@@ -1,0 +1,43 @@
+.slick-arrow.slick-next,
+.slick-arrow.slick-prev {
+    background-color: #fff;
+    height: 85px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+}
+
+.slick-arrow.slick-next{
+    border-radius: 6px 0px 0px 6px;
+    right: 0;
+}
+
+.slick-arrow.slick-prev {
+    border-radius: 0px 6px 6px 0px;
+    
+    left: 0;
+}
+
+/* .slick-arrow.slick-next:hover,
+.slick-arrow.slick-prev:hover
+{
+    background-color: #2574f5;
+    opacity:1;
+} */
+
+
+.slick-prev::before,
+.slick-next::before {
+    display: none;
+}
+
+.arrows {
+    height: 18px;
+    width: 18px;
+}
+
+
+
+/* // style={{ ...style, display: "block", background: "green", height: '85px', width: '40px', zIndex: 9, left: 0, color: 'black', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }} */

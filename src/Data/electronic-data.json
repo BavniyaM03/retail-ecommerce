@@ -1,0 +1,183 @@
+{
+    "electronics": [
+      {
+        "id": 1,
+        "name": "Wireless Noise-Canceling Headphones",
+        "brand": "Sony",
+        "category": "Audio",
+        "price": 349.99,
+        "currency": "USD",
+        "stock": 100,
+        "rating": 4.8,
+        "reviews": 920,
+        "discount": 15,
+        "color": ["Black", "Silver", "Blue"],
+        "battery_life": "30 hours",
+        "connectivity": ["Bluetooth 5.0", "3.5mm Audio Jack"],
+        "features": ["Active Noise Cancellation", "Touch Controls", "Voice Assistant"],
+        "warranty": "2 Years",
+        "description": "Experience premium sound quality with Sony's Wireless Noise-Canceling Headphones. Featuring industry-leading noise cancellation, 30-hour battery life, and touch controls, these headphones offer an immersive audio experience.",
+        "images": [
+          "https://example.com/images/sonyheadphones1.jpg",
+          "https://example.com/images/sonyheadphones2.jpg"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Smartwatch with Fitness Tracker",
+        "brand": "Apple",
+        "category": "Wearable",
+        "price": 399.99,
+        "currency": "USD",
+        "stock": 75,
+        "rating": 4.9,
+        "reviews": 1350,
+        "discount": 10,
+        "color": ["Black", "White", "Gold"],
+        "battery_life": "18 hours",
+        "connectivity": ["WiFi", "Bluetooth", "GPS"],
+        "features": ["Heart Rate Monitoring", "Sleep Tracking", "Water Resistant"],
+        "warranty": "1 Year",
+        "description": "Stay connected and track your fitness goals with the Apple Smartwatch. With advanced health monitoring, GPS, and seamless iPhone integration, this smartwatch is perfect for an active lifestyle.",
+        "images": [
+          "https://example.com/images/applesmartwatch1.jpg",
+          "https://example.com/images/applesmartwatch2.jpg"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Gaming Laptop",
+        "brand": "Razer",
+        "category": "Computing",
+        "price": 1799.99,
+        "currency": "USD",
+        "stock": 30,
+        "rating": 4.7,
+        "reviews": 540,
+        "discount": 12,
+        "color": ["Black"],
+        "processor": "Intel Core i9",
+        "ram": "32GB",
+        "storage": "1TB SSD",
+        "graphics_card": "NVIDIA RTX 4080",
+        "screen_size": "17.3 inches",
+        "features": ["144Hz Display", "RGB Keyboard", "Advanced Cooling"],
+        "warranty": "3 Years",
+        "description": "Unleash your gaming potential with the Razer Gaming Laptop. Powered by an Intel Core i9, NVIDIA RTX 4080, and a 144Hz display, this beast delivers smooth and immersive gameplay.",
+        "images": [
+          "https://example.com/images/razergaminglaptop1.jpg",
+          "https://example.com/images/razergaminglaptop2.jpg"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Wireless Bluetooth Speaker",
+        "brand": "JBL",
+        "category": "Audio",
+        "price": 129.99,
+        "currency": "USD",
+        "stock": 200,
+        "rating": 4.6,
+        "reviews": 870,
+        "discount": 20,
+        "color": ["Red", "Black", "Blue"],
+        "battery_life": "12 hours",
+        "connectivity": ["Bluetooth 5.0", "AUX"],
+        "features": ["Waterproof", "360° Sound", "Party Mode"],
+        "warranty": "1 Year",
+        "description": "Bring the party anywhere with the JBL Wireless Bluetooth Speaker. Featuring waterproof design, deep bass, and 360-degree sound, it's the perfect companion for outdoor adventures.",
+        "images": [
+          "https://example.com/images/jblspeaker1.jpg",
+          "https://example.com/images/jblspeaker2.jpg"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "4K Streaming Media Player",
+        "brand": "Roku",
+        "category": "Entertainment",
+        "price": 99.99,
+        "currency": "USD",
+        "stock": 150,
+        "rating": 4.8,
+        "reviews": 620,
+        "discount": 10,
+        "color": ["Black"],
+        "resolution": "4K HDR",
+        "connectivity": ["WiFi", "HDMI"],
+        "features": ["Voice Control", "Dolby Vision", "Remote with Headphone Jack"],
+        "warranty": "2 Years",
+        "description": "Stream your favorite content in stunning 4K HDR with the Roku Streaming Media Player. Featuring Dolby Vision, voice control, and a private listening mode, it's the ultimate entertainment hub.",
+        "images": [
+          "https://example.com/images/rokustreamer1.jpg",
+          "https://example.com/images/rokustreamer2.jpg"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Mechanical Gaming Keyboard",
+        "brand": "Corsair",
+        "category": "Accessories",
+        "price": 149.99,
+        "currency": "USD",
+        "stock": 120,
+        "rating": 4.7,
+        "reviews": 470,
+        "discount": 10,
+        "color": ["Black", "RGB"],
+        "connectivity": ["USB", "Wired"],
+        "features": ["RGB Backlighting", "Mechanical Switches", "Anti-Ghosting"],
+        "warranty": "2 Years",
+        "description": "Dominate the competition with the Corsair Mechanical Gaming Keyboard. Featuring customizable RGB lighting, fast mechanical switches, and anti-ghosting technology, it's built for pro gamers.",
+        "images": [
+          "https://example.com/images/corsairkeyboard1.jpg",
+          "https://example.com/images/corsairkeyboard2.jpg"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Smart Home Security Camera",
+        "brand": "Arlo",
+        "category": "Home Security",
+        "price": 199.99,
+        "currency": "USD",
+        "stock": 85,
+        "rating": 4.8,
+        "reviews": 320,
+        "discount": 15,
+        "color": ["White", "Black"],
+        "resolution": "1080p Full HD",
+        "connectivity": ["WiFi", "Cloud Storage"],
+        "features": ["Night Vision", "Motion Detection", "Two-Way Audio"],
+        "warranty": "1 Year",
+        "description": "Protect your home with the Arlo Smart Home Security Camera. With 1080p HD resolution, night vision, and motion detection, it provides real-time security alerts and two-way audio communication.",
+        "images": [
+          "https://example.com/images/arlosmartcamera1.jpg",
+          "https://example.com/images/arlosmartcamera2.jpg"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Fast Wireless Charger",
+        "brand": "Anker",
+        "category": "Accessories",
+        "price": 39.99,
+        "currency": "USD",
+        "stock": 300,
+        "rating": 4.5,
+        "reviews": 580,
+        "discount": 10,
+        "color": ["Black", "White"],
+        "charging_speed": "15W",
+        "connectivity": ["USB-C"],
+        "features": ["Overheat Protection", "Case Friendly", "LED Indicator"],
+        "warranty": "1 Year",
+        "description": "Charge your devices quickly and safely with the Anker Fast Wireless Charger. Featuring 15W fast charging, case-friendly design, and overheating protection, it's perfect for everyday use.",
+        "images": [
+          "https://example.com/images/ankercharger1.jpg",
+          "https://example.com/images/ankercharger2.jpg"
+        ]
+      }
+    ]
+  }
+  

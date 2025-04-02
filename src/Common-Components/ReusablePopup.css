@@ -1,0 +1,68 @@
+.dialog-box-container {
+    display: flex;
+    justify-content: center;
+}
+
+.login-signup-description {
+    height: 600px;
+    width: 450px;
+    background-color: #16678e;
+}
+
+.login-sighnup-media{
+    /* margin-top: 50px; */
+    width: 300px;
+    /* height: 100px; */
+}
+
+.login-media-container {
+    margin-top: 180px;
+    width: 300px;
+    /* height: 100px; */
+}
+
+.signup-media-container {
+    margin-top: 80px;
+    width: 300px;
+    /* height: 100px; */
+}
+
+.input-field-box {
+    padding: 40px;
+    background-color: #fff;
+}
+
+.button-container {
+    width: 500px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* justify-content: center; */
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.request-otp-button {
+    width: 350px;
+    height: 50px;
+    border-radius: 0% !important;
+    background-color: #16678e !important;
+    margin-top: 20px !important;
+}
+
+.create-an-account-button {
+    margin-top: 300px !important;
+    width: 400px;
+    height: 50px;
+    color: #16678e !important;
+}
+
+.create-an-account-button-sign{
+    margin-top: 300px !important;
+    width: 350px;
+    background-color: #16678e !important;
+    height: 50px;
+    border-radius: 0% !important;
+    
+}

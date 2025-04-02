@@ -1,0 +1,52 @@
+import { createSlice } from '@reduxjs/toolkit'
+
+const initialState = [
+    "Electronics",
+    "Home & Kitchen",
+    "Clothing, Shoes & Jewelry",
+    "Beauty & Personal Care",
+    "Health & Household",
+    "Sports & Outdoors",
+    "Toys & Games",
+    "Books",
+    "Automotive",
+    "Grocery & Gourmet Food",
+    "Arts, Crafts & Sewing",
+    "Baby",
+    "Cell Phones & Accessories",
+    "Computers",
+    "Garden & Outdoor",
+    "Industrial & Scientific",
+    "Luggage & Travel Gear",
+    "Movies & TV",
+    "Musical Instruments",
+    "Office Products",
+    "Software",
+    "Tools & Home Improvement",
+    "Video Games"
+  ];
+
+export const categorySlice = createSlice({
+  name: 'category',
+  initialState,
+  reducers: {
+    // increment: (state) => {
+    //   // Redux Toolkit allows us to write "mutating" logic in reducers. It
+    //   // doesn't actually mutate the state because it uses the Immer library,
+    //   // which detects changes to a "draft state" and produces a brand new
+    //   // immutable state based off those changes
+    //   state.value += 1
+    // },
+    // decrement: (state) => {
+    //   state.value -= 1
+    // },
+    // incrementByAmount: (state, action) => {
+    //   state.value += action.payload
+    // },
+  },
+})
+
+// Action creators are generated for each case reducer function
+export const {  } = categorySlice.actions
+
+export default categorySlice.reducer

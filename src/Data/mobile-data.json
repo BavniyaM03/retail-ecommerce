@@ -1,0 +1,209 @@
+{
+    "mobiles": [
+      {
+        "id": 1,
+        "name": "Galaxy X Pro",
+        "brand": "Samsung",
+        "price": 999.99,
+        "currency": "USD",
+        "stock": 50,
+        "rating": 4.7,
+        "reviews": 450,
+        "discount": 10,
+        "color": ["Black", "Silver", "Blue"],
+        "release_date": "2024-02-15",
+        "operating_system": "Android 14",
+        "processor": "Snapdragon 8 Gen 3",
+        "ram": "12GB",
+        "storage": ["128GB", "256GB", "512GB"],
+        "battery": "5000mAh",
+        "display": {
+          "size": "6.7 inches",
+          "resolution": "3200x1440 pixels",
+          "type": "AMOLED",
+          "refresh_rate": "120Hz"
+        },
+        "camera": {
+          "rear": "108MP + 12MP + 10MP",
+          "front": "32MP",
+          "features": ["Night Mode", "8K Video Recording", "OIS"]
+        },
+        "connectivity": ["5G", "WiFi 6E", "Bluetooth 5.3", "NFC"],
+        "features": [
+          "In-Display Fingerprint Sensor",
+          "Face Unlock",
+          "Wireless Charging",
+          "IP68 Water & Dust Resistance"
+        ],
+        "warranty": "2 Years",
+        "images": [
+          "https://example.com/images/galaxyxpro1.jpg",
+          "https://example.com/images/galaxyxpro2.jpg"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "iPhone 15 Pro Max",
+        "brand": "Apple",
+        "price": 1199.99,
+        "currency": "USD",
+        "stock": 30,
+        "rating": 4.9,
+        "reviews": 600,
+        "discount": 5,
+        "color": ["Titanium Gray", "Gold", "Black"],
+        "release_date": "2024-09-20",
+        "operating_system": "iOS 17",
+        "processor": "A17 Bionic",
+        "ram": "8GB",
+        "storage": ["256GB", "512GB", "1TB"],
+        "battery": "4850mAh",
+        "display": {
+          "size": "6.8 inches",
+          "resolution": "2796x1290 pixels",
+          "type": "Super Retina XDR",
+          "refresh_rate": "120Hz"
+        },
+        "camera": {
+          "rear": "48MP + 12MP + 12MP",
+          "front": "12MP",
+          "features": ["ProRAW", "Cinematic Mode", "LiDAR Scanner"]
+        },
+        "connectivity": ["5G", "WiFi 6E", "Bluetooth 5.3", "MagSafe"],
+        "features": [
+          "Face ID",
+          "Ceramic Shield",
+          "USB-C Port",
+          "IP68 Water & Dust Resistance"
+        ],
+        "warranty": "1 Year",
+        "images": [
+          "https://example.com/images/iphone15promax1.jpg",
+          "https://example.com/images/iphone15promax2.jpg"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Pixel 8 Pro",
+        "brand": "Google",
+        "price": 899.99,
+        "currency": "USD",
+        "stock": 40,
+        "rating": 4.6,
+        "reviews": 380,
+        "discount": 12,
+        "color": ["Obsidian", "Porcelain", "Sky Blue"],
+        "release_date": "2024-10-05",
+        "operating_system": "Android 14",
+        "processor": "Google Tensor G3",
+        "ram": "12GB",
+        "storage": ["128GB", "256GB"],
+        "battery": "5100mAh",
+        "display": {
+          "size": "6.7 inches",
+          "resolution": "3120x1440 pixels",
+          "type": "OLED",
+          "refresh_rate": "120Hz"
+        },
+        "camera": {
+          "rear": "50MP + 48MP + 12MP",
+          "front": "11MP",
+          "features": ["Magic Eraser", "Astrophotography", "4K Video"]
+        },
+        "connectivity": ["5G", "WiFi 6E", "Bluetooth 5.3", "NFC"],
+        "features": [
+          "Fingerprint Sensor",
+          "Face Unlock",
+          "Extreme Battery Saver",
+          "IP68 Water Resistance"
+        ],
+        "warranty": "2 Years",
+        "images": [
+          "https://example.com/images/pixel8pro1.jpg",
+          "https://example.com/images/pixel8pro2.jpg"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "OnePlus 12",
+        "brand": "OnePlus",
+        "price": 749.99,
+        "currency": "USD",
+        "stock": 60,
+        "rating": 4.5,
+        "reviews": 290,
+        "discount": 8,
+        "color": ["Emerald Green", "Volcanic Black"],
+        "release_date": "2024-03-10",
+        "operating_system": "OxygenOS 14 (Android 14)",
+        "processor": "Snapdragon 8 Gen 3",
+        "ram": "16GB",
+        "storage": ["256GB", "512GB"],
+        "battery": "5500mAh",
+        "display": {
+          "size": "6.8 inches",
+          "resolution": "3168x1440 pixels",
+          "type": "Fluid AMOLED",
+          "refresh_rate": "120Hz"
+        },
+        "camera": {
+          "rear": "50MP + 48MP + 32MP",
+          "front": "32MP",
+          "features": ["Hasselblad Tuning", "Ultra HDR", "Super Slow Motion"]
+        },
+        "connectivity": ["5G", "WiFi 7", "Bluetooth 5.3", "NFC"],
+        "features": [
+          "In-Display Fingerprint",
+          "120W Super Fast Charging",
+          "Dolby Atmos",
+          "IP65 Water Resistance"
+        ],
+        "warranty": "2 Years",
+        "images": [
+          "https://example.com/images/oneplus12-1.jpg",
+          "https://example.com/images/oneplus12-2.jpg"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Xiaomi 14 Ultra",
+        "brand": "Xiaomi",
+        "price": 899.99,
+        "currency": "USD",
+        "stock": 70,
+        "rating": 4.6,
+        "reviews": 410,
+        "discount": 10,
+        "color": ["White", "Black"],
+        "release_date": "2024-04-05",
+        "operating_system": "MIUI 15 (Android 14)",
+        "processor": "Snapdragon 8 Gen 3",
+        "ram": "16GB",
+        "storage": ["256GB", "512GB"],
+        "battery": "5200mAh",
+        "display": {
+          "size": "6.73 inches",
+          "resolution": "3200x1440 pixels",
+          "type": "AMOLED",
+          "refresh_rate": "120Hz"
+        },
+        "camera": {
+          "rear": "50MP + 50MP + 50MP + 50MP",
+          "front": "32MP",
+          "features": ["Leica Lens", "8K Video", "Periscope Zoom"]
+        },
+        "connectivity": ["5G", "WiFi 7", "Bluetooth 5.3", "NFC"],
+        "features": [
+          "120W Fast Charging",
+          "In-Display Fingerprint",
+          "IP68 Water Resistance"
+        ],
+        "warranty": "2 Years",
+        "images": [
+          "https://example.com/images/xiaomi14ultra1.jpg",
+          "https://example.com/images/xiaomi14ultra2.jpg"
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,58 @@
+/* .MuiBox-root {
+    background-color: brown;
+    
+}
+
+.MuiBox-root {
+    background-color: aquamarine !important
+} */
+/* 
+.custom-box-container {
+    background-color: rgb(182, 52, 0) !important
+} */
+
+
+
+.custom-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: #ffffff;
+    margin-top: 75px;
+}
+
+.custom-box-container section {
+    width: 140px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    /* border-radius: 10px; */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    /* transition: transform 0.3s ease-in-out; */
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* .custom-box-container section:hover {
+    transform: translateY(-5px);
+} */
+
+.custom-box-container img {
+    width: 90x;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.custom-box-container h3 {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    
+}

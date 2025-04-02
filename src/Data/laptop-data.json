@@ -1,0 +1,192 @@
+{
+    "laptops": [
+      {
+        "id": 1,
+        "name": "MacBook Pro 16\" (M3 Max)",
+        "brand": "Apple",
+        "price": 3499.99,
+        "currency": "USD",
+        "stock": 25,
+        "rating": 4.9,
+        "reviews": 520,
+        "discount": 5,
+        "color": ["Space Gray", "Silver"],
+        "release_date": "2024-03-10",
+        "operating_system": "macOS Sonoma",
+        "processor": "Apple M3 Max (14-core CPU, 30-core GPU)",
+        "ram": ["32GB", "64GB"],
+        "storage": ["1TB", "2TB", "4TB"],
+        "battery": "100Wh",
+        "display": {
+          "size": "16.2 inches",
+          "resolution": "3456x2234 pixels",
+          "type": "Liquid Retina XDR",
+          "refresh_rate": "120Hz (ProMotion)"
+        },
+        "graphics": "Integrated Apple GPU (30-core)",
+        "connectivity": ["WiFi 6E", "Bluetooth 5.3", "Thunderbolt 4", "HDMI"],
+        "ports": ["3x USB-C (Thunderbolt 4)", "1x HDMI", "1x SD Card Slot", "1x MagSafe 3"],
+        "features": [
+          "Touch ID",
+          "Backlit Magic Keyboard",
+          "High-Fidelity Speakers",
+          "Studio-Quality Microphones"
+        ],
+        "warranty": "1 Year",
+        "images": [
+          "https://example.com/images/macbookpro16-1.jpg",
+          "https://example.com/images/macbookpro16-2.jpg"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Dell XPS 15 (2024)",
+        "brand": "Dell",
+        "price": 2499.99,
+        "currency": "USD",
+        "stock": 40,
+        "rating": 4.7,
+        "reviews": 400,
+        "discount": 8,
+        "color": ["Platinum Silver", "Graphite"],
+        "release_date": "2024-04-05",
+        "operating_system": "Windows 11 Pro",
+        "processor": "Intel Core i9-13900H",
+        "ram": ["16GB", "32GB"],
+        "storage": ["512GB", "1TB", "2TB"],
+        "battery": "86Wh",
+        "display": {
+          "size": "15.6 inches",
+          "resolution": "3840x2400 pixels",
+          "type": "OLED Touchscreen",
+          "refresh_rate": "60Hz"
+        },
+        "graphics": "NVIDIA GeForce RTX 4060 (8GB)",
+        "connectivity": ["WiFi 6E", "Bluetooth 5.2", "Thunderbolt 4"],
+        "ports": ["2x USB-C (Thunderbolt 4)", "1x SD Card Reader", "1x 3.5mm Audio Jack"],
+        "features": [
+          "Fingerprint Reader",
+          "Backlit Keyboard",
+          "3D Soundscape Audio",
+          "Carbon Fiber Palm Rest"
+        ],
+        "warranty": "1 Year",
+        "images": [
+          "https://example.com/images/dellxps15-1.jpg",
+          "https://example.com/images/dellxps15-2.jpg"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Razer Blade 16",
+        "brand": "Razer",
+        "price": 2799.99,
+        "currency": "USD",
+        "stock": 35,
+        "rating": 4.8,
+        "reviews": 350,
+        "discount": 10,
+        "color": ["Black"],
+        "release_date": "2024-03-20",
+        "operating_system": "Windows 11 Home",
+        "processor": "Intel Core i9-13980HX",
+        "ram": ["32GB", "64GB"],
+        "storage": ["1TB", "2TB"],
+        "battery": "95Wh",
+        "display": {
+          "size": "16 inches",
+          "resolution": "3840x2160 pixels",
+          "type": "Mini LED 4K",
+          "refresh_rate": "165Hz"
+        },
+        "graphics": "NVIDIA GeForce RTX 4090 (16GB)",
+        "connectivity": ["WiFi 6E", "Bluetooth 5.3", "USB-C", "Thunderbolt 4"],
+        "ports": ["2x USB-C", "1x HDMI 2.1", "1x SD Card Reader"],
+        "features": [
+          "Per-Key RGB Keyboard",
+          "Vapor Chamber Cooling",
+          "Advanced AI Gaming Performance"
+        ],
+        "warranty": "2 Years",
+        "images": [
+          "https://example.com/images/razerblade16-1.jpg",
+          "https://example.com/images/razerblade16-2.jpg"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "ASUS ROG Zephyrus G16",
+        "brand": "ASUS",
+        "price": 2199.99,
+        "currency": "USD",
+        "stock": 50,
+        "rating": 4.6,
+        "reviews": 280,
+        "discount": 12,
+        "color": ["Eclipse Gray", "Moonlight White"],
+        "release_date": "2024-04-10",
+        "operating_system": "Windows 11 Pro",
+        "processor": "AMD Ryzen 9 7945HX",
+        "ram": ["16GB", "32GB"],
+        "storage": ["1TB", "2TB"],
+        "battery": "90Wh",
+        "display": {
+          "size": "16 inches",
+          "resolution": "2560x1600 pixels",
+          "type": "IPS LCD",
+          "refresh_rate": "240Hz"
+        },
+        "graphics": "NVIDIA GeForce RTX 4080 (12GB)",
+        "connectivity": ["WiFi 6E", "Bluetooth 5.2", "USB-C", "Thunderbolt 4"],
+        "ports": ["2x USB-C", "2x USB-A", "1x HDMI 2.1", "1x 3.5mm Audio Jack"],
+        "features": [
+          "AniMe Matrix Display",
+          "RGB Backlit Keyboard",
+          "AI-Enhanced Cooling System"
+        ],
+        "warranty": "2 Years",
+        "images": [
+          "https://example.com/images/asusrog16-1.jpg",
+          "https://example.com/images/asusrog16-2.jpg"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "HP Spectre x360 14",
+        "brand": "HP",
+        "price": 1699.99,
+        "currency": "USD",
+        "stock": 60,
+        "rating": 4.5,
+        "reviews": 320,
+        "discount": 10,
+        "color": ["Poseidon Blue", "Nightfall Black"],
+        "release_date": "2024-02-28",
+        "operating_system": "Windows 11 Home",
+        "processor": "Intel Core i7-13700U",
+        "ram": ["16GB", "32GB"],
+        "storage": ["512GB", "1TB"],
+        "battery": "66Wh",
+        "display": {
+          "size": "14 inches",
+          "resolution": "3000x2000 pixels",
+          "type": "OLED Touchscreen",
+          "refresh_rate": "90Hz"
+        },
+        "graphics": "Intel Iris Xe Graphics",
+        "connectivity": ["WiFi 6E", "Bluetooth 5.2", "USB-C", "Thunderbolt 4"],
+        "ports": ["2x USB-C (Thunderbolt 4)", "1x USB-A", "1x MicroSD Card Reader"],
+        "features": [
+          "Convertible 2-in-1 Design",
+          "HP Pen Support",
+          "AI Noise Reduction for Video Calls"
+        ],
+        "warranty": "1 Year",
+        "images": [
+          "https://example.com/images/hpspectre14-1.jpg",
+          "https://example.com/images/hpspectre14-2.jpg"
+        ]
+      }
+    ]
+  }
+  

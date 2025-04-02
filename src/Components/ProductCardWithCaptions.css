@@ -1,0 +1,48 @@
+.custom-card-section-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 345px;
+    /* justify-content: center; */
+    top: 0;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .custom-productcard-section-with-captions{
+    width: 140px;
+    height: 140px;
+    /* background-color: rgb(194, 194, 194); */
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-productcard-section-images{
+    width: 140px;
+    height: 100px;
+    /* background-color: black; */
+
+}
+
+.custom-productcard-caption-container{
+    width: 140px;
+    height: 40px;
+    /* background-color: blue; */
+    border: 0;
+    margin-bottom: 0;
+}
+
+.postcard-section{
+    /* color: brown !important; */
+    line-height: normal !important;
+    
+}
+
+.custom-postcard-images{
+    height: 100px;
+}
+
+
+
+

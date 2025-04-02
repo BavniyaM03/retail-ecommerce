@@ -1,0 +1,163 @@
+.footer-container {
+    background-color: #092736;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+
+.back-to-top {
+    width: 100%;
+    height: 60px;
+    background-color: #16678e;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.container-list {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+
+
+.list {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.list-items {
+    margin-left: 50px; 
+}
+
+
+.container-list h3 {
+    font-size: 16px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.container-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container-list li {
+    margin-bottom: 8px;
+}
+
+.container-list a {
+    font-size: 14px;
+    color: rgb(160, 160, 160);
+    text-decoration: none;
+}
+
+.container-list a:hover {
+    border-bottom: 1px solid rgb(160, 160, 160);
+}
+
+
+.address-mail-container {
+    width: 35%;
+    color: rgb(160, 160, 160);
+    font-size: 14px;
+    text-align: left;
+    padding-left: 20px;
+    /* background-color: aqua; */
+    border-left: 1px solid #16678e;
+    padding-left: 75px;
+}
+
+.mail {
+    margin-top: 20px;
+}
+
+
+.social-media-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .container-list {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .list {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .list-items {
+        margin-left: 0px !important;
+        margin-top: 35px;
+        text-align: center;
+        
+    }
+
+    .address-mail-container {
+        border-top: 1px solid #16678e;
+        border-left: 0px !important;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .social-media-icons {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .list {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: left;
+        margin-bottom: 50px;
+    }
+
+    .list-items {
+        margin-top: 35px;
+        margin-left: 75px;
+    }
+
+    .address-mail-container {
+        margin-top: 40px;
+        border-top: 1px solid #16678e;
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        border-left: 0px !important;
+    }
+
+    .social-media-icons{
+        justify-content: center;
+    }
+}

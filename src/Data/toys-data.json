@@ -1,0 +1,173 @@
+{
+    "toys": [
+      {
+        "id": 1,
+        "name": "LEGO City Police Station",
+        "brand": "LEGO",
+        "category": "Building Blocks",
+        "price": 99.99,
+        "currency": "USD",
+        "stock": 120,
+        "rating": 4.8,
+        "reviews": 1050,
+        "discount": 15,
+        "age_group": "6+ years",
+        "features": ["Modular Design", "Includes Police Cars", "7 Mini Figures"],
+        "material": "Plastic",
+        "safety_certification": "ASTM Certified",
+        "description": "Build and protect the LEGO City with this detailed police station set. Includes vehicles, mini-figures, and accessories for endless creative play.",
+        "images": [
+          "https://example.com/images/lego_police1.jpg",
+          "https://example.com/images/lego_police2.jpg"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Remote Control Monster Truck",
+        "brand": "Hot Wheels",
+        "category": "Remote Control Toys",
+        "price": 45.99,
+        "currency": "USD",
+        "stock": 200,
+        "rating": 4.6,
+        "reviews": 750,
+        "discount": 10,
+        "age_group": "8+ years",
+        "features": ["High-Speed Performance", "Off-Road Capable", "Rechargeable Battery"],
+        "material": "Plastic & Metal",
+        "safety_certification": "CE Certified",
+        "description": "Dominate any terrain with this high-speed, off-road monster truck. Features large tires and a durable build for extreme adventures.",
+        "images": [
+          "https://example.com/images/rc_monster_truck1.jpg",
+          "https://example.com/images/rc_monster_truck2.jpg"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Barbie Dreamhouse",
+        "brand": "Barbie",
+        "category": "Dolls & Playsets",
+        "price": 189.99,
+        "currency": "USD",
+        "stock": 85,
+        "rating": 4.9,
+        "reviews": 1320,
+        "discount": 20,
+        "age_group": "3+ years",
+        "features": ["3 Floors", "70+ Accessories", "Lights & Sounds"],
+        "material": "Plastic",
+        "safety_certification": "CPSC Approved",
+        "description": "The ultimate Barbie Dreamhouse with multiple rooms, lights, sounds, and endless customization options for storytelling and imaginative play.",
+        "images": [
+          "https://example.com/images/barbie_dreamhouse1.jpg",
+          "https://example.com/images/barbie_dreamhouse2.jpg"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "STEM Robotics Kit",
+        "brand": "Makeblock",
+        "category": "Educational Toys",
+        "price": 129.99,
+        "currency": "USD",
+        "stock": 60,
+        "rating": 4.8,
+        "reviews": 530,
+        "discount": 12,
+        "age_group": "10+ years",
+        "features": ["Programmable", "Supports Arduino", "Hands-On Learning"],
+        "material": "Metal & Plastic",
+        "safety_certification": "STEM.org Approved",
+        "description": "Engage kids in coding and robotics with this DIY STEM kit. Perfect for beginners and advanced learners to develop problem-solving and programming skills.",
+        "images": [
+          "https://example.com/images/stem_robotics1.jpg",
+          "https://example.com/images/stem_robotics2.jpg"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Puzzle Set - 1000 Pieces",
+        "brand": "Ravensburger",
+        "category": "Puzzles & Board Games",
+        "price": 22.99,
+        "currency": "USD",
+        "stock": 180,
+        "rating": 4.7,
+        "reviews": 620,
+        "discount": 8,
+        "age_group": "12+ years",
+        "features": ["High-Quality Pieces", "Anti-Glare Finish", "Intricate Design"],
+        "material": "Cardboard",
+        "safety_certification": "Eco-Friendly Certified",
+        "description": "Challenge yourself with a beautifully designed 1000-piece Ravensburger puzzle. Perfect for relaxation and brain training.",
+        "images": [
+          "https://example.com/images/ravensburger_puzzle1.jpg",
+          "https://example.com/images/ravensburger_puzzle2.jpg"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Soft Plush Teddy Bear",
+        "brand": "Gund",
+        "category": "Stuffed Animals",
+        "price": 29.99,
+        "currency": "USD",
+        "stock": 300,
+        "rating": 4.9,
+        "reviews": 890,
+        "discount": 10,
+        "age_group": "All Ages",
+        "features": ["Ultra-Soft Fabric", "Huggable Size", "Machine Washable"],
+        "material": "Plush Fabric",
+        "safety_certification": "CPSC Approved",
+        "description": "This adorable Gund plush teddy bear is ultra-soft, perfect for snuggling, and safe for all ages. A great gift for children and adults alike.",
+        "images": [
+          "https://example.com/images/gund_teddy1.jpg",
+          "https://example.com/images/gund_teddy2.jpg"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Kids' Indoor Basketball Hoop",
+        "brand": "Little Tikes",
+        "category": "Sports & Outdoor Toys",
+        "price": 59.99,
+        "currency": "USD",
+        "stock": 140,
+        "rating": 4.6,
+        "reviews": 710,
+        "discount": 15,
+        "age_group": "3+ years",
+        "features": ["Adjustable Height", "Indoor & Outdoor Use", "Includes Basketball"],
+        "material": "Plastic",
+        "safety_certification": "ASTM Certified",
+        "description": "Encourage active play with the Little Tikes indoor basketball hoop. Adjustable height makes it perfect for growing kids.",
+        "images": [
+          "https://example.com/images/littletikes_hoop1.jpg",
+          "https://example.com/images/littletikes_hoop2.jpg"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Talking Interactive Toy Dog",
+        "brand": "FurReal Friends",
+        "category": "Electronic Toys",
+        "price": 79.99,
+        "currency": "USD",
+        "stock": 90,
+        "rating": 4.8,
+        "reviews": 640,
+        "discount": 12,
+        "age_group": "4+ years",
+        "features": ["Interactive Sound & Movement", "Soft & Cuddly", "Battery Operated"],
+        "material": "Plush & Electronics",
+        "safety_certification": "CPSC Approved",
+        "description": "This FurReal Friends interactive toy dog responds to touch and sound with realistic movements and adorable barking sounds. The perfect companion for kids!",
+        "images": [
+          "https://example.com/images/furreal_dog1.jpg",
+          "https://example.com/images/furreal_dog2.jpg"
+        ]
+      }
+    ]
+  }
+  
