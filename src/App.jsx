@@ -4,6 +4,7 @@ import Header from './Components/Header/Header'
 import ProductCard from './Components/ProductCard'
 import { Home } from './Pages/Home'
 import { Product } from './Pages/Product'
+import { ProductList } from './Pages/ProductList'
 
 function App() {
 
@@ -11,8 +12,9 @@ function App() {
     <>
     
     <Header/>
-    <Product/>
-    <Home/>
+    <ProductList/>
+    {/* <Product/> */}
+    {/* <Home/> */}
     <Footer/>
     </>
   )

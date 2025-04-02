@@ -1,0 +1,23 @@
+.card-item-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.product-title {
+    font-size: 16px !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+.mrp-value {
+    font-size: 24px !important;
+    color: black;
+    font-weight: 500 !important;
+}
+
+.rating-value-star {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px;
+    margin-top: 8px !important;
+}
