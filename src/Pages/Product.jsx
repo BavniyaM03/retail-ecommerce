@@ -6,6 +6,7 @@ import { ReusableProduct } from "../Common-Components/ReusableProduct"
 import ReusableSlider from '../Common-Components/ReusableSlider';
 import ReusablePopup from '../Common-Components/ReusablePopup';
 import ReusablePopupProduct from '../Common-Components/ReusablePopupProduct';
+import { ReusableReviewRatingBox } from '../Common-Components/ReusableReviewRatingBox';
 
 export const Product = () => {
     return (
@@ -17,13 +18,18 @@ export const Product = () => {
                         <ReusableProduct />
                     </Box>
 
+                    <Box sx={{ bgcolor: '#fff', height:'100%', marginLeft:'603px'}} >
+                        <ReusableReviewRatingBox />
+                    </Box>
+
+
                     <Box sx={{ marginTop: 1.5 }}>
                         <ReusableSlider />
                     </Box>
 
 
                     <ReusablePopup />
-                    <ReusablePopupProduct/>
+                    <ReusablePopupProduct />
 
                 </Container>
             </React.Fragment>

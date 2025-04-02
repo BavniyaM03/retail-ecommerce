@@ -12,6 +12,7 @@
     /* background-color: aqua; */
     display: flex;
     flex-wrap: wrap;
+    /* position: fixed; */
 }
 
 .product-image{
@@ -94,6 +95,7 @@
     background-color: #fff;
     border-left: 1px solid #16678e;
     padding: 40px;
+    /* position: fixed; */
     
 }
 

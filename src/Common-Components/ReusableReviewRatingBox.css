@@ -1,0 +1,141 @@
+.review-rating-box {
+    width: 750px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.first-box {
+    border-bottom: 1px solid gray;
+}
+
+.sub-box {
+    margin-bottom: 25px;
+}
+
+.review-rating-main-box {
+    width: 100%;
+    max-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.overall-reating {
+    max-height: 200px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    margin-right: 250px;
+}
+
+.overall-sub-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* height: 8px; */
+
+}
+.rating-bar{
+    height: 12px;
+}
+
+/* .overall-one-rating{
+    /* background-color: red; */
+
+
+.total-rating {
+    display: flex;
+    flex-direction: column;
+}
+
+.star-icon {
+    max-height: 15px;
+    display: flex !important;
+    align-items: center !important;
+    margin-bottom: 10px;
+}
+
+.review-rating-images {
+    display: flex;
+    gap: 6px;
+}
+
+.review-image-container {
+    width: 80px;
+    height: 80px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.review-rating-images img {
+    width: 90px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.all-users-reviews-rating-second-box {
+    padding: 25px 0px;
+}
+
+.rating-section {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #388E3C;
+    border-radius: 3px;
+    padding: 4px;
+    color: #fff;
+}
+
+.user-review-title-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-review-title {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+}
+
+.user-review-description-box {
+    max-height: 300px;
+    margin-top: 10px;
+    /* background-color: aqua; */
+}
+
+.user-review-description {
+    font-size: 14px !important;
+}
+
+.user-review-images {
+    margin-top: 10px;
+}
+
+.user-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    color: gray;
+    border-bottom: 1px solid gray;
+    padding-bottom: 15px;
+}
+
+.like-dislike-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.all-reviews-button {
+    display: flex;
+    align-items: center;
+}
