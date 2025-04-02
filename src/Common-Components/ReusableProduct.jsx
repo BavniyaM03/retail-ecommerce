@@ -4,6 +4,8 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import Rating from '@mui/material/Rating';
 import { Typography } from "@mui/material";
 import { ReusableButton } from "./ReusableButton";
+import ReactImageMagnify from 'react-image-magnify';
+
 import './ReusableProduct.css'
 
 export const ReusableProduct = () => {
@@ -37,8 +39,31 @@ export const ReusableProduct = () => {
                         </div>
                     </div>
 
+
+                  
+                        
+
+
+
                     <div className="product-image">
-                        <img src="https://images-static.nykaa.com/media/catalog/product/b/8/b86cf32NYKAC00000193_2.jpg?tr=w-344,h-344,cm-pad_resize"></img>
+                        <ReactImageMagnify {...{
+                            smallImage: {
+                                alt: 'Wristwatch by Ted Baker London',
+                                isFluidWidth: true,
+                                src: "https://images-static.nykaa.com/media/catalog/product/b/8/b86cf32NYKAC00000193_2.jpg?tr=w-344,h-344,cm-pad_resize"
+                            },
+                            largeImage: {
+                                src: "https://images-static.nykaa.com/media/catalog/product/b/8/b86cf32NYKAC00000193_2.jpg?tr=w-344,h-344,cm-pad_resize",
+                                width: 1200,
+                                height: 1800
+                            },
+                            enlargedImageContainerDimensions: {
+                                width: '250%',
+                                height: '350%'
+                            },
+                            shouldUsePositiveSpaceLens: true
+                        }} />
+                        {/* <img src="https://images-static.nykaa.com/media/catalog/product/b/8/b86cf32NYKAC00000193_2.jpg?tr=w-344,h-344,cm-pad_resize"></img> */}
                     </div>
 
                 </div>

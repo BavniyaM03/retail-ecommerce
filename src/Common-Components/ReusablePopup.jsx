@@ -1,4 +1,6 @@
 import * as React from 'react';
+import ReactImageMagnify from 'react-image-magnify';
+
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogContent from '@mui/material/DialogContent';
