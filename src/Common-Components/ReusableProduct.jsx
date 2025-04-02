@@ -39,29 +39,29 @@ export const ReusableProduct = () => {
                         </div>
                     </div>
 
-
-                  
-                        
-
-
-
                     <div className="product-image">
                         <ReactImageMagnify {...{
                             smallImage: {
                                 alt: 'Wristwatch by Ted Baker London',
                                 isFluidWidth: true,
-                                src: "https://images-static.nykaa.com/media/catalog/product/b/8/b86cf32NYKAC00000193_2.jpg?tr=w-344,h-344,cm-pad_resize"
+                                src: "https://images-static.nykaa.com/media/catalog/product/c/4/c468f8f773602685189_1.jpg"
                             },
                             largeImage: {
-                                src: "https://images-static.nykaa.com/media/catalog/product/b/8/b86cf32NYKAC00000193_2.jpg?tr=w-344,h-344,cm-pad_resize",
+                                src: "https://images-static.nykaa.com/media/catalog/product/c/4/c468f8f773602685189_1.jpg",
                                 width: 1200,
                                 height: 1800
                             },
                             enlargedImageContainerDimensions: {
-                                width: '250%',
-                                height: '350%'
+                                width: '245%',
+                                height: '300%'
                             },
-                            shouldUsePositiveSpaceLens: true
+                            shouldUsePositiveSpaceLens: true,
+                            enlargedImageContainerStyle	: {
+                                backgroundColor:'#fff',
+                                zIndex: 9,
+                                top: '-82px',
+                                marginLeft : '45px'
+                            }
                         }} />
                         {/* <img src="https://images-static.nykaa.com/media/catalog/product/b/8/b86cf32NYKAC00000193_2.jpg?tr=w-344,h-344,cm-pad_resize"></img> */}
                     </div>
