@@ -5,15 +5,14 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea, Rating } from '@mui/material';
 import './ReusableProductList.css'
-import {books} from '../Data/books-data'
+import { books } from '../Data/books-data'
 
 export const ReusableProductList = () => {
     return (
         <>
-            <div className="filter-container"></div>
             <div className="card-item-container">
                 {books.map((item, index) => (
-                    <Card sx={{ width: 300 }}>
+                    <Card sx={{ width: 280, height: 350 }}>
                         <CardMedia
                             component="img"
                             height="200"
