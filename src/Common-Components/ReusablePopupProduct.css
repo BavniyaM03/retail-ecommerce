@@ -1,6 +1,7 @@
 .dialog-box-container {
     display: flex;
     justify-content: center;
+    
 }
 
 .product-mainimage-container {
@@ -168,4 +169,151 @@
 .add-to-bag {
     background-color: #16678e !important;
     border-radius: 0% !important;
+}
+
+/* Tablet View: max-width 1024px */
+@media (max-width: 1024px) {
+    /* Scale down the main image container */
+    .product-mainimage-container {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        padding: 0 10px;
+    }
+    
+    .product-mainimage-container img,
+    .product-mainimage-container video {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    /* Make the small images container fluid */
+    .product-small-images {
+        width: 100%;
+    }
+    
+    /* Adjust the image and video buttons */
+    .image-button, 
+    .video-button {
+        width: 50%;
+        height: auto;
+        font-size: 16px !important;
+        padding: 8px 0;
+        border-bottom: 1px solid #16678e !important;
+    }
+    
+    /* Arrange small images in a row with wrapping */
+    .small-images-container {
+        margin-top: 15px;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .small-images-container div {
+        height: auto;
+        gap: 10px;
+    }
+    
+    .small-images-container section {
+        width: 60px;
+        height: 60px;
+        border: 1px solid rgb(224, 224, 224);
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .small-images-container img {
+        width: 50px;
+    }
+    
+    /* Adjust popup product details */
+    .popup-product-details-container {
+        margin-top: 20px;
+        width: 100%;
+        padding: 10px;
+        border-top: 1px solid rgb(224, 224, 224);
+    }
+    
+    .popup-product-mrp .MuiTypography-root {
+        font-size: 20px !important;
+    }
+    
+    .add-to-bag {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Mobile View: max-width 768px */
+@media (max-width: 768px) {
+    .product-mainimage-container {
+        width: 100%;
+        height: auto;
+        padding: 0 5px;
+    }
+    
+    .product-mainimage-container img,
+    .product-mainimage-container video {
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .product-small-images {
+        width: 100%;
+    }
+    
+    .image-button, 
+    .video-button {
+        width: 50%;
+        height: auto;
+        font-size: 14px !important;
+        padding: 6px 0;
+        border-bottom: 1px solid #16678e !important;
+    }
+    
+    .small-images-container {
+        margin-top: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .small-images-container section {
+        width: 50px;
+        height: 50px;
+        border: 1px solid rgb(224, 224, 224);
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .small-images-container img {
+        width: 45px;
+    }
+    
+    .popup-product-details-container {
+        margin-top: 15px;
+        width: 100%;
+        padding: 8px;
+        border-top: 1px solid rgb(224, 224, 224);
+    }
+    
+    .popup-product-mrp .MuiTypography-root {
+        font-size: 18px !important;
+    }
+    
+    .add-to-bag {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .video-playing-label{
+    top: 570px;
+    border-radius: 10px 0 0 0 ;
+    }
 }

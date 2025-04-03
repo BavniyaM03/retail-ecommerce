@@ -44,10 +44,10 @@ export const ReusableProduct = () => {
                             smallImage: {
                                 alt: 'Wristwatch by Ted Baker London',
                                 isFluidWidth: true,
-                                src: "https://images-static.nykaa.com/media/catalog/product/c/4/c468f8f773602685189_1.jpg"
+                                src: "https://m.media-amazon.com/images/I/71FYgvmvNAL._SX522_.jpg"
                             },
                             largeImage: {
-                                src: "https://images-static.nykaa.com/media/catalog/product/c/4/c468f8f773602685189_1.jpg",
+                                src: "https://m.media-amazon.com/images/I/71FYgvmvNAL._SX522_.jpg",
                                 width: 1200,
                                 height: 1800
                             },

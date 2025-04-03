@@ -18,7 +18,7 @@ export const Product = () => {
                         <ReusableProduct />
                     </Box>
 
-                    <Box sx={{ bgcolor: '#fff', height:'100%', marginLeft:'603px'}} >
+                    <Box sx={{ bgcolor: '#fff', height:'100%'}} >
                         <ReusableReviewRatingBox />
                     </Box>
 

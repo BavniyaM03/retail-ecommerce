@@ -1,3 +1,12 @@
+/* -----------------------------
+   Existing Desktop (Web) Styles 
+   (Keep these unchanged)
+----------------------------- */
+.popup-container {
+    /* Adjust this if needed; 900vw seems excessive—maybe use 100% */
+    width: 100%;
+}
+
 .dialog-box-container {
     display: flex;
     justify-content: center;
@@ -9,22 +18,18 @@
     background-color: #16678e;
 }
 
-.login-sighnup-media{
-    /* margin-top: 50px; */
+.login-sighnup-media {
     width: 300px;
-    /* height: 100px; */
 }
 
 .login-media-container {
     margin-top: 180px;
     width: 300px;
-    /* height: 100px; */
 }
 
 .signup-media-container {
     margin-top: 80px;
     width: 300px;
-    /* height: 100px; */
 }
 
 .input-field-box {
@@ -38,9 +43,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    /* justify-content: center; */
     align-items: center;
-    /* background-color: aqua; */
 }
 
 .request-otp-button {
@@ -58,11 +61,142 @@
     color: #16678e !important;
 }
 
-.create-an-account-button-sign{
+.create-an-account-button-sign {
     margin-top: 300px !important;
     width: 350px;
     background-color: #16678e !important;
     height: 50px;
     border-radius: 0% !important;
-    
+}
+
+/* -----------------------------
+   Responsive Media Queries 
+   (For Tablet & Mobile Views)
+----------------------------- */
+
+/* Tablet View: Screens between 768px and 1024px */
+@media (max-width: 1024px) and (min-width: 768px) {
+
+    .dialog-box-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .login-signup-description {
+        width: 100% !important;
+        /* Almost full width */
+        height: 100% !important;
+        margin: auto;
+        /* background-color: red; */
+    }
+
+    .login-sighnup-media {
+        width: 50%;
+        /* background-color: aqua; */
+    }
+
+    .login-media-container,
+    .signup-media-container {
+        width: 100%;
+        margin-top: 10%;
+        /* background-color: rgb(255, 0, 221); */
+        display: flex;
+        justify-content: center;
+    }
+
+    .input-field-box {
+        padding: 25px;
+    }
+
+    .button-container {
+        width: 100%;
+        height: auto;
+        padding-bottom: 15px;
+        /* background-color: aqua; */
+    }
+
+    .request-otp-button,
+    .create-an-account-button,
+    .create-an-account-button-sign {
+        width: 100%;
+        margin-top: 15px;
+        height: auto;
+    }
+
+    .create-an-account-button {
+        margin-top: 12% !important;
+        width: 60%;
+        /* width: 400px;
+        height: 50px;
+        color: #16678e !important; */
+    }
+
+    .create-an-account-button-sign {
+        margin-top: 6% !important;
+    }
+
+}
+
+/* Mobile View: Screens less than 768px */
+@media (max-width: 768px) {
+
+    .dialog-box-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .login-signup-description {
+        width: 100% !important;
+        /* Almost full width */
+        height: 100% !important;
+        margin: auto;
+        /* background-color: red; */
+    }
+
+    .login-sighnup-media {
+        width: 50%;
+        /* background-color: aqua; */
+    }
+
+    .login-media-container,
+    .signup-media-container {
+        width: 100%;
+        margin-top: 10%;
+        /* background-color: rgb(255, 0, 221); */
+        display: flex;
+        justify-content: center;
+    }
+
+    .input-field-box {
+        padding: 25px;
+    }
+
+    .button-container {
+        width: 100%;
+        height: auto;
+        padding-bottom: 15px;
+        /* background-color: aqua; */
+    }
+
+    .request-otp-button,
+    .create-an-account-button,
+    .create-an-account-button-sign {
+        width: 100%;
+        margin-top: 15px;
+        height: auto;
+    }
+
+    .create-an-account-button {
+        margin-top: 12% !important;
+        width: 60%;
+        /* width: 400px;
+        height: 50px;
+        color: #16678e !important; */
+    }
+
+    .create-an-account-button-sign {
+        margin-top: 6% !important;
+    }
 }

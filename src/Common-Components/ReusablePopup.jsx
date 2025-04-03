@@ -30,7 +30,8 @@ export default function ReusablePopup() {
             <Button variant="outlined" onClick={handleClickOpen}>
                 Open responsive dialog
             </Button>
-            <Dialog
+          <div className='popup-container'>
+          <Dialog
                 maxWidth="md"
                 open={open}
                 onClose={handleClose}
@@ -87,6 +88,7 @@ export default function ReusablePopup() {
                 </div>
 
             </Dialog>
+          </div>
         </React.Fragment>
     );
 }

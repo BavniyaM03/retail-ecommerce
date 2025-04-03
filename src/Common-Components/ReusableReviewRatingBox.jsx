@@ -114,7 +114,7 @@ export const ReusableReviewRatingBox = () => {
                         <Typography className='user-review-description' variant='caption'>Good mobile very good I have buy this mobile in 12/256 very beautiful mobile but camera quality is ok ok medium 🔉 spekar is very good battery 🔋 drain fast I have power charger issue face this mobile but mobile is 10/08 rating ok ok mobile over all bast and nice mobile happy 😊😊 happy diwali 🎇🪔🪔🪔🪔</Typography>
                     </div>
                     <div className='user-review-images'>
-                        <div className='review-rating-images sub-box'>
+                        <div className='indivisual-user-review-rating-images sub-box'>
                             <div className='review-image-container'>
                                 <img src='https://rukminim1.flixcart.com/blobio/178/178/imr/blobio-imr_83b1a8cf3451407ebcfb789c89d5dc7f.jpg?q=90'></img>
                             </div>
@@ -168,7 +168,7 @@ export const ReusableReviewRatingBox = () => {
                         <Typography className='user-review-description' variant='caption'>Good mobile very good I have buy this mobile in 12/256 very beautiful mobile but camera quality is ok ok medium 🔉 spekar is very good battery 🔋 drain fast I have power charger issue face this mobile but mobile is 10/08 rating ok ok mobile over all bast and nice mobile happy 😊😊 happy diwali 🎇🪔🪔🪔🪔</Typography>
                     </div>
                     <div className='user-review-images'>
-                        <div className='review-rating-images sub-box'>
+                        <div className='indivisual-user-review-rating-images sub-box'>
                             <div className='review-image-container'>
                                 <img src='https://rukminim1.flixcart.com/blobio/178/178/imr/blobio-imr_83b1a8cf3451407ebcfb789c89d5dc7f.jpg?q=90'></img>
                             </div>
@@ -222,7 +222,7 @@ export const ReusableReviewRatingBox = () => {
                         <Typography className='user-review-description' variant='caption'>Good mobile very good </Typography>
                     </div>
                     <div className='user-review-images'>
-                        <div className='review-rating-images sub-box'>
+                        <div className='indivisual-user-review-rating-images sub-box'>
                             <div className='review-image-container'>
                                 <img src='https://rukminim1.flixcart.com/blobio/178/178/imr/blobio-imr_83b1a8cf3451407ebcfb789c89d5dc7f.jpg?q=90'></img>
                             </div>

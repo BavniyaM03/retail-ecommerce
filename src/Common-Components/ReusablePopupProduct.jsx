@@ -11,7 +11,7 @@ import { CurrencyRupee } from '@mui/icons-material';
 
 export default function ReusablePopupProduct() {
     // const [isLoggedIn, setIsLoggedIn] = React.useState(true);
-    const [isActive, setIsActive] = React.useState(false);
+    const [isActive, setIsActive] = React.useState(true);
     const [open, setOpen] = React.useState(false);
 
     const handleClickOpen = () => {
