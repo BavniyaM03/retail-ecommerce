@@ -3,7 +3,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import { Hero } from '../Components/Hero';
-// import SimpleSlider from '../Components/ImageSlider';
 import Card from '../Components/ProductCard';
 // import ProductCard from '../Components/ProductCard';
 const ProductCard = React.lazy(() => import('../Components/ProductCard'))
@@ -17,7 +16,6 @@ import { ReusableLoadingSymbol } from '../Common-Components/ReusableLoadingSymbo
 
 export const Home = () => {
     return (
-        <>
             <React.Fragment>
                 <CssBaseline />
                 <Container maxWidth="xl">
@@ -57,7 +55,6 @@ export const Home = () => {
                 </Container>
             </React.Fragment>
 
-        </>
     )
 }
 

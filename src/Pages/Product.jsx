@@ -10,7 +10,7 @@ import { ReusableReviewRatingBox } from '../Common-Components/ReusableReviewRati
 
 export const Product = () => {
     return (
-        <>
+        
             <React.Fragment>
                 <CssBaseline />
                 <Container maxWidth="xl">
@@ -34,6 +34,6 @@ export const Product = () => {
                 </Container>
             </React.Fragment>
 
-        </>
+        
     )
 }
