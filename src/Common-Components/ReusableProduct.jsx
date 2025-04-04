@@ -63,7 +63,6 @@ export const ReusableProduct = () => {
                                 marginLeft : '45px'
                             }
                         }} />
-                        {/* <img src="https://images-static.nykaa.com/media/catalog/product/b/8/b86cf32NYKAC00000193_2.jpg?tr=w-344,h-344,cm-pad_resize"></img> */}
                     </div>
 
                 </div>
@@ -79,7 +78,6 @@ export const ReusableProduct = () => {
                             <Typography variant="captions">2.5/5 | 25 ratings & 8 reviews</Typography>
                         </div>
                         <div className="price-details">
-                            {/* <Typography className="mrp" variant="captions">MRP :</Typography> */}
                             <Typography className="mrp" variant="h4"><CurrencyRupee />500/-</Typography>
                             <div><Typography variant="captions">Inclusive of all taxes</Typography></div>
                         </div>

@@ -9,7 +9,6 @@ import { ReusableButton } from './ReusableButton';
 import Typography from '@mui/material/Typography';
 import Slider from '@mui/material/Slider';
 import { Checkbox, FormControlLabel } from '@mui/material';
-
 import ReusableDropDown from '../Common-Components/ReusableDropDown'
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
@@ -57,12 +56,7 @@ const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
   return (
     <Box sx={{ display: 'flex' }}>
-      <CssBaseline />
-  
-        {/* <Box>
-            <ReusableButton value="Filter" variant="text" onClick={handleDrawerOpen} />         
-        </Box> */}
-      
+      <CssBaseline />      
       <Drawer
         sx={{
           width: drawerWidth,
@@ -72,7 +66,6 @@ const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
             boxSizing: 'border-box',
           },
         }}
-        // variant="persistent"
         anchor="left"
         open={open}
       >
@@ -114,7 +107,6 @@ const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
                     </Box>
                 </div>
                 <div className='pay-on-delivery filter-types'>
-                    {/* <Checkbox {...label} label="Pay on delivery" /> */}
                     <Typography>Payment</Typography>
                     <FormControlLabel control={<Checkbox />} label="Pay on delivery" />
                 </div>

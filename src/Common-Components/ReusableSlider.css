@@ -1,7 +1,5 @@
 
 
-/* class="slick-slider slick-initialized" */
-
 .slick-arrow.slick-next,
 .slick-arrow.slick-prev {
     background-color: #fff;
@@ -16,13 +14,10 @@
 .slick-arrow.slick-next{
     border-radius: 6px 0px 0px 6px;
     right: 0;
-    
-    /* margin-left: 50px; */
 }
 
 .slick-arrow.slick-prev {
     border-radius: 0px 6px 6px 0px;
-    /* margin-right: 50px; */
     left: 0;
 }
 

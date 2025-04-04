@@ -1,16 +1,14 @@
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
-import { IconButton, TextField, Typography } from '@mui/material';
+import { IconButton, Typography } from '@mui/material';
 import { ReusableButton } from './ReusableButton';
 import CloseIcon from '@mui/icons-material/Close';
 import './ReusablePopupProduct.css'
-import loginSignUpImage from '../assets/login-signup-vector.png'
 import { CurrencyRupee } from '@mui/icons-material';
 
 
 export default function ReusablePopupProduct() {
-    // const [isLoggedIn, setIsLoggedIn] = React.useState(true);
     const [isActive, setIsActive] = React.useState(true);
     const [open, setOpen] = React.useState(false);
 

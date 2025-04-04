@@ -7,7 +7,6 @@
 .product-mainimage-container {
     width: 1800px;
     height: 900px;
-    /* background-color: brown; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -26,11 +25,8 @@
 }
 
 .product-small-images {
-    /* background-color: aquamarine; */
     width: 350px;
 }
-
-
 
 
 .image-button {
@@ -57,22 +53,18 @@
 .small-images-container {
     margin-top: 25px;
     height: 275px;
-    /* background-color: blue; */
     display: flex;
     flex-direction: column;
 }
 
 
 .small-video-container {
-    /* width: 275px; */
     height: 280px;
     margin-top: 25px;
-    /* background-color: blue; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 25px;
-    /* align-items: ; */
 }
 
 .small-video {
@@ -83,8 +75,7 @@
     align-items: center;
     border: 2px solid black;
     border-radius: 12px;
-    /* background-color: tomato; */
-    /* object-fit: fill; */
+      
 }
 
 .video-playing-label{
@@ -108,8 +99,6 @@
 
 .small-images-container div {
     height: 400px;
-    /* background-color: #808080; */
-    /* border-bottom: 3px solid #16678e; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,7 +113,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* object-fit: contain; */
 }
 
 .small-images-container img {
@@ -133,10 +121,6 @@
     cursor: pointer;
 }
 
-/* .small-images-container img :hover{
-    
-    
-} */
 
 .small-view-of-images:hover {
     padding: 5px;
@@ -146,7 +130,6 @@
     margin-top: 285px;
     width: 350px;
     height: 120;
-    /* background-color: #808080; */
     border-top: 2px solid rgb(224, 224, 224);
     display: flex;
     flex-direction: column;
@@ -158,8 +141,6 @@
     margin: 10px 0px;
     display: flex;
     align-items: center;
-
-    /* justify-content: center; */
 }
 
 .popup-product-mrp .MuiTypography-root {
@@ -171,9 +152,8 @@
     border-radius: 0% !important;
 }
 
-/* Tablet View: max-width 1024px */
+
 @media (max-width: 1024px) {
-    /* Scale down the main image container */
     .product-mainimage-container {
         width: 100%;
         height: auto;
@@ -187,12 +167,10 @@
         margin-top: 20px;
     }
     
-    /* Make the small images container fluid */
     .product-small-images {
         width: 100%;
     }
     
-    /* Adjust the image and video buttons */
     .image-button, 
     .video-button {
         width: 50%;
@@ -202,7 +180,6 @@
         border-bottom: 1px solid #16678e !important;
     }
     
-    /* Arrange small images in a row with wrapping */
     .small-images-container {
         margin-top: 15px;
         height: auto;
@@ -230,7 +207,6 @@
         width: 50px;
     }
     
-    /* Adjust popup product details */
     .popup-product-details-container {
         margin-top: 20px;
         width: 100%;
@@ -247,8 +223,6 @@
         padding: 10px;
     }
 }
-
-/* Mobile View: max-width 768px */
 @media (max-width: 768px) {
     .product-mainimage-container {
         width: 100%;

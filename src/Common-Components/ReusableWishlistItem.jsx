@@ -1,15 +1,9 @@
 import React from 'react';
 import './ReusableWishlistItem.css';
-import { Typography, Button, IconButton, TextField } from '@mui/material';
-import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
-// import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined';
+import { Typography} from '@mui/material';
 import { CurrencyRupeeOutlined } from '@mui/icons-material';
 import { books } from '../Data/books-data';
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-import RemoveCircleOutlineOutlinedIcon from '@mui/icons-material/RemoveCircleOutlineOutlined';
-import ControlPointOutlinedIcon from '@mui/icons-material/ControlPointOutlined';
 import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
-import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import {ReusableButton} from '../Common-Components/ReusableButton'
 
 
@@ -36,9 +30,6 @@ export const ReusableWishlistItem = () => {
                             </Typography>
 
                             <div className='add-to-cart-button-wishlist'>
-                                {/* <section><RemoveCircleOutlineOutlinedIcon /></section>
-                                <section><Typography variant='h5'>2</Typography></section>
-                                <section><ControlPointOutlinedIcon /></section> */}
                                 <ReusableButton variant="contained" value="Add to Cart"/>
                             </div>
 

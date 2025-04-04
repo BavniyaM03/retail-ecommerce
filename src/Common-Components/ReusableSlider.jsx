@@ -1,8 +1,6 @@
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import React from "react";
 import Slider from "react-slick";
-import { sliderImages } from '../assets/slider-images/slider-images'
-// import './ReusableSlider.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ReusableSliderProduct } from './ReusableSliderProduct';
@@ -32,14 +30,10 @@ function SamplePrevArrow(props) {
 
 export default function ReusableSlider({ infinite, slidesToShow, slidesToScroll, autoplay, speed, cssEase, adaptiveHeight, fade }) {
     const settings = {
-        // infinite: true,
         slidesToShow: 5,
         slidesToScroll: 6,
-        // autoplay: true,
         speed: 500,
         cssEase: "linear",
-        // adaptiveHeight: true,
-        // fade: true,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
         responsive: [
