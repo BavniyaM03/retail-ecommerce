@@ -21,9 +21,6 @@ export const ProductList = () => {
                     </Box>
                     
                 </Box>
-                {/* <Box sx={{ bgcolor: '#fff', height: '100%', marginTop: 10 }} > */}
-                    
-                {/* </Box> */}
             </Container>
         </React.Fragment>
 

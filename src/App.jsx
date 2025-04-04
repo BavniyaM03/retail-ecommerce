@@ -5,6 +5,7 @@ import { Home } from './Pages/Home'
 import { Product } from './Pages/Product'
 import { ProductList } from './Pages/ProductList'
 import { CartItem } from './Pages/CartItem'
+import { WishlistItem } from './Pages/WishlistItem'
 
 function App() {
   const router = createBrowserRouter([
@@ -23,7 +24,12 @@ function App() {
     {
       path: "/cartitem",
       element : <CartItem/>
+    },
+    {
+      path : "/wishlist",
+      element : <WishlistItem/>
     }
+
   ])
 
   return (
@@ -31,10 +37,6 @@ function App() {
 
       <Header />
       <RouterProvider router={router} />
-      {/* <CartItem /> */}
-      {/* <ProductList/> */}
-      {/* <Product /> */}
-      {/* <Home/> */}
       <Footer />
     </>
   )

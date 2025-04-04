@@ -1,6 +1,6 @@
 import React from "react";
 import './Footer.css'
-import { Facebook, Instagram, LinkedIn, Telegram, YardOutlined, YouTube } from "@mui/icons-material";
+import { Facebook, Instagram, LinkedIn, Telegram} from "@mui/icons-material";
 
 export const Footer = () => {
   return (

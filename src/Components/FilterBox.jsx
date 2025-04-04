@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Slider from '@mui/material/Slider';
@@ -9,7 +8,6 @@ import ReusableDropDown from '../Common-Components/ReusableDropDown'
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControl from '@mui/material/FormControl';
-import FormLabel from '@mui/material/FormLabel';
 import './FilterBox.css'
 
 
@@ -73,7 +71,6 @@ export const FilterBox = () => {
                     </Box>
                 </div>
                 <div className='pay-on-delivery filter-types'>
-                    {/* <Checkbox {...label} label="Pay on delivery" /> */}
                     <Typography>Payment</Typography>
                     <FormControlLabel control={<Checkbox />} label="Pay on delivery" />
                 </div>

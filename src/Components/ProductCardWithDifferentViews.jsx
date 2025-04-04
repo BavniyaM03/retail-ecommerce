@@ -2,12 +2,8 @@ import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import Paper from '@mui/material/Paper';
-import Box from '@mui/material/Box';
-import { CurrencyRupeeSharp } from '@mui/icons-material';
 import './ProductCardWithDifferentViews.css'
 import { Container, Grid } from '@mui/material';
 import { books } from '../Data/books-data';
@@ -63,54 +59,5 @@ export default function ProductCardWithDifferentViews() {
 
             </Grid >
         </Container>
-        // <Card sx={{ maxWidth: 350, padding: 2, margin: 2 }}>
-        //     <Typography variant='h6' sx={{ fontWeight: 'bold' }} >Continue Shopping Deals</Typography>
-        //     <Box
-        //         sx={{
-        //             display: 'flex',
-        //             flexWrap: 'wrap',
-        //             justifyContent: 'center',
-        //             paddingTop: 2,
-        //             paddingBottom: 2,
-        //             bgcolor: '#fff',
-        //         }}
-        //     >
-
-        //         <Box component="section" sx={{ p: 2, border: '1px dashed grey', width: 200, height: 150 }}>
-        //             <Typography variant='caption'>Product Name</Typography>
-        //             <Typography variant='caption' ><CurrencyRupeeSharp />304</Typography>
-        //         </Box>
-
-        //         <CardContent>
-        //             <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-        //                 MAPPERZ Hair Root Applicator Bottle Applying Hair Oil Shampoo and Medicine 1…
-        //             </Typography>
-        //             <Typography variant='caption' ><CurrencyRupeeSharp />304</Typography>
-        //         </CardContent>
-
-
-        //         <Box component="section" sx={{ display: 'flex', justifyContent: 'space-between', width: 300, height: 72, bgcolor: 'gray' }}>
-        //             <Box component="section" sx={{ p: 2, border: '1px dashed grey', width: 70, height: 72, bgcolor: '#fff' }}></Box>
-        //             <Box component="section" sx={{ p: 2, border: '1px dashed grey', width: 70, height: 72, bgcolor: '#fff' }}></Box>
-        //             <Box component="section" sx={{ p: 2, border: '1px dashed grey', width: 70, height: 72, bgcolor: '#fff' }}></Box>
-        //             <Box component="section" sx={{ p: 2, border: '1px dashed grey', width: 70, height: 72, bgcolor: '#fff' }}></Box>
-        //         </Box>
-
-
-
-        //         {/* 
-        //         <Paper elevation={0}><Typography variant='caption'>Product Name</Typography>
-        //             <Typography variant='caption' ><CurrencyRupeeSharp />304</Typography></Paper> */}
-
-
-
-
-        //     </Box>
-
-
-        //     <CardActions>
-        //         <Button size="small">See More</Button>
-        //     </CardActions>
-        // </Card>
     );
 }

@@ -1,13 +1,8 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import Paper from '@mui/material/Paper';
-import Box from '@mui/material/Box';
-import { CurrencyRupeeSharp } from '@mui/icons-material';
 import { Container, Grid } from '@mui/material';
 import { books } from '../Data/books-data';
 import './ProductCardWithCaptions.css'
@@ -90,44 +85,5 @@ export default function ProductCardWithCaptions() {
 
             </Grid >
         </Container>
-        // <Card sx={{ maxWidth: 350, padding: 2, margin: 2 }}>
-        //     <Typography variant='h6' sx={{ fontWeight: 'bold' }} >Continue Shopping Deals</Typography>
-        //     <Box
-        //         sx={{
-        //             display: 'flex',
-        //             flexWrap: 'wrap',
-        //             justifyContent: 'center',
-        //             paddingTop: 2,
-        //             paddingBottom: 2,
-        //             bgcolor: '#fff',
-        //             '& > :not(style)': {
-        //                 m: 1,
-        //                 width: 128,
-        //                 height: 128,
-        //                 display: 'flex',
-        //                 justifyItems: 'center',
-        //                 bgcolor: 'grey'
-        //                 // alignItems : 'center'
-        //             },
-        //         }}
-        //     >
-
-        //         <Paper elevation={3}><Typography variant='caption'>Product Name</Typography>
-        //             <Typography variant='caption' ><CurrencyRupeeSharp />304</Typography></Paper>
-        //         <Paper elevation={3}><Typography variant='caption'>Product Name</Typography>
-        //             <Typography variant='caption' ><CurrencyRupeeSharp />304</Typography></Paper>
-        //         <Paper elevation={3}><Typography variant='caption'>Product Name</Typography>
-        //             <Typography variant='caption' ><CurrencyRupeeSharp />304</Typography></Paper>
-        //         <Paper elevation={3}><Typography variant='caption'>Product Name</Typography>
-        //             <Typography variant='caption' ><CurrencyRupeeSharp />304</Typography></Paper>
-
-
-        //     </Box>
-
-
-        //     <CardActions>
-        //         <Button size="small">See More</Button>
-        //     </CardActions>
-        // </Card>
     );
 }
