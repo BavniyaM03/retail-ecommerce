@@ -1,172 +1,171 @@
 {
-    "beauty_cosmetics": [
-      {
-        "id": 1,
-        "name": "Hydrating Face Moisturizer",
-        "brand": "CeraVe",
-        "category": "Skincare",
-        "price": 18.99,
-        "currency": "USD",
-        "stock": 150,
-        "rating": 4.8,
-        "reviews": 920,
-        "discount": 10,
-        "skin_type": ["Dry", "Sensitive", "Normal"],
-        "key_ingredients": ["Hyaluronic Acid", "Ceramides", "Niacinamide"],
-        "features": ["Fragrance-Free", "Non-Comedogenic", "Dermatologist Recommended"],
-        "warranty": "N/A",
-        "description": "CeraVe Hydrating Face Moisturizer is designed to nourish and protect your skin with ceramides and hyaluronic acid. It provides long-lasting hydration and is perfect for sensitive skin types.",
-        "images": [
-          "https://example.com/images/cerave_moisturizer1.jpg",
-          "https://example.com/images/cerave_moisturizer2.jpg"
-        ]
-      },
-      {
-        "id": 2,
-        "name": "Matte Liquid Foundation",
-        "brand": "Maybelline",
-        "category": "Makeup",
-        "price": 12.99,
-        "currency": "USD",
-        "stock": 200,
-        "rating": 4.6,
-        "reviews": 1450,
-        "discount": 15,
-        "skin_type": ["Oily", "Combination", "Normal"],
-        "shades_available": 30,
-        "coverage": "Full",
-        "features": ["Oil-Free", "Long-Lasting", "Pore Minimizing"],
-        "warranty": "N/A",
-        "description": "Achieve a flawless matte finish with Maybelline's liquid foundation. This full-coverage, oil-free formula controls shine and lasts all day, making it perfect for oily and combination skin.",
-        "images": [
-          "https://example.com/images/maybelline_foundation1.jpg",
-          "https://example.com/images/maybelline_foundation2.jpg"
-        ]
-      },
-      {
-        "id": 3,
-        "name": "Long-Lasting Lipstick",
-        "brand": "MAC",
-        "category": "Makeup",
-        "price": 24.99,
-        "currency": "USD",
-        "stock": 180,
-        "rating": 4.9,
-        "reviews": 1100,
-        "discount": 5,
-        "shades_available": 40,
-        "finish": "Matte",
-        "features": ["Highly Pigmented", "Smudge-Proof", "Long-Lasting"],
-        "warranty": "N/A",
-        "description": "MAC's iconic lipstick delivers intense color payoff and a velvety matte finish. With a smudge-proof formula, this lipstick stays vibrant throughout the day.",
-        "images": [
-          "https://example.com/images/mac_lipstick1.jpg",
-          "https://example.com/images/mac_lipstick2.jpg"
-        ]
-      },
-      {
-        "id": 4,
-        "name": "Vitamin C Face Serum",
-        "brand": "The Ordinary",
-        "category": "Skincare",
-        "price": 14.99,
-        "currency": "USD",
-        "stock": 120,
-        "rating": 4.7,
-        "reviews": 980,
-        "discount": 10,
-        "skin_type": ["All Skin Types"],
-        "key_ingredients": ["Vitamin C", "Hyaluronic Acid", "Antioxidants"],
-        "features": ["Brightening", "Anti-Aging", "Hydrating"],
-        "warranty": "N/A",
-        "description": "Revitalize your skin with The Ordinary’s Vitamin C Face Serum. This powerful antioxidant formula brightens skin tone, reduces fine lines, and boosts hydration.",
-        "images": [
-          "https://example.com/images/ordinary_serum1.jpg",
-          "https://example.com/images/ordinary_serum2.jpg"
-        ]
-      },
-      {
-        "id": 5,
-        "name": "Waterproof Mascara",
-        "brand": "L'Oréal",
-        "category": "Makeup",
-        "price": 9.99,
-        "currency": "USD",
-        "stock": 250,
-        "rating": 4.8,
-        "reviews": 1350,
-        "discount": 12,
-        "color": ["Black", "Brown"],
-        "features": ["Volumizing", "Lengthening", "Smudge-Proof"],
-        "warranty": "N/A",
-        "description": "Get bold, dramatic lashes with L'Oréal's Waterproof Mascara. This long-lasting formula resists smudging and provides intense volume and length for all-day wear.",
-        "images": [
-          "https://example.com/images/loreal_mascara1.jpg",
-          "https://example.com/images/loreal_mascara2.jpg"
-        ]
-      },
-      {
-        "id": 6,
-        "name": "Organic Argan Hair Oil",
-        "brand": "Moroccanoil",
-        "category": "Haircare",
-        "price": 29.99,
-        "currency": "USD",
-        "stock": 90,
-        "rating": 4.9,
-        "reviews": 650,
-        "discount": 8,
-        "hair_type": ["Dry", "Damaged", "Frizzy"],
-        "key_ingredients": ["Argan Oil", "Vitamin E", "Essential Fatty Acids"],
-        "features": ["Sulfate-Free", "Paraben-Free", "Deep Nourishing"],
-        "warranty": "N/A",
-        "description": "Repair and protect your hair with Moroccanoil’s Organic Argan Hair Oil. Infused with Vitamin E and essential fatty acids, this formula nourishes, smooths, and strengthens dry and damaged hair.",
-        "images": [
-          "https://example.com/images/moroccanoil_hair1.jpg",
-          "https://example.com/images/moroccanoil_hair2.jpg"
-        ]
-      },
-      {
-        "id": 7,
-        "name": "Exfoliating Body Scrub",
-        "brand": "Tree Hut",
-        "category": "Body Care",
-        "price": 10.99,
-        "currency": "USD",
-        "stock": 160,
-        "rating": 4.7,
-        "reviews": 800,
-        "discount": 10,
-        "scent": ["Coconut Lime", "Shea Butter", "Mango"],
-        "features": ["Deep Exfoliation", "Moisturizing", "Paraben-Free"],
-        "warranty": "N/A",
-        "description": "Experience smooth, glowing skin with Tree Hut's Exfoliating Body Scrub. Infused with shea butter and natural oils, it deeply exfoliates while keeping skin hydrated and refreshed.",
-        "images": [
-          "https://example.com/images/treehut_scrub1.jpg",
-          "https://example.com/images/treehut_scrub2.jpg"
-        ]
-      },
-      {
-        "id": 8,
-        "name": "Natural Glow Highlighter",
-        "brand": "Fenty Beauty",
-        "category": "Makeup",
-        "price": 34.99,
-        "currency": "USD",
-        "stock": 110,
-        "rating": 4.9,
-        "reviews": 920,
-        "discount": 10,
-        "shades_available": 12,
-        "finish": "Shimmer",
-        "features": ["Lightweight", "Buildable Glow", "Skin-Loving Ingredients"],
-        "warranty": "N/A",
-        "description": "Get the perfect glow with Fenty Beauty’s Natural Glow Highlighter. This lightweight formula blends effortlessly for a buildable, radiant shimmer that enhances your natural beauty.",
-        "images": [
-          "https://example.com/images/fenty_highlighter1.jpg",
-          "https://example.com/images/fenty_highlighter2.jpg"
-        ]
-      }
-    ]
-  }
-  
+  "beauty_cosmetics": [
+    {
+      "id": 8,
+      "name": "Hydrating Face Moisturizer",
+      "brand": "CeraVe",
+      "category": "Skincare",
+      "price": 18.99,
+      "currency": "USD",
+      "stock": 150,
+      "rating": 4.8,
+      "reviews": 920,
+      "discount": 10,
+      "skin_type": ["Dry", "Sensitive", "Normal"],
+      "key_ingredients": ["Hyaluronic Acid", "Ceramides", "Niacinamide"],
+      "features": ["Fragrance-Free", "Non-Comedogenic", "Dermatologist Recommended"],
+      "warranty": "N/A",
+      "description": "CeraVe Hydrating Face Moisturizer is designed to nourish and protect your skin with ceramides and hyaluronic acid. It provides long-lasting hydration and is perfect for sensitive skin types.",
+      "images": [
+        "https://example.com/images/cerave_moisturizer1.jpg",
+        "https://example.com/images/cerave_moisturizer2.jpg"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Matte Liquid Foundation",
+      "brand": "Maybelline",
+      "category": "Makeup",
+      "price": 12.99,
+      "currency": "USD",
+      "stock": 200,
+      "rating": 4.6,
+      "reviews": 1450,
+      "discount": 15,
+      "skin_type": ["Oily", "Combination", "Normal"],
+      "shades_available": 30,
+      "coverage": "Full",
+      "features": ["Oil-Free", "Long-Lasting", "Pore Minimizing"],
+      "warranty": "N/A",
+      "description": "Achieve a flawless matte finish with Maybelline's liquid foundation. This full-coverage, oil-free formula controls shine and lasts all day, making it perfect for oily and combination skin.",
+      "images": [
+        "https://example.com/images/maybelline_foundation1.jpg",
+        "https://example.com/images/maybelline_foundation2.jpg"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Long-Lasting Lipstick",
+      "brand": "MAC",
+      "category": "Makeup",
+      "price": 24.99,
+      "currency": "USD",
+      "stock": 180,
+      "rating": 4.9,
+      "reviews": 1100,
+      "discount": 5,
+      "shades_available": 40,
+      "finish": "Matte",
+      "features": ["Highly Pigmented", "Smudge-Proof", "Long-Lasting"],
+      "warranty": "N/A",
+      "description": "MAC's iconic lipstick delivers intense color payoff and a velvety matte finish. With a smudge-proof formula, this lipstick stays vibrant throughout the day.",
+      "images": [
+        "https://example.com/images/mac_lipstick1.jpg",
+        "https://example.com/images/mac_lipstick2.jpg"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Vitamin C Face Serum",
+      "brand": "The Ordinary",
+      "category": "Skincare",
+      "price": 14.99,
+      "currency": "USD",
+      "stock": 120,
+      "rating": 4.7,
+      "reviews": 980,
+      "discount": 10,
+      "skin_type": ["All Skin Types"],
+      "key_ingredients": ["Vitamin C", "Hyaluronic Acid", "Antioxidants"],
+      "features": ["Brightening", "Anti-Aging", "Hydrating"],
+      "warranty": "N/A",
+      "description": "Revitalize your skin with The Ordinary’s Vitamin C Face Serum. This powerful antioxidant formula brightens skin tone, reduces fine lines, and boosts hydration.",
+      "images": [
+        "https://example.com/images/ordinary_serum1.jpg",
+        "https://example.com/images/ordinary_serum2.jpg"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Waterproof Mascara",
+      "brand": "L'Oréal",
+      "category": "Makeup",
+      "price": 9.99,
+      "currency": "USD",
+      "stock": 250,
+      "rating": 4.8,
+      "reviews": 1350,
+      "discount": 12,
+      "color": ["Black", "Brown"],
+      "features": ["Volumizing", "Lengthening", "Smudge-Proof"],
+      "warranty": "N/A",
+      "description": "Get bold, dramatic lashes with L'Oréal's Waterproof Mascara. This long-lasting formula resists smudging and provides intense volume and length for all-day wear.",
+      "images": [
+        "https://example.com/images/loreal_mascara1.jpg",
+        "https://example.com/images/loreal_mascara2.jpg"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Organic Argan Hair Oil",
+      "brand": "Moroccanoil",
+      "category": "Haircare",
+      "price": 29.99,
+      "currency": "USD",
+      "stock": 90,
+      "rating": 4.9,
+      "reviews": 650,
+      "discount": 8,
+      "hair_type": ["Dry", "Damaged", "Frizzy"],
+      "key_ingredients": ["Argan Oil", "Vitamin E", "Essential Fatty Acids"],
+      "features": ["Sulfate-Free", "Paraben-Free", "Deep Nourishing"],
+      "warranty": "N/A",
+      "description": "Repair and protect your hair with Moroccanoil’s Organic Argan Hair Oil. Infused with Vitamin E and essential fatty acids, this formula nourishes, smooths, and strengthens dry and damaged hair.",
+      "images": [
+        "https://example.com/images/moroccanoil_hair1.jpg",
+        "https://example.com/images/moroccanoil_hair2.jpg"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Exfoliating Body Scrub",
+      "brand": "Tree Hut",
+      "category": "Body Care",
+      "price": 10.99,
+      "currency": "USD",
+      "stock": 160,
+      "rating": 4.7,
+      "reviews": 800,
+      "discount": 10,
+      "scent": ["Coconut Lime", "Shea Butter", "Mango"],
+      "features": ["Deep Exfoliation", "Moisturizing", "Paraben-Free"],
+      "warranty": "N/A",
+      "description": "Experience smooth, glowing skin with Tree Hut's Exfoliating Body Scrub. Infused with shea butter and natural oils, it deeply exfoliates while keeping skin hydrated and refreshed.",
+      "images": [
+        "https://example.com/images/treehut_scrub1.jpg",
+        "https://example.com/images/treehut_scrub2.jpg"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Natural Glow Highlighter",
+      "brand": "Fenty Beauty",
+      "category": "Makeup",
+      "price": 34.99,
+      "currency": "USD",
+      "stock": 110,
+      "rating": 4.9,
+      "reviews": 920,
+      "discount": 10,
+      "shades_available": 12,
+      "finish": "Shimmer",
+      "features": ["Lightweight", "Buildable Glow", "Skin-Loving Ingredients"],
+      "warranty": "N/A",
+      "description": "Get the perfect glow with Fenty Beauty’s Natural Glow Highlighter. This lightweight formula blends effortlessly for a buildable, radiant shimmer that enhances your natural beauty.",
+      "images": [
+        "https://example.com/images/fenty_highlighter1.jpg",
+        "https://example.com/images/fenty_highlighter2.jpg"
+      ]
+    }
+  ]
+}

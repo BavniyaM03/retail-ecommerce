@@ -2,8 +2,7 @@ import React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-
-import { ReusableShoppingCard } from "../Common-Components/ReusableShoppingCard"
+import {ReusableShoppingCard} from '../components/features/shopping-cart-items/ReusableShoppingCard'
 
 export const CartItem = () => {
     return (

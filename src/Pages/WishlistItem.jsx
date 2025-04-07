@@ -2,8 +2,9 @@ import React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
+import { ReusableWishlistItem } from '../components/features/wishlist/ReusableWishlistItem';
 
-import { ReusableWishlistItem } from "../Common-Components/ReusableWishlistItem"
+
 
 export const WishlistItem = () => {
     return (

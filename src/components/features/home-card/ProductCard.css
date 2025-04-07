@@ -1,0 +1,28 @@
+/* .cardsection-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 345px;
+    height: 200px;
+    justify-content: flex-start;
+    top: 0;
+    cursor: pointer;
+    background-color: aqua;
+  } */
+
+.custom-productcard-section{
+    width: 140px;
+    height: 140px;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    /* background-color: yellow; */
+
+}
+
+.productcard-images{
+    min-height: 140px;
+}
+
+
+

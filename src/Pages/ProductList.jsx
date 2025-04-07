@@ -2,9 +2,9 @@ import React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import { ReusableProductList } from "../Common-Components/ReusableProductList"
-import { FilterBox } from '../Components/FilterBox';
-import ReusableDrawyerComponent from '../Common-Components/ReusableDrawyerComponent.jsx';
+import { ReusableProductList } from "../components/features/all-product/ReusableProductList.jsx"
+import { FilterBox } from '../components/features/all-product/FilterBox.jsx';
+import ReusableDrawyerComponent from '../components/features/all-product/ReusableDrawyerComponent.jsx';
 
 export const ProductList = () => {
     return (
@@ -15,8 +15,6 @@ export const ProductList = () => {
                     <FilterBox/>
                     <ReusableDrawyerComponent/>
                     <Box sx={{display:'flex', flexWrap:'wrap', justifyContent:'flex-start', gap:'20px'}}>
-                    <ReusableProductList />
-                    <ReusableProductList />
                     <ReusableProductList />
                     </Box>
                     

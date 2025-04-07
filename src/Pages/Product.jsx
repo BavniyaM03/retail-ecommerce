@@ -2,13 +2,16 @@ import React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import { ReusableProduct } from "../Common-Components/ReusableProduct"
-import ReusableSlider from '../Common-Components/ReusableSlider';
-import ReusablePopup from '../Common-Components/ReusablePopup';
-import ReusablePopupProduct from '../Common-Components/ReusablePopupProduct';
-import { ReusableReviewRatingBox } from '../Common-Components/ReusableReviewRatingBox';
+import { ReusableProduct } from "../components/features/product/ReusableProduct"
+import ReusableSlider from '../components/common/ReusableSlider';
+import ReusablePopup from '../components/features/login-signup/ReusablePopup';
+import ReusablePopupProduct from '../components/features/product/ReusablePopupProduct';
+import { ReusableReviewRatingBox } from '../components/features/product/review-rating/ReusableReviewRatingBox';
+import { useParams } from 'react-router-dom';
 
 export const Product = () => {
+    const param = useParams();
+    console.log('14', param)
     return (
         
             <React.Fragment>
