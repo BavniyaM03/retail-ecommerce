@@ -3,10 +3,13 @@ import './Footer.css'
 import { Facebook, Instagram, LinkedIn, Telegram} from "@mui/icons-material";
 
 export const Footer = () => {
+  const handlerBackToTop = () =>{
+    window.scrollTo(0, 0);
+  }
   return (
     <>
       <footer className="footer-container">
-        <div className="back-to-top" >Back to top</div>
+        <div className="back-to-top" onClick={handlerBackToTop} >Back to top</div>
         <div className="container-list">
 
           <div className="list">
