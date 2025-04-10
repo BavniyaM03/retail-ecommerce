@@ -10,10 +10,8 @@ import { NavLink } from 'react-router-dom';
 import { showProductDetails } from '../../../Redux/productSlice';
 
 
-export default function ImageShowcaseCard({ products }) {
-    const mobilesItem = useSelector((state) => state.products.mobile.mobiles);
+export default function ImageShowcaseCard({products}) {
     const dispatch = useDispatch();
-    // console.log(mobilesItem);
     return (
         products.map((item, index) => (
             <Grid item xs={12} sm={6} md={4} lg={3} key={index}>

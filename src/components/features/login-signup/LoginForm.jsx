@@ -3,16 +3,18 @@ import { Typography } from '@mui/material';
 import './LoginSignupForm.css'
 import { ReusableTextField } from '../../common/ui/ReusableTextField';
 import { useDispatch, useSelector } from 'react-redux';
-import { handleLoginData } from '../../../Redux/authSlice';
+import { setLoginSignupFormValues } from '../../../Redux/authSlice';
 import { ReusablePassword } from './ReusablePassword';
 
 export const LoginForm = () => {
     const [showPassword, setShowPassword] = React.useState(false);
-    const signUpDetails = useSelector((state) => state.authSlice.signup);
-    const loginDetails = useSelector((state) => state.authSlice.login);
+    
+    // const userFormValues = useSelector((state) => state.authSlice.signup);
+    // const userFormValues = useSelector((state) => state.authSlice.login);
+    const userFormValues = useSelector((state) => state.authSlice.userFormValues);
     const isLoggedIn = useSelector((state) => state.authSlice.isLoggedIn)
 
-    console.log(signUpDetails);
+    // console.log(userFormValues);
     const dispatch = useDispatch();
 
     const handleClickShowPassword = () => setShowPassword((show) => !show);
@@ -20,7 +22,7 @@ export const LoginForm = () => {
     const handleUserLoginData = (e) => {
         e.preventDefault;
         const { name, value } = e.target;
-        dispatch(handleLoginData({ name: name, value: value }))
+        dispatch(setLoginSignupFormValues({ name: name, value: value }))
     }
 
     return (
@@ -34,7 +36,7 @@ export const LoginForm = () => {
                         label="Email Address"
                         type="email"
                         variant="standard"
-                        value={loginDetails.email}
+                        value={userFormValues.email}
                         onChange={(e) => handleUserLoginData(e)} />
 
                     <Typography
@@ -45,7 +47,7 @@ export const LoginForm = () => {
                     </Typography>
 
                     <ReusablePassword
-                        value={loginDetails.password}
+                        value={userFormValues.password}
                         onChange={(e) => handleUserLoginData(e)}
                         type={showPassword ? 'text' : 'password'}
                         onClick={handleClickShowPassword}

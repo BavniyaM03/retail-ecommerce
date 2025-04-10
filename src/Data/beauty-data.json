@@ -1,5 +1,4 @@
-{
-  "beauty_cosmetics": [
+[
     {
       "id": 8,
       "name": "Hydrating Face Moisturizer",
@@ -160,4 +159,4 @@
       ]
     }
   ]
-}
+

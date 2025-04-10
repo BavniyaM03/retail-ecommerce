@@ -1,18 +1,6 @@
 import { createSlice, current } from "@reduxjs/toolkit";
 
-const login = {
-    email: '',
-    password: ''
-}
-
-// const signup = {
-//     firstName: "Priya",
-//     lastName: "Thakur",
-//     email: "priyathakur1998@gmail.com",
-//     password: "Priya@123"
-// }
-
-const signup = {
+const userFormValues = {
     firstName: "",
     lastName: "",
     email: "",
@@ -22,148 +10,93 @@ const signup = {
 const authSlice = createSlice({
     name: "authentication",
     initialState: {
-        signup: signup,
-        login: login,
+        userFormValues: userFormValues,
         open: false,
         isLoggedIn: true,
-
     },
     reducers: {
-        openLoginPage: (state, action) => {
-            console.log(action.payload)
-            state.open = action.payload;
-        },
-        closeLoginPage: (state, action) => {
-            state.open = false;
-        },
-        openSignUpPage: (state, action) => {
-            if (state.isLoggedIn) {
-                state.isLoggedIn = false;
-            } else {
-                state.isLoggedIn = true;
-            }
-        },
-        handleSignUpData: (state, action) => {
-            const value = action.payload;
-            state.signup[value.name] = value.value;
-            // console.log(current(state))
+
+        loginPopupVisible: (state) => {
+            state.open ? state.open = false : state.open = true;
         },
 
-        // handleSignUpData: (state, action) => {
-        //     const regex = /^(?=(.*[a-z]){3,}) (?=(.*[A-Z]){2,}) (?=(.*[0-9]){2,}) (?=(.*[!@#$%^&*()\-__+.]){1,}) {8,}$/;
-        //     const value = action.payload;
-        //     if (value.name.password) {
-        //         console.log(value.name.password)
-        //         const result = regex.test(value.value.password);
-        //         console.log(value.value.password)
-        //         console.log(result)
-        //         if (result) {
-        //             alert('strong password');
-        //         }
-        //         else {
-        //             alert('password must be strong')
-        //         }
-        //     }
-        //     state.signup[value.name] = value.value;
+        openSignUpPage: (state) => {
+            state.isLoggedIn ? state.isLoggedIn = false : state.isLoggedIn = true;
+        },
 
-        //     // console.log(current(state))
-        // },
+        setLoginSignupFormValues: (state, action) => {
+            const userInput = action.payload;
+            state.userFormValues[userInput.name] = userInput.value;
+        },
 
         handleStoreDataInTheSessionStorage: (state, action) => {
-            // const regExp = /^(?=(.*[a-z]){3,}) (?=(.*[A-Z]){2,}) (?=(.*[0-9]){2,}) (?=(.*[!@#$%^&*()\-__+.]){1,}) {8,}$/
             const regExp = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/
             const regExpForMail = /^[a-zA-Z0-9._%±]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$/;
             const regExpForName = /^[a-zA-Z]{4,30}$/;
 
-
-
-
-
-
-            if (state.signup.email === "") {
+            if (state.userFormValues.email === "") {
                 return alert('please enter email address')
             }
-            else if (!regExpForMail.test(state.signup.email)) {
+            else if (!regExpForMail.test(state.userFormValues.email)) {
                 return alert('Invalid Email')
-            } else if (regExpForMail.test(state.signup.email)) {
+            } else if (regExpForMail.test(state.userFormValues.email)) {
                 alert('Email is valid')
             }
 
 
-            if (state.signup.password === "") {
+            if (state.userFormValues.password === "") {
                 return alert('please enter password')
-            } else if (!regExp.test(state.signup.password)) {
+            } else if (!regExp.test(state.userFormValues.password)) {
                 return alert('Invalid Password')
-            } else if (regExp.test(state.signup.password)) {
+            } else if (regExp.test(state.userFormValues.password)) {
                 alert('password is valid')
             }
 
 
-            if (state.signup.firstName === "") {
+            if (state.userFormValues.firstName === "") {
                 return alert('please enter first Name ')
-            } else if (!regExpForName.test(state.signup.firstName)) {
+            } else if (!regExpForName.test(state.userFormValues.firstName)) {
                 return alert('Invalid Name')
-            } else if (regExpForName.test(state.signup.firstName)) {
+            } else if (regExpForName.test(state.userFormValues.firstName)) {
                 alert('Name is valid')
             }
 
-
-
-
-
-            if (state.signup.lastName === "") {
+            if (state.userFormValues.lastName === "") {
                 return alert('please enter last name')
-            } else if (!regExpForName.test(state.signup.lastName)) {
+            } else if (!regExpForName.test(state.userFormValues.lastName)) {
                 return alert('Invalid lastname')
-            } else if (regExpForName.test(state.signup.lastName)) {
+            } else if (regExpForName.test(state.userFormValues.lastName)) {
                 alert('last name is valid')
             }
-
-
-
-
-
-
-
 
             const getDataFromSession = sessionStorage.getItem('signup');
             const signUpData = JSON.parse(getDataFromSession);
 
             if (signUpData) {
 
-                if (signUpData.email === state.signup.email) {
-                    // console.log(typeof signUpData.email)
-                    // console.log(typeof state.signup.email)
+                if (signUpData.email === state.userFormValues.email) {
                     alert('email already exist')
                 } else {
-                    const signUpData = JSON.stringify(state.signup);
+                    const signUpData = JSON.stringify(state.userFormValues);
                     sessionStorage.setItem('signup', signUpData);
                     alert('signup successfully')
                 }
             }
             else {
-                const signUpData = JSON.stringify(state.signup);
+                const signUpData = JSON.stringify(state.userFormValues);
                 sessionStorage.setItem('signup', signUpData);
                 alert('signup successfully')
             }
         },
-        handleLoginData: (state, action) => {
-            const value = action.payload;
-            state.login[value.name] = value.value;
-            console.log(current(state));
-        },
 
-        handleAuthorizedUserLogin: (state, action) => {
+        handleAuthorizedUserLogin: (state) => {
             const getDataFromSession = sessionStorage.getItem('signup');
             const signUpData = JSON.parse(getDataFromSession);
             if (!signUpData) {
                 alert('Please sign in first');
             } else {
-                if (state.login.email === signUpData.email) {
-                    console.log('email match')
-                    state.login.password === signUpData.password ? alert("Login Successfully") : alert('wrong password entered')
-                    console.log(state.login.password);
-                    console.log(signUpData.password);
+                if (state.userFormValues.email === signUpData.email) {
+                    state.userFormValues.password === signUpData.password ? alert("Login Successfully") : alert('wrong password entered')
                 }
                 else {
                     alert('Invalid Email Address')
@@ -176,5 +109,5 @@ const authSlice = createSlice({
 })
 
 
-export const { openLoginPage, closeLoginPage, openSignUpPage, handleSignUpData, handleStoreDataInTheSessionStorage, handleLoginData, handleAuthorizedUserLogin } = authSlice.actions;
+export const { loginPopupVisible, openLoginPage, closeLoginPage, openSignUpPage, handleSignUpData, handleStoreDataInTheSessionStorage, handleLoginData, handleAuthorizedUserLogin, setLoginSignupFormValues } = authSlice.actions;
 export default authSlice.reducer;

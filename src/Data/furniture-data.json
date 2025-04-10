@@ -1,5 +1,4 @@
-{
-    "furniture": [
+[
       {
         "id": 1,
         "name": "Modern Leather Sofa",
@@ -133,5 +132,4 @@
         ]
       }
     ]
-  }
   

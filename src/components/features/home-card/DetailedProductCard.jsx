@@ -14,7 +14,7 @@ export default function DetailedProductCard({ products, idx }) {
     const dispatch = useDispatch();
     const selectedImages = useSelector((state) => state.products.selectedImages);
     // console.log("", typeof selectedImages);
-    const bags = useSelector((state) => state.products.bags.bags)
+    const bags = useSelector((state) => state.products.bags)
     // console.log('bags', bags)
     return (
         bags.map((element, index) => (<Grid item xs={12} sm={6} md={4} lg={3} >

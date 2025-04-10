@@ -4,16 +4,15 @@ import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Container, Grid } from '@mui/material';
-import { books } from '../../../Data/books-data';
 import './CategoryCard.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { showProductDetails } from '../../../Redux/productSlice';
 
-export default function ProductCardWithCaptions({ products }) {
-    const electronicProducts = useSelector((state) => state.products.electronic.electronics)
+export default function ProductCardWithCaptions() {
+    const electronicProducts = useSelector((state) => state.products.electronic)
     const dispatch = useDispatch();
-
+console.log(electronicProducts);
 
     return (
         electronicProducts.map((element, index) => (

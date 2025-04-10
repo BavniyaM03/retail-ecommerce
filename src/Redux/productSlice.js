@@ -1,8 +1,8 @@
 // All Data
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, current } from "@reduxjs/toolkit";
 import bags from "../Data/bags-data.json"
 import beauty from "../Data/beauty-data.json"
-import { books } from "../Data/books-data"
+import books from "../Data/books-data.json"
 import electronic from "../Data/electronic-data.json"
 import fashion from "../Data/fashion-data.json"
 import furniture from "../Data/furniture-data.json"
@@ -28,39 +28,48 @@ import toysImage from '../assets/category-images/toys.jpeg'
 
 export const category = [
     {
+        id: 'mobile',
         title: "Mobiles",
         image: mobileImage
 
     },
     {
+        id: 'laptop',
         title: "Laptops",
         image: laptopImage
     },
     {
+        id: 'fashion',
         title: "Fashion",
         image: fashionImage
     },
     {
+        id: 'home',
         title: "Home Appliances",
         image: homeImage
     },
     {
+        id: 'electronic',
         title: "Electronics",
         image: electronicImage
     },
     {
+        id: 'toys',
         title: "Toys",
         image: toysImage
     },
     {
+        id: 'beauty',
         title: "Beauty & Personal Care",
         image: beautyImage
     },
     {
+        id: 'furniture',
         title: "Furniture",
         image: furnitureImage
     },
     {
+        id: 'sports',
         title: "Sports & Fitness",
         image: sportsImage
     }
@@ -70,6 +79,8 @@ export const category = [
 let selectedImages;
 
 const productDetails = [];
+
+let searchQuery = '';
 
 const productSlice = createSlice({
     name: "product",
@@ -86,23 +97,37 @@ const productSlice = createSlice({
         mobile: mobile,
         sports: sports,
         toys: toys,
-        selectedImages : selectedImages,
-        productDetails: productDetails
+        selectedImages: selectedImages,
+        productDetails: productDetails,
+        searchQuery: searchQuery
     },
     reducers: {
+        // HANDLER FOR DISPLAY PROUCT CARD
         displaySelectedImages: (state, action) => {
             const product = action.payload;
             console.log('92', product);
             state.selectedImages = product;
         },
+        // SHOW FULL PAGE OF PRODUCT DETAIL 
         showProductDetails: (state, action) => {
+            window.scrollTo(0, 0);
             const product = action.payload;
             console.log(product);
             state.productDetails = product;
+        },
+        findProduct: (state, action) => {
+            const userSearch = action.payload;
+            state.searchQuery = userSearch;
+            console.log(state.searchQuery)
+        },
+        priceSortingLowToHigh: (state, action) => {
+            const category = action.payload;
+            state[category] = state[category].sort((a, b) => a.price - b.price)
+            console.log(current(state[category]));
         }
     }
 })
 
-export const { displaySelectedImages, showProductDetails } = productSlice.actions;
+export const { displaySelectedImages, showProductDetails, findProduct, priceSortingLowToHigh } = productSlice.actions;
 
 export default productSlice.reducer;

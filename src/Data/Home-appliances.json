@@ -1,5 +1,4 @@
-{
-    "home_appliances": [
+[
       {
         "id": 1,
         "name": "Smart 4K LED TV",
@@ -168,5 +167,4 @@
         ]
       }
     ]
-  }
   

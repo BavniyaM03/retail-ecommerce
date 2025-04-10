@@ -1,5 +1,4 @@
-{
-    "sports": [
+[
       {
         "id": 1,
         "name": "Adidas Predator Soccer Ball",
@@ -111,5 +110,4 @@
         ]
       }
     ]
-  }
   

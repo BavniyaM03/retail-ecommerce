@@ -11,9 +11,12 @@ import { Grid } from '@mui/material';
 import { useSelector } from 'react-redux';
 
 export const Home = () => {
-    const mobilesItem = useSelector((state) => state.products.mobile.mobiles);
-    const beauty = useSelector((state) => state.products.beauty.beauty_cosmetics);
-    const fashion =useSelector((state)=>state.products.fashion.fashion);
+    const mobilesItem = useSelector((state) => state.products.mobile);
+    const beauty = useSelector((state) => state.products.beauty);
+    const fashion =useSelector((state)=>state.products.fashion);
+    console.log(mobilesItem)
+    console.log(beauty)
+    console.log(fashion)
     return (
         <React.Fragment>
             <CssBaseline />

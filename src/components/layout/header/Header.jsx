@@ -18,17 +18,19 @@ import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from "react-router";
 
 import { ReusableButton } from '../../common/ui/ReusableButton';
-import { openLoginPage } from '../../../Redux/authSlice';
+import { loginPopupVisible } from '../../../Redux/authSlice';
+import { findProduct } from '../../../Redux/productSlice';
 
 
 
 export default function Header() {
     const cart = useSelector((state) => state.cartItem.items);
     const wishlist = useSelector((state) => state.wishlist.wishlist);
+    const searchData = useSelector((state)=>state.products.searchQuery)
     const dispatch = useDispatch();
 
-    const handleDisplayLoginPage = (value) =>{
-        dispatch(openLoginPage(value))
+    const handleDisplayLoginPage = (value) => {
+        dispatch(loginPopupVisible(value))
     }
     return (
         <Box sx={{ flexGrow: 1 }} className="header-container karla-font" >
@@ -47,6 +49,8 @@ export default function Header() {
                             <SearchIcon />
                         </SearchIconWrapper>
                         <StyledInputBase
+                            value={searchData}
+                            onChange={(e)=>dispatch(findProduct(e.target.value))}
                             placeholder="Search…"
                             inputProps={{ 'aria-label': 'search' }}
                         />
@@ -55,8 +59,8 @@ export default function Header() {
                     <Box sx={{ flexGrow: 1 }} />
                     <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
 
-                        {/* <ReusableDropDown value={['Login', 'Sign Up']} onChange={()=>dispatch(openLoginPage())}  /> */}
-                        <ReusableButton value="Login" onClick={()=>handleDisplayLoginPage(true)}/>
+                        {/* <ReusableDropDown value={['Login', 'Sign Up']} onChange={()=>dispatch(loginPopupVisible())}  /> */}
+                        <ReusableButton value="Login" onClick={() => handleDisplayLoginPage(true)} />
 
                         <IconButton
                             size="large"

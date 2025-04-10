@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Slider from '@mui/material/Slider';
@@ -9,9 +9,15 @@ import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControl from '@mui/material/FormControl';
 import './FilterBox.css'
+import { useParams } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { priceSortingLowToHigh } from '../../../Redux/productSlice';
 
 
 export const FilterBox = () => {
+    const product  = useParams();
+    const dispatch = useDispatch();
+    const category = product.category;
     const marks = [
         {
             value: 50,
@@ -48,7 +54,7 @@ export const FilterBox = () => {
                             defaultValue="female"
                             name="radio-buttons-group"
                         >
-                            <FormControlLabel value="female" control={<Radio />} label="Price : Low to High" />
+                            <FormControlLabel value="female" onClick={()=>dispatch(priceSortingLowToHigh(category))} control={<Radio />} label="Price : Low to High" />
                             <FormControlLabel value="male" control={<Radio />} label="Price : High to Low" />
                         </RadioGroup>
                     </FormControl>

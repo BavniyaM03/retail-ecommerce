@@ -2,7 +2,6 @@ import React from 'react';
 import './ReusableWishlistItem.css';
 import { Typography } from '@mui/material';
 import { CurrencyRupeeOutlined } from '@mui/icons-material';
-import { books } from '../../../Data/books-data';
 import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
 import { ReusableButton } from '../../common/ui/ReusableButton'
 import { useDispatch, useSelector } from 'react-redux';

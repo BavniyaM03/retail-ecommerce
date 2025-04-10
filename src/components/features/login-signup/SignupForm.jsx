@@ -2,13 +2,13 @@ import React from 'react';
 import { Typography } from '@mui/material';
 import { ReusableTextField } from '../../common/ui/ReusableTextField';
 import { useDispatch, useSelector } from 'react-redux';
-import { handleSignUpData } from '../../../Redux/authSlice';
+import { setLoginSignupFormValues } from '../../../Redux/authSlice';
 import { ReusablePassword } from './ReusablePassword';
 import './LoginSignupForm.css'
 
 export const SignupForm = () => {
     const [showPassword, setShowPassword] = React.useState(false);
-    const signUpDetails = useSelector((state) => state.authSlice.signup);
+    const userFormValues = useSelector((state) => state.authSlice.userFormValues);
     const isLoggedIn = useSelector((state) => state.authSlice.isLoggedIn)
 
     const dispatch = useDispatch();
@@ -17,7 +17,7 @@ export const SignupForm = () => {
     const handleUserSignupData = (e) => {
         e.preventDefault;
         const { name, value } = e.target;
-        dispatch(handleSignUpData({ name: name, value: value }))
+        dispatch(setLoginSignupFormValues({ name: name, value: value }))
     }
 
     return (
@@ -28,7 +28,7 @@ export const SignupForm = () => {
                     label="Email Address"
                     type="email"
                     variant="standard"
-                    value={signUpDetails.email}
+                    value={userFormValues.email}
                     onChange={(e) => handleUserSignupData(e)}
                 />
 
@@ -39,7 +39,7 @@ export const SignupForm = () => {
                     label="First Name"
                     type="text"
                     variant="standard"
-                    value={signUpDetails.firstName}
+                    value={userFormValues.firstName}
                     onChange={(e) => handleUserSignupData(e)} />
 
                 <ReusableTextField
@@ -47,12 +47,12 @@ export const SignupForm = () => {
                     label="Last Name"
                     type="text"
                     variant="standard"
-                    value={signUpDetails.lastName}
+                    value={userFormValues.lastName}
                     onChange={(e) => handleUserSignupData(e)} />
 
 
                 <ReusablePassword
-                    value={signUpDetails.password}
+                    value={userFormValues.password}
                     onChange={(e) => handleUserSignupData(e)}
                     type={showPassword ? 'text' : 'password'}
                     onClick={handleClickShowPassword} showPassword={showPassword} />
