@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, current } from "@reduxjs/toolkit";
 
 const initialState =
     [
@@ -22,9 +22,9 @@ const initialState =
             "features": ["Heart Rate Monitor", "GPS", "Water Resistant"],
             "warranty": "2 Years",
             "images": [
-                "https://example.com/images/applewatch9-1.jpg",
-                "https://example.com/images/applewatch9-2.jpg"
-            ]
+               "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSXH8LTz3mntLlseoyjxJWbU7XlTD78kxRenKtjDC9CMtuAh1Aqjqsu0hsBXqi2XVTOyWfle5yo-Oc5T-qj9sDkDhiUKNsRQt1fpshT7Qw3dQMiqIKgLdhHddE"
+            ],
+            "quantity": 1
         },
         {
             "id": 44,
@@ -46,9 +46,9 @@ const initialState =
             "features": ["Single-Breasted", "Two Side Pockets", "Warm Lining"],
             "warranty": "1 Year",
             "images": [
-                "https://example.com/images/woolcoat1.jpg",
-                "https://example.com/images/woolcoat2.jpg"
-            ]
+                "https://slimages.macysassets.com/is/image/MCY/products/4/optimized/27443934_fpx.tif?op_sharpen=1&wid=700&fit=fit,1&fmt=webp"
+            ],
+            "quantity": 1
         }
     ]
 
@@ -58,30 +58,45 @@ const cartSlice = createSlice({
     initialState: {
         items: initialState
     }, reducers: {
-       
+        addToCart: (state, action) => {
+            const product = action.payload;
+            const existingProduct = state.items.find((item) => { if (item.id === product.id) { return item } else { return null } })
+            console.log("existing Product", existingProduct);
+            if (existingProduct) {
+                existingProduct.quantity += 1;
+            }
+            else {
+                state.items.push({ ...product, quantity: 1 });
+            }
+            console.log(current(state));
+        },
+
+        removeToCart: (state, action) => {
+            const product = action.payload;
+            const existingProduct = state.items.find((item) => { if (item.id === product.id) { return item } else { return null } })
+            console.log(product);
+            if (existingProduct.quantity > 1) {
+                existingProduct.quantity -= 1;
+            }
+            else {
+                removeCartItem();
+            }
+
+        },
+
         removeCartItem: (state, action) => {
             console.log("payload data", action.payload)
             const product = action.payload;
             state.items = state.items.filter((item) => item.id !== product.id)
         },
-        moveToWishlist : (state, action) =>{
-            const product = action.payload;
-            
-        },
 
-        addToWishlist : (state, action)=>{
+        moveToWishlist: (state, action) => {
             const product = action.payload;
-            const existingProduct = state.wishlist.find((item)=>item.id === product.id);
-            if(existingProduct){
-    
-            }
-            else{
-                state.wishlist.push(product);
-            }
+            state.items = state.items.filter((item) => item.id !== product.id)
         },
     }
 })
 
-export const { removeCartItem} = cartSlice.actions
+export const { addToCart, removeCartItem, removeToCart, moveToWishlist } = cartSlice.actions
 
 export default cartSlice.reducer

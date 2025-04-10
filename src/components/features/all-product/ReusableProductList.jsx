@@ -8,12 +8,12 @@ import './ReusableProductList.css'
 import { useSelector } from 'react-redux';
 
 export const ReusableProductList = () => {
-    const bags = useSelector((state)=>state.products.bags.bags)
-    console.log(13, bags);
+    const fashion = useSelector((state)=>state.products.fashion.fashion)
+    // console.log(13, bags);
     return (
         <>
             <div className="card-item-container">
-                {bags.map((item, index) => (
+                {fashion.map((item, index) => (
                     <Card key={index} sx={{ width: 280, height: 350 }}>
                         <CardMedia
                             component="img"

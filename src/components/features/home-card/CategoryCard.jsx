@@ -6,24 +6,28 @@ import Typography from '@mui/material/Typography';
 import { Container, Grid } from '@mui/material';
 import { books } from '../../../Data/books-data';
 import './CategoryCard.css'
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { NavLink } from 'react-router-dom';
+import { showProductDetails } from '../../../Redux/productSlice';
 
-export default function ProductCardWithCaptions({products}) {
-   
+export default function ProductCardWithCaptions({ products }) {
+    const electronicProducts = useSelector((state) => state.products.electronic.electronics)
+    const dispatch = useDispatch();
+
+
     return (
-        <Container maxWidth='xl' sx={{ marginTop: 1 }}>
-            <Grid container spacing={2.5}>
-                
-                    <Grid item xs={12} sm={6} md={4} lg={3} >
-                        <Card sx={{ maxWidth: 345}}>
+        electronicProducts.map((element, index) => (
+            <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
+                <Card sx={{ maxWidth: 345, height: 415 }}>
 
-                            <Typography className='custom-card-title lato-bolder' gutterBottom variant="h6" component="div">
-                                {/* {item.title} */}
-                            </Typography>
+                    <Typography className='custom-card-title lato-bolder' gutterBottom variant="h6" component="div">
+                        {/* {item.title} */}
+                    </Typography>
 
-                            <div className='custom-card-section-container'>
-                            {products.map((item, index) => (
-                                <section className='custom-productcard-section-with-captions'>
+                    <div className='custom-card-section-container'>
+                        {element.map((item, index) => (
+                            <NavLink key={index} to={`/product/${item.id}`}>
+                                <section key={index} className='custom-productcard-section-with-captions' onClick={()=>dispatch(showProductDetails(item))}>
                                     <secion className='custom-productcard-section-images'>
                                         <img className='custom-postcard-images' src={item.images}></img>
                                     </secion>
@@ -35,58 +39,17 @@ export default function ProductCardWithCaptions({products}) {
                                         </Typography>
                                     </section>
                                 </section>
-                                ))}
+                            </NavLink>
+                        ))}
 
-                                {/* <section className='custom-productcard-section-with-captions'>
-                                    <secion className='custom-productcard-section-images'>
-                                        <img className='custom-postcard-images' src='https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg'></img>
-                                    </secion>
-                                    <section className='custom-productcard-caption-container'>
-                                        <Typography className='postcard-section'
-                                            variant='caption'
-                                            sx={{ lineHeight: 'normal' }} >
-                                            {item.title}
-                                        </Typography>
-                                    </section>
-                                </section> */}
+                    </div>
 
-                                {/* <section className='custom-productcard-section-with-captions'>
-                                    <secion className='custom-productcard-section-images'>
-                                        <img className='custom-postcard-images' src='https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg'></img>
-                                    </secion>
-                                    <section className='custom-productcard-caption-container'>
-                                        <Typography className='postcard-section'
-                                            variant='caption'
-                                            sx={{ lineHeight: 'normal' }} >
-                                            {item.title}
-                                        </Typography>
-                                    </section>
-                                </section> */}
+                    <CardActions>
+                        <Button size="small">Show more</Button>
+                    </CardActions>
+                </Card>
+            </Grid>
+        ))
 
-                                {/* <section className='custom-productcard-section-with-captions'>
-                                    <secion className='custom-productcard-section-images'>
-                                        <img className='custom-postcard-images' src='https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg'></img>
-                                    </secion>
-                                    <section className='custom-productcard-caption-container'>
-                                        <Typography className='postcard-section'
-                                            variant='caption'
-                                            sx={{ lineHeight: 'normal' }} >
-                                            {item.title}
-                                        </Typography>
-                                    </section>
-                                </section> */}
-
-                               
-                            </div>
-
-                            <CardActions>
-                                <Button size="small">Show more</Button>
-                            </CardActions>
-                        </Card>
-                    </Grid>
-                
-
-            </Grid >
-        </Container>
-    );
+    )
 }

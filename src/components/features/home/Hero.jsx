@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 
 export const Hero = () => {
     const category = useSelector((state)=>state.products.categories);
-    console.log(category);
+    // console.log(category);
     return (
         <div>
             <Box className="custom-box-container ">

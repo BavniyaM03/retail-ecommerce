@@ -19,8 +19,7 @@ const initialState = [
     "warranty": "1 Year",
     "description": "Protect your home with the Arlo Smart Home Security Camera. With 1080p HD resolution, night vision, and motion detection, it provides real-time security alerts and two-way audio communication.",
     "images": [
-      "https://example.com/images/arlosmartcamera1.jpg",
-      "https://example.com/images/arlosmartcamera2.jpg"
+      "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSkc9DkBcLGEMrnTVkdjbG9ovAR1BbYoFS_prcbsSIEXUXXH1uWEPuLlJJDMSznbXCth-pOTxRmpMuXpPs-SICTEpm-JOrsQF8rPaTp13sqoKJLEFW9nu0g"
     ]
   },
   {
@@ -41,8 +40,7 @@ const initialState = [
     "warranty": "1 Year",
     "description": "Charge your devices quickly and safely with the Anker Fast Wireless Charger. Featuring 15W fast charging, case-friendly design, and overheating protection, it's perfect for everyday use.",
     "images": [
-      "https://example.com/images/ankercharger1.jpg",
-      "https://example.com/images/ankercharger2.jpg"
+      "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQQn6ME_hIlgLOhL736I9xSLBZGXmby47Nlof93C3VjyU2QPh4_tL2gAmsJw0DDXWv3zpgCjSMi_FrrLhg5Bk_Z7SGRZo1fUNSr9QLIak3aFEhTd9K3O3vx1w"
     ]
   }
 ]
@@ -53,14 +51,14 @@ const wishlistSlice = createSlice({
     wishlist: initialState,
   },
   reducers: {
-    addToCart: (state, action) => {
+    addToWishlist: (state, action) => {
       const product = action.payload;
       const existingProduct = state.wishlist.find((item) => item.id === product.id);
       if (existingProduct) {
 
       }
       else {
-        state.i.push(product)
+        state.wishlist.push(product)
       }
     },
 

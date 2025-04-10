@@ -14,23 +14,32 @@ import { SearchIconWrapper } from './Style';
 import { Search } from './Style';
 import { StyledInputBase } from './Style';
 import './Header.css'
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from "react-router";
+
+import { ReusableButton } from '../../common/ui/ReusableButton';
+import { openLoginPage } from '../../../Redux/authSlice';
+
 
 
 export default function Header() {
     const cart = useSelector((state) => state.cartItem.items);
     const wishlist = useSelector((state) => state.wishlist.wishlist);
+    const dispatch = useDispatch();
+
+    const handleDisplayLoginPage = (value) =>{
+        dispatch(openLoginPage(value))
+    }
     return (
         <Box sx={{ flexGrow: 1 }} className="header-container karla-font" >
             <AppBar position="fixed" sx={{ backgroundColor: '#16678e' }}>
                 <Toolbar>
-                    <NavLink  className="hyperlink" to="/" style={{color : '#fff'}}>
+                    <NavLink className="hyperlink" to="/" style={{ color: '#fff' }}>
                         <ReusableTypography />
                     </NavLink>
 
                     <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-                        <ReusableDropDown />
+                        {/* <ReusableDropDown /> */}
                     </Box>
 
                     <Search>
@@ -45,13 +54,16 @@ export default function Header() {
 
                     <Box sx={{ flexGrow: 1 }} />
                     <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-                        <ReusableDropDown />
+
+                        {/* <ReusableDropDown value={['Login', 'Sign Up']} onChange={()=>dispatch(openLoginPage())}  /> */}
+                        <ReusableButton value="Login" onClick={()=>handleDisplayLoginPage(true)}/>
+
                         <IconButton
                             size="large"
                             aria-label="show 17 new notifications"
                             color="inherit"
                         >
-                            <NavLink  className="hyperlink" to="/wishlist">
+                            <NavLink className="hyperlink" to="/wishlist">
                                 <Badge badgeContent={wishlist.length} color="error">
                                     <FavoriteBorderIcon />
                                 </Badge>
@@ -66,7 +78,7 @@ export default function Header() {
                             aria-haspopup="true"
 
                             color="inherit"
-                        > <NavLink  className="hyperlink" to="/cartitem">
+                        > <NavLink className="hyperlink" to="/cartitem">
                                 <Badge badgeContent={cart.length} color="error">
                                     <ShoppingCartOutlinedIcon />
                                 </Badge>

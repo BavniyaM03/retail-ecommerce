@@ -16,8 +16,7 @@ export const ProductList = () => {
                     <ReusableDrawyerComponent/>
                     <Box sx={{display:'flex', flexWrap:'wrap', justifyContent:'flex-start', gap:'20px'}}>
                     <ReusableProductList />
-                    </Box>
-                    
+                    </Box>         
                 </Box>
             </Container>
         </React.Fragment>

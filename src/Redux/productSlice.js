@@ -23,9 +23,7 @@ import beautyImage from '../assets/category-images/beauty.webp'
 import furnitureImage from '../assets/category-images/furniture.webp'
 import sportsImage from '../assets/category-images/sports.png'
 import toysImage from '../assets/category-images/toys.jpeg'
-// import { useNavigate } from "react-router-dom";
 
-// const navigate = useNavigate();
 
 
 export const category = [
@@ -69,7 +67,7 @@ export const category = [
 ];
 
 
-const selectedImages = [];
+let selectedImages;
 
 const productDetails = [];
 
@@ -88,20 +86,19 @@ const productSlice = createSlice({
         mobile: mobile,
         sports: sports,
         toys: toys,
-        selectedImages: selectedImages,
+        selectedImages : selectedImages,
         productDetails: productDetails
     },
     reducers: {
         displaySelectedImages: (state, action) => {
-            const prodcut = action.payload;
-            console.log('92', prodcut);
-            state.selectedImages = prodcut;
+            const product = action.payload;
+            console.log('92', product);
+            state.selectedImages = product;
         },
         showProductDetails: (state, action) => {
             const product = action.payload;
             console.log(product);
             state.productDetails = product;
-            // navigate(`/product/${product.id}`)
         }
     }
 })

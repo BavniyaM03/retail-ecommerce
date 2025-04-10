@@ -6,13 +6,31 @@ import { Typography } from '@mui/material';
 import { CurrencyRupeeOutlined } from '@mui/icons-material';
 import './ReusableShoppingCard.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { removeCartItem } from '../../../Redux/cartSlice';
+import { addToCart, moveToWishlist, removeCartItem, removeToCart } from '../../../Redux/cartSlice';
+import { addToWishlist } from '../../../Redux/wishlistSlice';
 
 
 export const ReusableShoppingCard = () => {
-    const cart = useSelector((state)=>state.cartItem);
+    const cart = useSelector((state) => state.cartItem.items);
     const dispatch = useDispatch();
     console.log(14, cart);
+
+
+    const priceArray = cart.map((item) => item.price * item.quantity);
+    console.log(19, priceArray);
+    const getSum = (total, num) => {
+        return total + num;
+    }
+    let price = priceArray.reduce(getSum);
+    price = price.toFixed(2);
+    const amountAfterDiscountAndDeliveryCharges = price - 50 + 40;
+    const totalAmount = amountAfterDiscountAndDeliveryCharges.toFixed(2);
+
+    const handleMoveToWishlist = (item) =>{
+        dispatch(moveToWishlist(item))
+        dispatch(addToWishlist(item))
+    }
+
     return (
         <div className="shopping-cart-item-container">
             <div className='shopping-cart'>
@@ -20,32 +38,32 @@ export const ReusableShoppingCard = () => {
                     <Typography variant='h4'>Shopping Cart</Typography>
                 </div>
 
-                {cart.items.map((item, index) => (
+                {cart.map((item, index) => (
                     <div key={index} className="cart-items">
                         <div className="cart-item-image">
-                            <img src='https://m.media-amazon.com/images/I/61+8OlSpToL._SX522_.jpg' alt='book' />
+                            <img src={item.images ? item.images : item.cover_image} alt='book' />
                         </div>
 
                         <div className="cart-item-details">
-                            <Typography variant='h5'>{item.name}</Typography>
+                            <Typography variant='h5'>{item.name ? item.name : item.title}</Typography>
                             <Typography variant='h5'>
                                 <CurrencyRupeeOutlined /> {item.price}
                             </Typography>
 
                             <div className='add-to-cart'>
-                                <section><RemoveCircleOutlineOutlinedIcon /></section>
-                                <section><Typography variant='h5'>1</Typography></section>
-                                <section><ControlPointOutlinedIcon /></section>
+                                <section onClick={()=>dispatch(removeToCart(item))}><RemoveCircleOutlineOutlinedIcon /></section>
+                                <section><Typography variant='h5'>{item.quantity}</Typography></section>
+                                <section onClick={()=>dispatch(addToCart(item))}><ControlPointOutlinedIcon /></section>
                             </div>
 
                             <div className='cart-item-actions' >
-                                <div className='cart-action-btn' onClick={()=>dispatch(removeCartItem(item))} >
+                                <div className='cart-action-btn' onClick={() => dispatch(removeCartItem(item))} >
                                     <DeleteOutlineOutlinedIcon fontSize='small' />
                                     <Typography>Remove</Typography>
                                 </div>
                                 <div className='cart-action-btn'>
                                     <FavoriteBorderOutlinedIcon fontSize='small' />
-                                    <Typography>Move to Wishlist</Typography>
+                                    <Typography onClick={()=>handleMoveToWishlist(item)}>Move to Wishlist</Typography>
                                 </div>
                             </div>
                         </div>
@@ -57,8 +75,8 @@ export const ReusableShoppingCard = () => {
                 <Typography variant='h6' className="price-title">PRICE DETAILS</Typography>
 
                 <div className="price-row">
-                    <Typography>Price (2 items)</Typography>
-                    <Typography><CurrencyRupeeOutlined fontSize='small' /> 300</Typography>
+                    <Typography>Price ({cart.length} items)</Typography>
+                    <Typography><CurrencyRupeeOutlined fontSize='small' /> {price}</Typography>
                 </div>
 
                 <div className="price-row">
@@ -73,7 +91,7 @@ export const ReusableShoppingCard = () => {
 
                 <div className="price-total-row">
                     <Typography variant='h6'>Total Amount</Typography>
-                    <Typography variant='h6'><CurrencyRupeeOutlined fontSize='small' /> 290</Typography>
+                    <Typography variant='h6'><CurrencyRupeeOutlined fontSize='small' /> {totalAmount}</Typography>
                 </div>
 
                 <button className="proceed-btn">Proceed to Buy</button>
