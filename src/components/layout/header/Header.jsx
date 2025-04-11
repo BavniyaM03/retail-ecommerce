@@ -8,30 +8,43 @@ import SearchIcon from '@mui/icons-material/Search';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import ReusableTypography from '../../common/ui/ReusableTypography';
-import ReusableDropDown from '../../common/ui/ReusableDropDown';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { SearchIconWrapper } from './Style';
 import { Search } from './Style';
 import { StyledInputBase } from './Style';
 import './Header.css'
 import { useDispatch, useSelector } from 'react-redux';
-import { NavLink } from "react-router";
+import { NavLink, useNavigate } from "react-router";
 
 import { ReusableButton } from '../../common/ui/ReusableButton';
 import { loginPopupVisible } from '../../../Redux/authSlice';
-import { findProduct } from '../../../Redux/productSlice';
+import { findProduct, findProductOnSearch, showProductDetails } from '../../../Redux/productSlice';
+import { SearchOutlined } from '@mui/icons-material';
 
 
 
 export default function Header() {
     const cart = useSelector((state) => state.cartItem.items);
     const wishlist = useSelector((state) => state.wishlist.wishlist);
-    const searchData = useSelector((state)=>state.products.searchQuery)
+    const searchData = useSelector((state) => state.products.searchQuery)
+    let findProductData = useSelector((state) => state.products.findProductExisting)
+    console.log(findProductData);
+    // console.log(searchData);
     const dispatch = useDispatch();
+    const navigate = useNavigate();
 
     const handleDisplayLoginPage = (value) => {
         dispatch(loginPopupVisible(value))
     }
+
+    React.useEffect(() => {
+        console.log(41, findProductData);
+        if (findProductData === true) {
+            navigate(`/productlist/${searchData}`)  
+            dispatch(showProductDetails(searchData));
+        }
+    }, [findProductData])
+
     return (
         <Box sx={{ flexGrow: 1 }} className="header-container karla-font" >
             <AppBar position="fixed" sx={{ backgroundColor: '#16678e' }}>
@@ -45,15 +58,16 @@ export default function Header() {
                     </Box>
 
                     <Search>
-                        <SearchIconWrapper>
-                            <SearchIcon />
-                        </SearchIconWrapper>
+
                         <StyledInputBase
                             value={searchData}
-                            onChange={(e)=>dispatch(findProduct(e.target.value))}
+                            onChange={(e) => dispatch(findProduct(e.target.value))}
                             placeholder="Search…"
                             inputProps={{ 'aria-label': 'search' }}
                         />
+                        {/* <SearchIconWrapper> */}
+                            <SearchOutlined sx={{ cursor: 'pointer', backgroundColor: 'red', zIndex : 9 }} onClick={() => dispatch(findProductOnSearch())} />
+                        {/* </SearchIconWrapper> */}
                     </Search>
 
                     <Box sx={{ flexGrow: 1 }} />

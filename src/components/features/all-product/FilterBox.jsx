@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Slider from '@mui/material/Slider';
-import { Checkbox, FormControlLabel } from '@mui/material';
+import { Checkbox, FormControlLabel, FormGroup } from '@mui/material';
 import { ReusableButton } from '../../common/ui/ReusableButton'
 import ReusableDropDown from '../../common/ui/ReusableDropDown'
 import Radio from '@mui/material/Radio';
@@ -10,14 +10,20 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControl from '@mui/material/FormControl';
 import './FilterBox.css'
 import { useParams } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
-import { priceSortingLowToHigh } from '../../../Redux/productSlice';
+import { useDispatch, useSelector } from 'react-redux';
+import { cashOnDeliveryFilter, filterProductsWithRatingFourAndAbove, priceSortingHighToLow, priceSortingLowToHigh, setChecked } from '../../../Redux/productSlice';
+import { CheckBox } from '@mui/icons-material';
 
 
 export const FilterBox = () => {
-    const product  = useParams();
+    // const [checked, setChecked] = useState(false);
+    const category = useParams();
+    // const products = useSelector((state) => state.product[category])
+    // console.log(22, products);
     const dispatch = useDispatch();
-    const category = product.category;
+    const checked = useSelector((state) => state.products.checked)
+    // const payOnDelivery = useSelector((state) => state.products.payOnDelivery)
+    // const category = product.category;
     const marks = [
         {
             value: 50,
@@ -41,7 +47,23 @@ export const FilterBox = () => {
         return `${value}`;
     }
 
-    const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
+     const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
+
+    // const handlerPayOnDelivery = (e) => {
+    //     setChecked(e.target.checked)
+    //     console.log(checked);
+    //     dispatch(cashOnDeliveryFilter({ product, checked }))
+    // }
+
+    // const handlerPayOnDelivery = (e) => {
+    //     setChecked(e.target.checked)
+    //     if (checked) {
+    //         const payOnDeliveryProducts = products.filter((item) => item.pay_on_delivery === true);
+    //         console.log(payOnDeliveryProducts);
+    //     } else{
+    //         products;
+    //     }
+    // }
 
     return (
         <>
@@ -54,8 +76,8 @@ export const FilterBox = () => {
                             defaultValue="female"
                             name="radio-buttons-group"
                         >
-                            <FormControlLabel value="female" onClick={()=>dispatch(priceSortingLowToHigh(category))} control={<Radio />} label="Price : Low to High" />
-                            <FormControlLabel value="male" control={<Radio />} label="Price : High to Low" />
+                            <FormControlLabel value="female" onClick={() => dispatch(priceSortingLowToHigh(category))} control={<Radio />} label="Price : Low to High" />
+                            <FormControlLabel value="male" onClick={() => dispatch(priceSortingHighToLow(category))} control={<Radio />} label="Price : High to Low" />
                         </RadioGroup>
                     </FormControl>
                 </div>
@@ -78,15 +100,21 @@ export const FilterBox = () => {
                 </div>
                 <div className='pay-on-delivery filter-types'>
                     <Typography>Payment</Typography>
-                    <FormControlLabel control={<Checkbox />} label="Pay on delivery" />
+                    {/* <Checkbox type="checkbox" checked={} onChange={(event) => dispatch(cashOnDeliveryFilter({ category, event }))}/> */}
+                    <Checkbox type="checkbox" checked={checked} onChange={(e)=>dispatch(setChecked(e.target.checked))} />
+
+                    {/* <CheckBox checked={payOnDelivery} onChange={(event) => dispatch(cashOnDeliveryFilter({ category, event }))}></CheckBox> */}
+                    {/* <FormGroup>
+                        <FormControlLabel control={<Checkbox checked={payOnDelivery} onChange={(event) => dispatch(cashOnDeliveryFilter({ category, event }))} />} label="Pay on delivery" />
+                    </FormGroup> */}
                 </div>
                 <div className='discounts filter-types'>
                     <Typography>Discounts</Typography>
-                    <ReusableButton sx={{color : 'black'}} variant="text" value="10% off or more" />
-                    <ReusableButton sx={{color : 'black'}}  variant="text" value="25% off or more" />
-                    <ReusableButton  sx={{color : 'black'}}  variant="text" value="35% off or more" />
-                    <ReusableButton sx={{color : 'black'}}  variant="text" value="50% off or more" />
-                    <ReusableButton sx={{color : 'black'}}  variant="text" value="70% off or more" />
+                    <ReusableButton sx={{ color: 'black' }} variant="text" value="10% off or more" />
+                    <ReusableButton sx={{ color: 'black' }} variant="text" value="25% off or more" />
+                    <ReusableButton sx={{ color: 'black' }} variant="text" value="35% off or more" />
+                    <ReusableButton sx={{ color: 'black' }} variant="text" value="50% off or more" />
+                    <ReusableButton sx={{ color: 'black' }} variant="text" value="70% off or more" />
                 </div>
                 <div className='availabilitiy filter-types'>
                     <Typography>Availabilitiy</Typography>
@@ -95,7 +123,11 @@ export const FilterBox = () => {
 
                 <div className='customer-rating filter-types'>
                     <Typography>Ratings</Typography>
-                    <FormControlLabel control={<Checkbox />} label="4 Star & Above" />
+                    <FormControlLabel
+
+                        control={<Checkbox onChange={(event) => dispatch(filterProductsWithRatingFourAndAbove({ category, event }))} />}
+                        label="4 Star & Above" />
+
                     <FormControlLabel control={<Checkbox />} label="3 Star & Above" />
                 </div>
             </div>

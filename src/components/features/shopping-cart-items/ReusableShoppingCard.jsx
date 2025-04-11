@@ -21,7 +21,7 @@ export const ReusableShoppingCard = () => {
     const getSum = (total, num) => {
         return total + num;
     }
-    let price = priceArray.reduce(getSum);
+    let price = priceArray.length > 0 ? priceArray.reduce(getSum) : 0;
     price = price.toFixed(2);
     const amountAfterDiscountAndDeliveryCharges = price - 50 + 40;
     const totalAmount = amountAfterDiscountAndDeliveryCharges.toFixed(2);
@@ -38,7 +38,7 @@ export const ReusableShoppingCard = () => {
                     <Typography variant='h4'>Shopping Cart</Typography>
                 </div>
 
-                {cart.map((item, index) => (
+                {cart?.map((item, index) => (
                     <div key={index} className="cart-items">
                         <div className="cart-item-image">
                             <img src={item.images ? item.images : item.cover_image} alt='book' />

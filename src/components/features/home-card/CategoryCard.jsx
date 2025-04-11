@@ -12,7 +12,7 @@ import { showProductDetails } from '../../../Redux/productSlice';
 export default function ProductCardWithCaptions() {
     const electronicProducts = useSelector((state) => state.products.electronic)
     const dispatch = useDispatch();
-console.log(electronicProducts);
+// console.log(electronicProducts);
 
     return (
         electronicProducts.map((element, index) => (

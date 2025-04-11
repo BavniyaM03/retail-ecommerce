@@ -1,281 +1,355 @@
 [
-    {
-      "id": 1,
-      "name": "Galaxy X Pro",
-      "brand": "Samsung",
-      "price": 999.99,
-      "currency": "USD",
-      "stock": 50,
-      "rating": 4.7,
-      "reviews": 450,
-      "discount": 10,
-      "color": [
-        "Black",
-        "Silver",
-        "Blue"
-      ],
-      "release_date": "2024-02-15",
-      "operating_system": "Android 14",
-      "processor": "Snapdragon 8 Gen 3",
-      "ram": "12GB",
-      "storage": [
-        "128GB",
-        "256GB",
-        "512GB"
-      ],
-      "battery": "5000mAh",
-      "display": {
-        "size": "6.7 inches",
-        "resolution": "3200x1440 pixels",
-        "type": "AMOLED",
-        "refresh_rate": "120Hz"
-      },
-      "camera": {
-        "rear": "108MP + 12MP + 10MP",
-        "front": "32MP",
-        "features": [
-          "Night Mode",
-          "8K Video Recording",
-          "OIS"
-        ]
-      },
-      "connectivity": [
-        "5G",
-        "WiFi 6E",
-        "Bluetooth 5.3",
-        "NFC"
-      ],
-      "features": [
-        "In-Display Fingerprint Sensor",
-        "Face Unlock",
-        "Wireless Charging",
-        "IP68 Water & Dust Resistance"
-      ],
-      "warranty": "2 Years",
-      "images": [
-        "https://images.samsung.com/is/image/samsung/sg-feature-equipped-for-your-environment-399623738?$FB_TYPE_A_JPG$"
-      ]
+  {
+    "id": 1,
+    "name": "Galaxy X Pro",
+    "brand": "Samsung",
+    "price": 999.99,
+    "currency": "USD",
+    "stock": 50,
+    "rating": 4.7,
+    "reviews": 450,
+    "discount": 10,
+    "color": ["Black", "Silver", "Blue"],
+    "release_date": "2024-02-15",
+    "operating_system": "Android 14",
+    "processor": "Snapdragon 8 Gen 3",
+    "ram": "12GB",
+    "storage": ["128GB", "256GB", "512GB"],
+    "battery": "5000mAh",
+    "display": {
+      "size": "6.7 inches",
+      "resolution": "3200x1440 pixels",
+      "type": "AMOLED",
+      "refresh_rate": "120Hz"
     },
-    {
-      "id": 2,
-      "name": "iPhone 15 Pro Max",
-      "brand": "Apple",
-      "price": 1199.99,
-      "currency": "USD",
-      "stock": 30,
-      "rating": 4.9,
-      "reviews": 600,
-      "discount": 5,
-      "color": [
-        "Titanium Gray",
-        "Gold",
-        "Black"
-      ],
-      "release_date": "2024-09-20",
-      "operating_system": "iOS 17",
-      "processor": "A17 Bionic",
-      "ram": "8GB",
-      "storage": [
-        "256GB",
-        "512GB",
-        "1TB"
-      ],
-      "battery": "4850mAh",
-      "display": {
-        "size": "6.8 inches",
-        "resolution": "2796x1290 pixels",
-        "type": "Super Retina XDR",
-        "refresh_rate": "120Hz"
-      },
-      "camera": {
-        "rear": "48MP + 12MP + 12MP",
-        "front": "12MP",
-        "features": [
-          "ProRAW",
-          "Cinematic Mode",
-          "LiDAR Scanner"
-        ]
-      },
-      "connectivity": [
-        "5G",
-        "WiFi 6E",
-        "Bluetooth 5.3",
-        "MagSafe"
-      ],
-      "features": [
-        "Face ID",
-        "Ceramic Shield",
-        "USB-C Port",
-        "IP68 Water & Dust Resistance"
-      ],
-      "warranty": "1 Year",
-      "images": [
-        "https://m.media-amazon.com/images/I/81dT7CUY6GL._AC_UY218_.jpg"
-      ]
+    "camera": {
+      "rear": "108MP + 12MP + 10MP",
+      "front": "32MP",
+      "features": ["Night Mode", "8K Video Recording", "OIS"]
     },
-    {
-      "id": 3,
-      "name": "Pixel 8 Pro",
-      "brand": "Google",
-      "price": 899.99,
-      "currency": "USD",
-      "stock": 40,
-      "rating": 4.6,
-      "reviews": 380,
-      "discount": 12,
-      "color": [
-        "Obsidian",
-        "Porcelain",
-        "Sky Blue"
-      ],
-      "release_date": "2024-10-05",
-      "operating_system": "Android 14",
-      "processor": "Google Tensor G3",
-      "ram": "12GB",
-      "storage": [
-        "128GB",
-        "256GB"
-      ],
-      "battery": "5100mAh",
-      "display": {
-        "size": "6.7 inches",
-        "resolution": "3120x1440 pixels",
-        "type": "OLED",
-        "refresh_rate": "120Hz"
-      },
-      "camera": {
-        "rear": "50MP + 48MP + 12MP",
-        "front": "11MP",
-        "features": [
-          "Magic Eraser",
-          "Astrophotography",
-          "4K Video"
-        ]
-      },
-      "connectivity": [
-        "5G",
-        "WiFi 6E",
-        "Bluetooth 5.3",
-        "NFC"
-      ],
-      "features": [
-        "Fingerprint Sensor",
-        "Face Unlock",
-        "Extreme Battery Saver",
-        "IP68 Water Resistance"
-      ],
-      "warranty": "2 Years",
-      "images": [
-        "https://m.media-amazon.com/images/I/71N4hshhfNL._AC_UY218_.jpg"
-      ]
+    "connectivity": ["5G", "WiFi 6E", "Bluetooth 5.3", "NFC"],
+    "features": [
+      "In-Display Fingerprint Sensor",
+      "Face Unlock",
+      "Wireless Charging",
+      "IP68 Water & Dust Resistance"
+    ],
+    "warranty": "2 Years",
+    "images": [
+      "https://images.samsung.com/is/image/samsung/sg-feature-equipped-for-your-environment-399623738?$FB_TYPE_A_JPG$"
+    ],
+    "pay_on_delivery": true,
+    "out_of_stock": "available"
+  },
+  {
+    "id": 2,
+    "name": "iPhone 15 Pro Max",
+    "brand": "Apple",
+    "price": 1199.99,
+    "currency": "USD",
+    "stock": 30,
+    "rating": 4.9,
+    "reviews": 600,
+    "discount": 5,
+    "color": ["Titanium Gray", "Gold", "Black"],
+    "release_date": "2024-09-20",
+    "operating_system": "iOS 17",
+    "processor": "A17 Bionic",
+    "ram": "8GB",
+    "storage": ["256GB", "512GB", "1TB"],
+    "battery": "4850mAh",
+    "display": {
+      "size": "6.8 inches",
+      "resolution": "2796x1290 pixels",
+      "type": "Super Retina XDR",
+      "refresh_rate": "120Hz"
     },
-    {
-      "id": 4,
-      "name": "OnePlus 12",
-      "brand": "OnePlus",
-      "price": 749.99,
-      "currency": "USD",
-      "stock": 60,
-      "rating": 4.5,
-      "reviews": 290,
-      "discount": 8,
-      "color": [
-        "Emerald Green",
-        "Volcanic Black"
-      ],
-      "release_date": "2024-03-10",
-      "operating_system": "OxygenOS 14 (Android 14)",
-      "processor": "Snapdragon 8 Gen 3",
-      "ram": "16GB",
-      "storage": [
-        "256GB",
-        "512GB"
-      ],
-      "battery": "5500mAh",
-      "display": {
-        "size": "6.8 inches",
-        "resolution": "3168x1440 pixels",
-        "type": "Fluid AMOLED",
-        "refresh_rate": "120Hz"
-      },
-      "camera": {
-        "rear": "50MP + 48MP + 32MP",
-        "front": "32MP",
-        "features": [
-          "Hasselblad Tuning",
-          "Ultra HDR",
-          "Super Slow Motion"
-        ]
-      },
-      "connectivity": [
-        "5G",
-        "WiFi 7",
-        "Bluetooth 5.3",
-        "NFC"
-      ],
-      "features": [
-        "In-Display Fingerprint",
-        "120W Super Fast Charging",
-        "Dolby Atmos",
-        "IP65 Water Resistance"
-      ],
-      "warranty": "2 Years",
-      "images": [
-        "https://m.media-amazon.com/images/I/61BAuSC0UnL._AC_UY218_.jpg"
-      ]
+    "camera": {
+      "rear": "48MP + 12MP + 12MP",
+      "front": "12MP",
+      "features": ["ProRAW", "Cinematic Mode", "LiDAR Scanner"]
     },
-    {
-      "id": 5,
-      "name": "Xiaomi 14 Ultra",
-      "brand": "Xiaomi",
-      "price": 899.99,
-      "currency": "USD",
-      "stock": 70,
-      "rating": 4.6,
-      "reviews": 410,
-      "discount": 10,
-      "color": [
-        "White",
-        "Black"
-      ],
-      "release_date": "2024-04-05",
-      "operating_system": "MIUI 15 (Android 14)",
-      "processor": "Snapdragon 8 Gen 3",
-      "ram": "16GB",
-      "storage": [
-        "256GB",
-        "512GB"
-      ],
-      "battery": "5200mAh",
-      "display": {
-        "size": "6.73 inches",
-        "resolution": "3200x1440 pixels",
-        "type": "AMOLED",
-        "refresh_rate": "120Hz"
-      },
-      "camera": {
-        "rear": "50MP + 50MP + 50MP + 50MP",
-        "front": "32MP",
-        "features": [
-          "Leica Lens",
-          "8K Video",
-          "Periscope Zoom"
-        ]
-      },
-      "connectivity": [
-        "5G",
-        "WiFi 7",
-        "Bluetooth 5.3",
-        "NFC"
-      ],
-      "features": [
-        "120W Fast Charging",
-        "In-Display Fingerprint",
-        "IP68 Water Resistance"
-      ],
-      "warranty": "2 Years",
-      "images": [
-       "https://i02.appmifile.com/mi-com-product/fly-birds/new-xiaomi-14-ultra/PC/pc-14ultra-header.jpg?f=webp"
-      ]
-    }
-  ]
+    "connectivity": ["5G", "WiFi 6E", "Bluetooth 5.3", "MagSafe"],
+    "features": ["Face ID", "Ceramic Shield", "USB-C Port", "IP68 Water & Dust Resistance"],
+    "warranty": "1 Year",
+    "images": [
+      "https://m.media-amazon.com/images/I/81dT7CUY6GL._AC_UY218_.jpg",
+      "https://m.media-amazon.com/images/I/51njdfo0QXL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71qwUZC36YL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71ta3jyFvIL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81oC53mwCPL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/61kJdbgQOfL._SX679_.jpg"
+    ],
+    "pay_on_delivery": false,
+    "out_of_stock": "available"
+  },
+  {
+    "id": 3,
+    "name": "Pixel 8 Pro",
+    "brand": "Google",
+    "price": 899.99,
+    "currency": "USD",
+    "stock": 40,
+    "rating": 4.6,
+    "reviews": 380,
+    "discount": 12,
+    "color": ["Obsidian", "Porcelain", "Sky Blue"],
+    "release_date": "2024-10-05",
+    "operating_system": "Android 14",
+    "processor": "Google Tensor G3",
+    "ram": "12GB",
+    "storage": ["128GB", "256GB"],
+    "battery": "5100mAh",
+    "display": {
+      "size": "6.7 inches",
+      "resolution": "3120x1440 pixels",
+      "type": "OLED",
+      "refresh_rate": "120Hz"
+    },
+    "camera": {
+      "rear": "50MP + 48MP + 12MP",
+      "front": "11MP",
+      "features": ["Magic Eraser", "Astrophotography", "4K Video"]
+    },
+    "connectivity": ["5G", "WiFi 6E", "Bluetooth 5.3", "NFC"],
+    "features": [
+      "Fingerprint Sensor",
+      "Face Unlock",
+      "Extreme Battery Saver",
+      "IP68 Water Resistance"
+    ],
+    "warranty": "2 Years",
+    "images": [
+      "https://m.media-amazon.com/images/I/71N4hshhfNL._AC_UY218_.jpg"
+    ],
+    "pay_on_delivery": true,
+    "out_of_stock": "available"
+  },
+  {
+    "id": 4,
+    "name": "OnePlus 12",
+    "brand": "OnePlus",
+    "price": 749.99,
+    "currency": "USD",
+    "stock": 60,
+    "rating": 4.5,
+    "reviews": 290,
+    "discount": 8,
+    "color": ["Emerald Green", "Volcanic Black"],
+    "release_date": "2024-03-10",
+    "operating_system": "OxygenOS 14 (Android 14)",
+    "processor": "Snapdragon 8 Gen 3",
+    "ram": "16GB",
+    "storage": ["256GB", "512GB"],
+    "battery": "5500mAh",
+    "display": {
+      "size": "6.8 inches",
+      "resolution": "3168x1440 pixels",
+      "type": "Fluid AMOLED",
+      "refresh_rate": "120Hz"
+    },
+    "camera": {
+      "rear": "50MP + 48MP + 32MP",
+      "front": "32MP",
+      "features": ["Hasselblad Tuning", "Ultra HDR", "Super Slow Motion"]
+    },
+    "connectivity": ["5G", "WiFi 7", "Bluetooth 5.3", "NFC"],
+    "features": [
+      "In-Display Fingerprint",
+      "120W Super Fast Charging",
+      "Dolby Atmos",
+      "IP65 Water Resistance"
+    ],
+    "warranty": "2 Years",
+    "images": [
+      "https://m.media-amazon.com/images/I/61BAuSC0UnL._AC_UY218_.jpg"
+    ],
+    "pay_on_delivery": true,
+    "out_of_stock": "available"
+  },
+  {
+    "id": 5,
+    "name": "Xiaomi 14 Ultra",
+    "brand": "Xiaomi",
+    "price": 899.99,
+    "currency": "USD",
+    "stock": 70,
+    "rating": 4.6,
+    "reviews": 410,
+    "discount": 10,
+    "color": ["White", "Black"],
+    "release_date": "2024-04-05",
+    "operating_system": "MIUI 15 (Android 14)",
+    "processor": "Snapdragon 8 Gen 3",
+    "ram": "16GB",
+    "storage": ["256GB", "512GB"],
+    "battery": "5200mAh",
+    "display": {
+      "size": "6.73 inches",
+      "resolution": "3200x1440 pixels",
+      "type": "AMOLED",
+      "refresh_rate": "120Hz"
+    },
+    "camera": {
+      "rear": "50MP + 50MP + 50MP + 50MP",
+      "front": "32MP",
+      "features": ["Leica Lens", "8K Video", "Periscope Zoom"]
+    },
+    "connectivity": ["5G", "WiFi 7", "Bluetooth 5.3", "NFC"],
+    "features": [
+      "120W Fast Charging",
+      "In-Display Fingerprint",
+      "IP68 Water Resistance"
+    ],
+    "warranty": "2 Years",
+    "images": [
+      "https://i02.appmifile.com/mi-com-product/fly-birds/new-xiaomi-14-ultra/PC/pc-14ultra-header.jpg?f=webp"
+    ],
+    "pay_on_delivery": true,
+    "out_of_stock": "available"
+  },
+  {
+    "id": 6,
+    "name": "Moto Edge Fusion",
+    "brand": "Motorola",
+    "price": 599.99,
+    "currency": "USD",
+    "stock": 0,
+    "rating": 3.8,
+    "reviews": 200,
+    "discount": 15,
+    "color": ["Charcoal", "Sunset Red"],
+    "release_date": "2024-01-12",
+    "operating_system": "Android 13",
+    "processor": "Snapdragon 7 Gen 1",
+    "ram": "8GB",
+    "storage": ["128GB", "256GB"],
+    "battery": "4700mAh",
+    "display": {
+      "size": "6.5 inches",
+      "resolution": "2400x1080 pixels",
+      "type": "OLED",
+      "refresh_rate": "144Hz"
+    },
+    "camera": {
+      "rear": "64MP + 13MP",
+      "front": "16MP",
+      "features": ["Dual Capture", "4K Video"]
+    },
+    "connectivity": ["5G", "WiFi 6", "Bluetooth 5.2", "NFC"],
+    "features": ["Water Repellent Design", "Fast Charging"],
+    "warranty": "1 Year",
+    "images": [
+      "https://fdn2.gsmarena.com/vv/pics/motorola/motorola-edge-30-1.jpg"
+    ],
+    "pay_on_delivery": false,
+    "out_of_stock": "out of stock"
+  },
+  {
+    "id": 7,
+    "name": "Realme GT Neo 6",
+    "brand": "Realme",
+    "price": 499.99,
+    "currency": "USD",
+    "stock": 90,
+    "rating": 3.5,
+    "reviews": 150,
+    "discount": 18,
+    "color": ["Mirror Silver", "Aurora Green"],
+    "release_date": "2024-05-01",
+    "operating_system": "Realme UI 5 (Android 14)",
+    "processor": "Snapdragon 8s Gen 2",
+    "ram": "12GB",
+    "storage": ["256GB"],
+    "battery": "5000mAh",
+    "display": {
+      "size": "6.74 inches",
+      "resolution": "2772x1240 pixels",
+      "type": "AMOLED",
+      "refresh_rate": "144Hz"
+    },
+    "camera": {
+      "rear": "50MP + 8MP",
+      "front": "16MP",
+      "features": ["Street Photography Mode", "HDR Video"]
+    },
+    "connectivity": ["5G", "WiFi 6", "Bluetooth 5.3", "NFC"],
+    "features": ["Fast Charging", "VC Cooling System"],
+    "warranty": "1 Year",
+    "images": [
+      "https://fdn2.gsmarena.com/vv/pics/realme/realme-gt-neo6-1.jpg"
+    ],
+    "pay_on_delivery": true,
+    "out_of_stock": "available"
+  },
+  {
+    "id": 8,
+    "name": "POCO F6 Pro",
+    "brand": "POCO",
+    "price": 649.99,
+    "currency": "USD",
+    "stock": 20,
+    "rating": 4.3,
+    "reviews": 250,
+    "discount": 12,
+    "color": ["Phantom Black", "Lunar Silver"],
+    "release_date": "2024-06-15",
+    "operating_system": "HyperOS (Android 14)",
+    "processor": "Snapdragon 8 Gen 2",
+    "ram": "12GB",
+    "storage": ["256GB", "512GB"],
+    "battery": "5000mAh",
+    "display": {
+      "size": "6.67 inches",
+      "resolution": "3200x1440 pixels",
+      "type": "AMOLED",
+      "refresh_rate": "120Hz"
+    },
+    "camera": {
+      "rear": "50MP + 8MP + 2MP",
+      "front": "16MP",
+      "features": ["AI Camera", "Night Vision", "4K Video"]
+    },
+    "connectivity": ["5G", "WiFi 6E", "Bluetooth 5.3", "NFC"],
+    "features": ["LiquidCool Technology", "Fast Charging", "In-Display Fingerprint"],
+    "warranty": "1 Year",
+    "images": ["https://fdn2.gsmarena.com/vv/pics/poco/poco-f5-pro-1.jpg"],
+    "pay_on_delivery": true,
+    "out_of_stock": "available"
+  },
+  {
+    "id": 9,
+    "name": "iPhone 14 Pro",
+    "brand": "Apple",
+    "price": 1099.99,
+    "currency": "USD",
+    "stock": 25,
+    "rating": 4.8,
+    "reviews": 550,
+    "discount": 7,
+    "color": ["Deep Purple", "Silver", "Gold", "Space Black"],
+    "release_date": "2023-09-16",
+    "operating_system": "iOS 16 (Upgradeable to latest iOS)",
+    "processor": "A16 Bionic",
+    "ram": "6GB",
+    "storage": ["128GB", "256GB", "512GB", "1TB"],
+    "battery": "3200mAh",
+    "display": {
+      "size": "6.1 inches",
+      "resolution": "2556x1179 pixels",
+      "type": "Super Retina XDR",
+      "refresh_rate": "120Hz"
+    },
+    "camera": {
+      "rear": "48MP + 12MP + 12MP",
+      "front": "12MP",
+      "features": ["ProRAW", "Photonic Engine", "Cinematic Mode"]
+    },
+    "connectivity": ["5G", "WiFi 6", "Bluetooth 5.3", "Lightning"],
+    "features": ["Face ID", "Ceramic Shield", "Emergency SOS via satellite", "IP68 Water & Dust Resistance"],
+    "warranty": "1 Year",
+    "images": ["https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-pro-new-1.jpg"],
+    "pay_on_delivery": false,
+    "out_of_stock": "available"
+  }
+]

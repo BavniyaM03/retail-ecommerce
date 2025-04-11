@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -11,17 +11,31 @@ import { useParams } from 'react-router-dom';
 export const ReusableProductList = () => {
     const routeParam = useParams();
     const category = routeParam.category;
-    const product = useSelector((state) => state.products[category])
-    console.log(product)
+    let product = useSelector((state) => state.products[category])
+    const [productArray, setProductArray] = useState(product);
+    const checked = useSelector((state) => state.products.checked)
+
+    useEffect(() => {
+        if (checked === true) {
+            let payOnDeliveryProducts = product.filter((item) => item.pay_on_delivery === true);
+            setProductArray(payOnDeliveryProducts);
+        }
+        else {
+            setProductArray(product);
+        }
+
+    }, [checked])
+
     return (
         <>
+
             <div className="card-item-container">
-                {product.map((item, index) => (
+                {productArray.map((item, index) => (
                     <Card key={index} sx={{ width: 280, height: 350 }}>
                         <CardMedia
                             component="img"
                             height="200"
-                            image={item.images ? item.images : "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/330px-No-Image-Placeholder.svg.png?20200912122019" }
+                            image={item.images ? item.images : "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/330px-No-Image-Placeholder.svg.png?20200912122019"}
                             alt="green iguana"
                             sx={{ objectFit: 'contain' }}
                         />
@@ -37,6 +51,10 @@ export const ReusableProductList = () => {
                     </Card>
                 ))}
             </div>
+
+
+
+
         </>
     )
 }
