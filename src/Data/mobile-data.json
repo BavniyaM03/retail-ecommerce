@@ -1,12 +1,12 @@
 [
   {
-    "id": 1,
+    "id": 63,
     "name": "Galaxy X Pro",
     "brand": "Samsung",
     "price": 999.99,
     "currency": "USD",
     "stock": 50,
-    "rating": 4.7,
+    "rating": 4.5,
     "reviews": 450,
     "discount": 10,
     "color": ["Black", "Silver", "Blue"],
@@ -42,15 +42,15 @@
     "out_of_stock": "available"
   },
   {
-    "id": 2,
+    "id": 64,
     "name": "iPhone 15 Pro Max",
     "brand": "Apple",
     "price": 1199.99,
     "currency": "USD",
     "stock": 30,
-    "rating": 4.9,
+    "rating": 5,
     "reviews": 600,
-    "discount": 5,
+    "discount": 25,
     "color": ["Titanium Gray", "Gold", "Black"],
     "release_date": "2024-09-20",
     "operating_system": "iOS 17",
@@ -84,15 +84,15 @@
     "out_of_stock": "available"
   },
   {
-    "id": 3,
+    "id": 65,
     "name": "Pixel 8 Pro",
     "brand": "Google",
     "price": 899.99,
     "currency": "USD",
     "stock": 40,
-    "rating": 4.6,
+    "rating": 4.2,
     "reviews": 380,
-    "discount": 12,
+    "discount": 35,
     "color": ["Obsidian", "Porcelain", "Sky Blue"],
     "release_date": "2024-10-05",
     "operating_system": "Android 14",
@@ -126,7 +126,7 @@
     "out_of_stock": "available"
   },
   {
-    "id": 4,
+    "id": 66,
     "name": "OnePlus 12",
     "brand": "OnePlus",
     "price": 749.99,
@@ -134,7 +134,7 @@
     "stock": 60,
     "rating": 4.5,
     "reviews": 290,
-    "discount": 8,
+    "discount": 50,
     "color": ["Emerald Green", "Volcanic Black"],
     "release_date": "2024-03-10",
     "operating_system": "OxygenOS 14 (Android 14)",
@@ -168,15 +168,15 @@
     "out_of_stock": "available"
   },
   {
-    "id": 5,
+    "id": 67,
     "name": "Xiaomi 14 Ultra",
     "brand": "Xiaomi",
     "price": 899.99,
     "currency": "USD",
     "stock": 70,
-    "rating": 4.6,
+    "rating": 4.5,
     "reviews": 410,
-    "discount": 10,
+    "discount": 75,
     "color": ["White", "Black"],
     "release_date": "2024-04-05",
     "operating_system": "MIUI 15 (Android 14)",
@@ -209,13 +209,13 @@
     "out_of_stock": "available"
   },
   {
-    "id": 6,
+    "id": 68,
     "name": "Moto Edge Fusion",
     "brand": "Motorola",
     "price": 599.99,
     "currency": "USD",
     "stock": 0,
-    "rating": 3.8,
+    "rating": 3.2,
     "reviews": 200,
     "discount": 15,
     "color": ["Charcoal", "Sunset Red"],
@@ -246,13 +246,13 @@
     "out_of_stock": "out of stock"
   },
   {
-    "id": 7,
+    "id": 69,
     "name": "Realme GT Neo 6",
     "brand": "Realme",
     "price": 499.99,
     "currency": "USD",
     "stock": 90,
-    "rating": 3.5,
+    "rating": 4,
     "reviews": 150,
     "discount": 18,
     "color": ["Mirror Silver", "Aurora Green"],
@@ -283,13 +283,13 @@
     "out_of_stock": "available"
   },
   {
-    "id": 8,
+    "id": 70,
     "name": "POCO F6 Pro",
     "brand": "POCO",
     "price": 649.99,
     "currency": "USD",
     "stock": 20,
-    "rating": 4.3,
+    "rating": 4.5,
     "reviews": 250,
     "discount": 12,
     "color": ["Phantom Black", "Lunar Silver"],
@@ -313,43 +313,10 @@
     "connectivity": ["5G", "WiFi 6E", "Bluetooth 5.3", "NFC"],
     "features": ["LiquidCool Technology", "Fast Charging", "In-Display Fingerprint"],
     "warranty": "1 Year",
-    "images": ["https://fdn2.gsmarena.com/vv/pics/poco/poco-f5-pro-1.jpg"],
+    "images": [
+      "https://fdn2.gsmarena.com/vv/pics/poco/poco-f5-pro-1.jpg"
+    ],
     "pay_on_delivery": true,
-    "out_of_stock": "available"
-  },
-  {
-    "id": 9,
-    "name": "iPhone 14 Pro",
-    "brand": "Apple",
-    "price": 1099.99,
-    "currency": "USD",
-    "stock": 25,
-    "rating": 4.8,
-    "reviews": 550,
-    "discount": 7,
-    "color": ["Deep Purple", "Silver", "Gold", "Space Black"],
-    "release_date": "2023-09-16",
-    "operating_system": "iOS 16 (Upgradeable to latest iOS)",
-    "processor": "A16 Bionic",
-    "ram": "6GB",
-    "storage": ["128GB", "256GB", "512GB", "1TB"],
-    "battery": "3200mAh",
-    "display": {
-      "size": "6.1 inches",
-      "resolution": "2556x1179 pixels",
-      "type": "Super Retina XDR",
-      "refresh_rate": "120Hz"
-    },
-    "camera": {
-      "rear": "48MP + 12MP + 12MP",
-      "front": "12MP",
-      "features": ["ProRAW", "Photonic Engine", "Cinematic Mode"]
-    },
-    "connectivity": ["5G", "WiFi 6", "Bluetooth 5.3", "Lightning"],
-    "features": ["Face ID", "Ceramic Shield", "Emergency SOS via satellite", "IP68 Water & Dust Resistance"],
-    "warranty": "1 Year",
-    "images": ["https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-pro-new-1.jpg"],
-    "pay_on_delivery": false,
     "out_of_stock": "available"
   }
 ]

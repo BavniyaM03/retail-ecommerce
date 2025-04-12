@@ -1,188 +1,195 @@
 [
-    [
-      {
-        "id": 1,
-        "name": "Leather Tote Handbag",
-        "brand": "Michael Kors",
-        "category": "Handbag",
-        "price": 149.99,
-        "currency": "USD",
-        "stock": 120,
-        "rating": 4.7,
-        "reviews": 3200,
-        "discount": 10,
-        "material": "Genuine Leather",
-        "color": "Brown",
-        "dimensions": "14 x 10 x 5 inches",
-        "features": [
-          "Spacious Interior",
-          "Zipper Closure",
-          "Adjustable Strap"
-        ],
-        "warranty": "2 Years",
-        "description": "A stylish and versatile tote handbag made from premium genuine leather. Designed for modern women, this bag offers a spacious interior, multiple compartments, and a durable zipper closure. Perfect for everyday use, office, or special occasions.",
-        "images": [
-          "https://michaelkors.scene7.com/is/image/MichaelKors/30F4GTBT7L-0001_IS?$productMain$"
-        ],
-        "quantity": 0
-      },
-      {
-        "id": 2,
-        "name": "Anti-Theft Laptop Backpack",
-        "brand": "Samsonite",
-        "category": "Backpack",
-        "price": 89.99,
-        "currency": "USD",
-        "stock": 200,
-        "rating": 4.8,
-        "reviews": 5000,
-        "discount": 15,
-        "material": "Waterproof Nylon",
-        "color": "Black",
-        "dimensions": "18 x 12 x 6 inches",
-        "features": [
-          "USB Charging Port",
-          "Hidden Zipper",
-          "Padded Laptop Sleeve"
-        ],
-        "warranty": "3 Years",
-        "description": "The Samsonite Anti-Theft Laptop Backpack is perfect for professionals and students. With a hidden zipper design, USB charging port, and a padded laptop sleeve, it ensures security, convenience, and comfort. Crafted from waterproof nylon, it protects your belongings from rain and spills.",
-        "images": [
-          "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQuB_tUU_E1y3lPukInSv6Ut8j_9AlhnCzC2Qd4nRWDUAJUyweSrE4LTK2AjEZHyNuM8GkHwtoBY3GNEOENfVHAhaTnXWFDvc0rbZhRJfTyHtpO2lPYeOIW"
-        ],
-        "quantity": 0
-      },
-      {
-        "id": 3,
-        "name": "Vintage Canvas Messenger Bag",
-        "brand": "Fossil",
-        "category": "Messenger Bag",
-        "price": 79.99,
-        "currency": "USD",
-        "stock": 150,
-        "rating": 4.6,
-        "reviews": 2800,
-        "discount": 10,
-        "material": "Canvas & Leather",
-        "color": "Khaki",
-        "dimensions": "16 x 12 x 4 inches",
-        "features": [
-          "Adjustable Shoulder Strap",
-          "Multiple Pockets",
-          "Magnetic Closure"
-        ],
-        "warranty": "2 Years",
-        "description": "A rugged yet stylish canvas messenger bag featuring a blend of classic and modern design. Equipped with multiple compartments, an adjustable shoulder strap, and secure magnetic closure, this bag is perfect for work, school, or casual outings.",
-        "images": [
-          "https://fossil.scene7.com/is/image/FossilPartners/MBG9560222_main?$sfcc_fos_large$"
-        ],
-        "quantity": 0
-      },
-      {
-        "id": 4,
-        "name": "Expandable Wheeled Travel Bag",
-        "brand": "American Tourister",
-        "category": "Travel Bag",
-        "price": 159.99,
-        "currency": "USD",
-        "stock": 80,
-        "rating": 4.9,
-        "reviews": 4000,
-        "discount": 20,
-        "material": "Polycarbonate",
-        "color": "Navy Blue",
-        "dimensions": "28 x 18 x 12 inches",
-        "features": [
-          "360° Spinner Wheels",
-          "TSA-Approved Lock",
-          "Expandable Storage"
-        ],
-        "warranty": "5 Years",
-        "description": "Designed for frequent travelers, this durable and lightweight wheeled travel bag features 360° spinner wheels, an expandable compartment, and a TSA-approved lock for security. A perfect companion for business trips and vacations.",
-        "images": [
-          "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRQ0JosbkxY69XiVJzy9EUxZBcirwWL02F_-CE9DOoShxMirGoWHyKNsRZduJH9fVqrb5ttAU5NIdW5o_DosX34CR1w3QMj4bvNSktfCfd3JXFztC8SMn4N"
-        ],
-        "quantity": 0
-      }
-    ],
-    [
-      {
-        "id": 5,
-        "name": "Sports Duffel Gym Bag",
-        "brand": "Nike",
-        "category": "Duffel Bag",
-        "price": 49.99,
-        "currency": "USD",
-        "stock": 250,
-        "rating": 4.7,
-        "reviews": 3200,
-        "discount": 15,
-        "material": "Polyester",
-        "color": "Red & Black",
-        "dimensions": "22 x 12 x 10 inches",
-        "features": [
-          "Ventilated Shoe Compartment",
-          "Adjustable Shoulder Strap",
-          "Water-Resistant Fabric"
-        ],
-        "warranty": "1 Year",
-        "description": "The ultimate gym bag for athletes and fitness enthusiasts. Features a ventilated shoe compartment, spacious main storage, and water-resistant fabric to keep your gear dry. The adjustable shoulder strap provides comfort for carrying on the go.",
-        "images": [
-          "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQtn8nMvLMg4dqfSxRtFIZG76sEB6w9XrUtMo3RXe0rG7aeO5gWfCPFZeDvu5FHGSfy1Dm1rdWOw60w05s2IjhM1WYEZKMrvHssbu6vNDj_lqMbGWOBPNwN"
-        ],
-        "quantity": 0
-      },
-      {
-        "id": 6,
-        "name": "Designer Evening Clutch",
-        "brand": "Gucci",
-        "category": "Clutch",
-        "price": 299.99,
-        "currency": "USD",
-        "stock": 50,
-        "rating": 4.9,
-        "reviews": 1500,
-        "discount": 5,
-        "material": "Velvet & Metal",
-        "color": "Gold",
-        "dimensions": "8 x 5 x 2 inches",
-        "features": [
-          "Elegant Metal Clasp",
-          "Chain Strap",
-          "Luxury Velvet Finish"
-        ],
-        "warranty": "3 Years",
-        "description": "An elegant designer evening clutch that adds a touch of glamour to any outfit. Made with a luxurious velvet finish, a delicate chain strap, and an intricate metal clasp, this clutch is perfect for formal events, weddings, and parties.",
-        "images": [
-          "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRUGylwHXQSkpg822rS0ht7gTQXNrm1tseiuPDew4NhJJcyvPT0OS5tlsSR23AbSeFN8RA_iq5-lXoYybtOraFBm3Fd3L-mf_1t_AIwk_FG"
-        ],
-        "quantity": 0
-      },
-      {
-        "id": 7,
-        "name": "Kids Cartoon Backpack",
-        "brand": "Disney",
-        "category": "Backpack",
-        "price": 29.99,
-        "currency": "USD",
-        "stock": 300,
-        "rating": 4.8,
-        "reviews": 4500,
-        "discount": 10,
-        "material": "Polyester",
-        "color": "Blue & Red",
-        "dimensions": "15 x 11 x 5 inches",
-        "features": [
-          "Padded Straps",
-          "Side Water Bottle Pocket",
-          "Durable Zippers"
-        ],
-        "warranty": "1 Year",
-        "description": "A fun and colorful backpack featuring beloved Disney characters, designed especially for kids. With padded straps for comfort, a side pocket for water bottles, and durable zippers, it's perfect for school and travel.",
-        "images": [
-          "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS4052So8ihHZ7S_O3QDkjegzKr8pR-_w8Gmmkqm1zaHAvI9hhOMrmc62jROt3gEMbZiZhhlM-kkuw2npSHSar59Y22kkJyr0S1wh8N0iidYSGi5nKyvBTjpg"
-        ],
-        "quantity": 0
-      }
-    ]
+  [
+    {
+      "id": 1,
+      "name": "Leather Tote Handbag",
+      "brand": "Michael Kors",
+      "category": "Handbag",
+      "price": 149.99,
+      "currency": "USD",
+      "stock": 120,
+      "rating": 4,
+      "reviews": 3200,
+      "discount": 10,
+      "material": "Genuine Leather",
+      "color": "Brown",
+      "dimensions": "14 x 10 x 5 inches",
+      "features": [
+        "Spacious Interior",
+        "Zipper Closure",
+        "Adjustable Strap"
+      ],
+      "warranty": "2 Years",
+      "description": "A stylish and versatile tote handbag made from premium genuine leather. Designed for modern women, this bag offers a spacious interior, multiple compartments, and a durable zipper closure. Perfect for everyday use, office, or special occasions.",
+      "images": [
+        "https://michaelkors.scene7.com/is/image/MichaelKors/30F4GTBT7L-0001_IS?$productMain$"
+      ],
+      "quantity": 0,
+      "cashOnDelivery": true
+    },
+    {
+      "id": 2,
+      "name": "Anti-Theft Laptop Backpack",
+      "brand": "Samsonite",
+      "category": "Backpack",
+      "price": 89.99,
+      "currency": "USD",
+      "stock": 200,
+      "rating": 2,
+      "reviews": 5000,
+      "discount": 15,
+      "material": "Waterproof Nylon",
+      "color": "Black",
+      "dimensions": "18 x 12 x 6 inches",
+      "features": [
+        "USB Charging Port",
+        "Hidden Zipper",
+        "Padded Laptop Sleeve"
+      ],
+      "warranty": "3 Years",
+      "description": "The Samsonite Anti-Theft Laptop Backpack is perfect for professionals and students. With a hidden zipper design, USB charging port, and a padded laptop sleeve, it ensures security, convenience, and comfort. Crafted from waterproof nylon, it protects your belongings from rain and spills.",
+      "images": [
+        "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQuB_tUU_E1y3lPukInSv6Ut8j_9AlhnCzC2Qd4nRWDUAJUyweSrE4LTK2AjEZHyNuM8GkHwtoBY3GNEOENfVHAhaTnXWFDvc0rbZhRJfTyHtpO2lPYeOIW"
+      ],
+      "quantity": 0,
+      "cashOnDelivery": true
+    },
+    {
+      "id": 3,
+      "name": "Vintage Canvas Messenger Bag",
+      "brand": "Fossil",
+      "category": "Messenger Bag",
+      "price": 79.99,
+      "currency": "USD",
+      "stock": 150,
+      "rating": 3,
+      "reviews": 2800,
+      "discount": 10,
+      "material": "Canvas & Leather",
+      "color": "Khaki",
+      "dimensions": "16 x 12 x 4 inches",
+      "features": [
+        "Adjustable Shoulder Strap",
+        "Multiple Pockets",
+        "Magnetic Closure"
+      ],
+      "warranty": "2 Years",
+      "description": "A rugged yet stylish canvas messenger bag featuring a blend of classic and modern design. Equipped with multiple compartments, an adjustable shoulder strap, and secure magnetic closure, this bag is perfect for work, school, or casual outings.",
+      "images": [
+        "https://fossil.scene7.com/is/image/FossilPartners/MBG9560222_main?$sfcc_fos_large$"
+      ],
+      "quantity": 0,
+      "cashOnDelivery": true
+    },
+    {
+      "id": 4,
+      "name": "Expandable Wheeled Travel Bag",
+      "brand": "American Tourister",
+      "category": "Travel Bag",
+      "price": 159.99,
+      "currency": "USD",
+      "stock": 80,
+      "rating": 4,
+      "reviews": 4000,
+      "discount": 20,
+      "material": "Polycarbonate",
+      "color": "Navy Blue",
+      "dimensions": "28 x 18 x 12 inches",
+      "features": [
+        "360° Spinner Wheels",
+        "TSA-Approved Lock",
+        "Expandable Storage"
+      ],
+      "warranty": "5 Years",
+      "description": "Designed for frequent travelers, this durable and lightweight wheeled travel bag features 360° spinner wheels, an expandable compartment, and a TSA-approved lock for security. A perfect companion for business trips and vacations.",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRQ0JosbkxY69XiVJzy9EUxZBcirwWL02F_-CE9DOoShxMirGoWHyKNsRZduJH9fVqrb5ttAU5NIdW5o_DosX34CR1w3QMj4bvNSktfCfd3JXFztC8SMn4N"
+      ],
+      "quantity": 0,
+      "cashOnDelivery": true
+    }
+  ],
+  [
+    {
+      "id": 5,
+      "name": "Sports Duffel Gym Bag",
+      "brand": "Nike",
+      "category": "Duffel Bag",
+      "price": 49.99,
+      "currency": "USD",
+      "stock": 250,
+      "rating": 4,
+      "reviews": 3200,
+      "discount": 15,
+      "material": "Polyester",
+      "color": "Red & Black",
+      "dimensions": "22 x 12 x 10 inches",
+      "features": [
+        "Ventilated Shoe Compartment",
+        "Adjustable Shoulder Strap",
+        "Water-Resistant Fabric"
+      ],
+      "warranty": "1 Year",
+      "description": "The ultimate gym bag for athletes and fitness enthusiasts. Features a ventilated shoe compartment, spacious main storage, and water-resistant fabric to keep your gear dry. The adjustable shoulder strap provides comfort for carrying on the go.",
+      "images": [
+        "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQtn8nMvLMg4dqfSxRtFIZG76sEB6w9XrUtMo3RXe0rG7aeO5gWfCPFZeDvu5FHGSfy1Dm1rdWOw60w05s2IjhM1WYEZKMrvHssbu6vNDj_lqMbGWOBPNwN"
+      ],
+      "quantity": 0,
+      "cashOnDelivery": true
+    },
+    {
+      "id": 6,
+      "name": "Designer Evening Clutch",
+      "brand": "Gucci",
+      "category": "Clutch",
+      "price": 299.99,
+      "currency": "USD",
+      "stock": 50,
+      "rating": 2,
+      "reviews": 1500,
+      "discount": 5,
+      "material": "Velvet & Metal",
+      "color": "Gold",
+      "dimensions": "8 x 5 x 2 inches",
+      "features": [
+        "Elegant Metal Clasp",
+        "Chain Strap",
+        "Luxury Velvet Finish"
+      ],
+      "warranty": "3 Years",
+      "description": "An elegant designer evening clutch that adds a touch of glamour to any outfit. Made with a luxurious velvet finish, a delicate chain strap, and an intricate metal clasp, this clutch is perfect for formal events, weddings, and parties.",
+      "images": [
+        "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRUGylwHXQSkpg822rS0ht7gTQXNrm1tseiuPDew4NhJJcyvPT0OS5tlsSR23AbSeFN8RA_iq5-lXoYybtOraFBm3Fd3L-mf_1t_AIwk_FG"
+      ],
+      "quantity": 0,
+      "cashOnDelivery": true
+    },
+    {
+      "id": 7,
+      "name": "Kids Cartoon Backpack",
+      "brand": "Disney",
+      "category": "Backpack",
+      "price": 29.99,
+      "currency": "USD",
+      "stock": 300,
+      "rating": 3,
+      "reviews": 4500,
+      "discount": 10,
+      "material": "Polyester",
+      "color": "Blue & Red",
+      "dimensions": "15 x 11 x 5 inches",
+      "features": [
+        "Padded Straps",
+        "Side Water Bottle Pocket",
+        "Durable Zippers"
+      ],
+      "warranty": "1 Year",
+      "description": "A fun and colorful backpack featuring beloved Disney characters, designed especially for kids. With padded straps for comfort, a side pocket for water bottles, and durable zippers, it's perfect for school and travel.",
+      "images": [
+        "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS4052So8ihHZ7S_O3QDkjegzKr8pR-_w8Gmmkqm1zaHAvI9hhOMrmc62jROt3gEMbZiZhhlM-kkuw2npSHSar59Y22kkJyr0S1wh8N0iidYSGi5nKyvBTjpg"
+      ],
+      "quantity": 0,
+      "cashOnDelivery": true
+    }
   ]
+]

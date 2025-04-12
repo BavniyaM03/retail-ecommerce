@@ -28,7 +28,7 @@ export default function Header() {
     const wishlist = useSelector((state) => state.wishlist.wishlist);
     const searchData = useSelector((state) => state.products.searchQuery)
     let findProductData = useSelector((state) => state.products.findProductExisting)
-    console.log(findProductData);
+    // console.log(findProductD);
     // console.log(searchData);
     const dispatch = useDispatch();
     const navigate = useNavigate();
@@ -40,7 +40,7 @@ export default function Header() {
     React.useEffect(() => {
         console.log(41, findProductData);
         if (findProductData === true) {
-            navigate(`/productlist/${searchData}`)  
+            navigate(`/productlist/${searchData}`)
             dispatch(showProductDetails(searchData));
         }
     }, [findProductData])
@@ -57,16 +57,16 @@ export default function Header() {
                         {/* <ReusableDropDown /> */}
                     </Box>
 
-                    <Search>
-
+                    <Search sx={{display:'flex', alignItems:'center'}}>
                         <StyledInputBase
                             value={searchData}
                             onChange={(e) => dispatch(findProduct(e.target.value))}
                             placeholder="Search…"
                             inputProps={{ 'aria-label': 'search' }}
+                            sx={{width: 910}}
                         />
                         {/* <SearchIconWrapper> */}
-                            <SearchOutlined sx={{ cursor: 'pointer', backgroundColor: 'red', zIndex : 9 }} onClick={() => dispatch(findProductOnSearch())} />
+                        <SearchOutlined sx={{ cursor: 'pointer', zIndex: 9 }} onClick={() => dispatch(findProductOnSearch())} />
                         {/* </SearchIconWrapper> */}
                     </Search>
 

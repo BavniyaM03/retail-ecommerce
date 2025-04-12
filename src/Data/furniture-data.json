@@ -1,135 +1,140 @@
 [
-      {
-        "id": 1,
-        "name": "Modern Leather Sofa",
-        "brand": "Ashley Furniture",
-        "category": "Living Room",
-        "price": 899.99,
-        "currency": "USD",
-        "stock": 50,
-        "rating": 4.8,
-        "reviews": 320,
-        "discount": 15,
-        "dimensions": "84 x 36 x 34 inches",
-        "material": "Genuine Leather & Wood",
-        "color": "Black",
-        "features": ["High-Density Foam Cushions", "Sturdy Wooden Frame", "Scratch-Resistant"],
-        "warranty": "5 Years",
-        "description": "Upgrade your living space with the Modern Leather Sofa by Ashley Furniture. Crafted from premium genuine leather, this sofa offers a sleek and stylish design that complements any contemporary home. Featuring high-density foam cushions and a sturdy wooden frame, it ensures maximum comfort and durability. The scratch-resistant surface makes it easy to maintain, while its ergonomic design provides excellent lumbar support. Perfect for relaxing, entertaining guests, or adding elegance to your living room.",
-        "images": [
-          "https://example.com/images/leather_sofa1.jpg",
-          "https://example.com/images/leather_sofa2.jpg"
-        ]
-      },
-      {
-        "id": 2,
-        "name": "Oakwood King Size Bed",
-        "brand": "Home Elegance",
-        "category": "Bedroom",
-        "price": 1199.99,
-        "currency": "USD",
-        "stock": 30,
-        "rating": 4.9,
-        "reviews": 250,
-        "discount": 10,
-        "dimensions": "80 x 76 x 50 inches",
-        "material": "Solid Oak Wood",
-        "color": "Walnut Brown",
-        "features": ["Ergonomic Headboard", "Heavy-Duty Wooden Frame", "Anti-Slip Legs"],
-        "warranty": "10 Years",
-        "description": "Transform your bedroom with the luxurious Oakwood King Size Bed. Made from premium solid oak, this bed frame provides unmatched durability and a timeless aesthetic. The ergonomically designed headboard offers excellent back support, making it perfect for reading or watching TV in bed. With a heavy-duty wooden frame and anti-slip legs, this bed ensures stability and noise-free sleep. Its rich walnut brown finish adds warmth and elegance to any bedroom decor.",
-        "images": [
-          "https://example.com/images/king_size_bed1.jpg",
-          "https://example.com/images/king_size_bed2.jpg"
-        ]
-      },
-      {
-        "id": 3,
-        "name": "Ergonomic Office Chair",
-        "brand": "Herman Miller",
-        "category": "Office",
-        "price": 749.99,
-        "currency": "USD",
-        "stock": 100,
-        "rating": 4.8,
-        "reviews": 400,
-        "discount": 12,
-        "dimensions": "27 x 27 x 41 inches",
-        "material": "Mesh & Aluminum",
-        "color": "Gray",
-        "features": ["Adjustable Lumbar Support", "Breathable Mesh", "360° Swivel"],
-        "warranty": "12 Years",
-        "description": "Boost your productivity and comfort with the Herman Miller Ergonomic Office Chair. Designed for long hours of sitting, this chair features adjustable lumbar support, a breathable mesh backrest, and a cushioned seat for superior comfort. The 360° swivel and smooth-rolling wheels allow effortless movement. Ideal for both home offices and corporate environments, this chair promotes good posture and reduces back strain, making it the ultimate choice for professionals.",
-        "images": [
-          "https://example.com/images/office_chair1.jpg",
-          "https://example.com/images/office_chair2.jpg"
-        ]
-      },
-      {
-        "id": 4,
-        "name": "Extendable Dining Table Set",
-        "brand": "IKEA",
-        "category": "Dining Room",
-        "price": 699.99,
-        "currency": "USD",
-        "stock": 40,
-        "rating": 4.7,
-        "reviews": 350,
-        "discount": 10,
-        "dimensions": "72-96 x 36 x 30 inches",
-        "material": "Solid Pine Wood",
-        "color": "Natural Wood Finish",
-        "features": ["Extendable Table", "6 Matching Chairs", "Scratch-Resistant Surface"],
-        "warranty": "5 Years",
-        "description": "Host family dinners and gatherings with the IKEA Extendable Dining Table Set. Crafted from solid pine wood, this dining set includes a spacious table and six comfortable chairs. The extendable feature allows you to accommodate extra guests, making it perfect for large meals and celebrations. With a scratch-resistant surface and a timeless natural wood finish, this set is a durable and stylish addition to any dining room.",
-        "images": [
-          "https://example.com/images/dining_table1.jpg",
-          "https://example.com/images/dining_table2.jpg"
-        ]
-      },
-      {
-        "id": 5,
-        "name": "Outdoor Patio Lounge Set",
-        "brand": "SunVilla",
-        "category": "Outdoor",
-        "price": 1299.99,
-        "currency": "USD",
-        "stock": 25,
-        "rating": 4.9,
-        "reviews": 220,
-        "discount": 15,
-        "dimensions": "4-Piece Set",
-        "material": "Wicker & Steel Frame",
-        "color": "Beige & Brown",
-        "features": ["Weather-Resistant Cushions", "UV-Protected Rattan", "Glass-Top Coffee Table"],
-        "warranty": "3 Years",
-        "description": "Relax in style with the SunVilla Outdoor Patio Lounge Set. This 4-piece set includes a sofa, two armchairs, and a glass-top coffee table, providing the perfect outdoor retreat. Made from high-quality wicker with a sturdy steel frame, this set is built to withstand all weather conditions. The UV-protected rattan and water-resistant cushions ensure long-lasting durability. Whether you’re enjoying a morning coffee or hosting a backyard party, this set adds elegance and comfort to any outdoor space.",
-        "images": [
-          "https://example.com/images/patio_set1.jpg",
-          "https://example.com/images/patio_set2.jpg"
-        ]
-      },
-      {
-        "id": 6,
-        "name": "Modern Bookshelf with Storage",
-        "brand": "Wayfair",
-        "category": "Storage & Organization",
-        "price": 349.99,
-        "currency": "USD",
-        "stock": 60,
-        "rating": 4.7,
-        "reviews": 180,
-        "discount": 10,
-        "dimensions": "72 x 36 x 12 inches",
-        "material": "Engineered Wood & Metal",
-        "color": "White & Gold",
-        "features": ["5 Spacious Shelves", "Metal Frame Support", "Scratch-Resistant Finish"],
-        "warranty": "2 Years",
-        "description": "Keep your space organized with the Wayfair Modern Bookshelf. Featuring five spacious shelves and a sturdy metal frame, this bookshelf is perfect for storing books, decor, and other essentials. The scratch-resistant white finish adds a sleek, contemporary touch, while the gold metal accents provide a luxurious look. Ideal for living rooms, offices, or bedrooms, this bookshelf combines functionality with elegance to elevate any space.",
-        "images": [
-          "https://example.com/images/bookshelf1.jpg",
-          "https://example.com/images/bookshelf2.jpg"
-        ]
-      }
+  {
+    "id": 45,
+    "name": "Modern Leather Sofa",
+    "brand": "Ashley Furniture",
+    "category": "Living Room",
+    "price": 899.99,
+    "currency": "USD",
+    "stock": 50,
+    "rating": 4.8,
+    "reviews": 320,
+    "discount": 25,
+    "cashOnDelivery": true,
+    "dimensions": "84 x 36 x 34 inches",
+    "material": "Genuine Leather & Wood",
+    "color": "Black",
+    "features": ["High-Density Foam Cushions", "Sturdy Wooden Frame", "Scratch-Resistant"],
+    "warranty": "5 Years",
+    "description": "Upgrade your living space with the Modern Leather Sofa by Ashley Furniture. Crafted from premium genuine leather, this sofa offers a sleek and stylish design that complements any contemporary home. Featuring high-density foam cushions and a sturdy wooden frame, it ensures maximum comfort and durability. The scratch-resistant surface makes it easy to maintain, while its ergonomic design provides excellent lumbar support. Perfect for relaxing, entertaining guests, or adding elegance to your living room.",
+    "images": [
+      "https://example.com/images/leather_sofa1.jpg",
+      "https://example.com/images/leather_sofa2.jpg"
     ]
-  
+  },
+  {
+    "id": 46,
+    "name": "Oakwood King Size Bed",
+    "brand": "Home Elegance",
+    "category": "Bedroom",
+    "price": 1199.99,
+    "currency": "USD",
+    "stock": 30,
+    "rating": 4.9,
+    "reviews": 250,
+    "discount": 35,
+    "cashOnDelivery": true,
+    "dimensions": "80 x 76 x 50 inches",
+    "material": "Solid Oak Wood",
+    "color": "Walnut Brown",
+    "features": ["Ergonomic Headboard", "Heavy-Duty Wooden Frame", "Anti-Slip Legs"],
+    "warranty": "10 Years",
+    "description": "Transform your bedroom with the luxurious Oakwood King Size Bed. Made from premium solid oak, this bed frame provides unmatched durability and a timeless aesthetic. The ergonomically designed headboard offers excellent back support, making it perfect for reading or watching TV in bed. With a heavy-duty wooden frame and anti-slip legs, this bed ensures stability and noise-free sleep. Its rich walnut brown finish adds warmth and elegance to any bedroom decor.",
+    "images": [
+      "https://example.com/images/king_size_bed1.jpg",
+      "https://example.com/images/king_size_bed2.jpg"
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Ergonomic Office Chair",
+    "brand": "Herman Miller",
+    "category": "Office",
+    "price": 749.99,
+    "currency": "USD",
+    "stock": 100,
+    "rating": 4.5,
+    "reviews": 400,
+    "discount": 50,
+    "cashOnDelivery": false,
+    "dimensions": "27 x 27 x 41 inches",
+    "material": "Mesh & Aluminum",
+    "color": "Gray",
+    "features": ["Adjustable Lumbar Support", "Breathable Mesh", "360° Swivel"],
+    "warranty": "12 Years",
+    "description": "Boost your productivity and comfort with the Herman Miller Ergonomic Office Chair. Designed for long hours of sitting, this chair features adjustable lumbar support, a breathable mesh backrest, and a cushioned seat for superior comfort. The 360° swivel and smooth-rolling wheels allow effortless movement. Ideal for both home offices and corporate environments, this chair promotes good posture and reduces back strain, making it the ultimate choice for professionals.",
+    "images": [
+      "https://example.com/images/office_chair1.jpg",
+      "https://example.com/images/office_chair2.jpg"
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Extendable Dining Table Set",
+    "brand": "IKEA",
+    "category": "Dining Room",
+    "price": 699.99,
+    "currency": "USD",
+    "stock": 40,
+    "rating": 4.7,
+    "reviews": 350,
+    "discount": 10,
+    "cashOnDelivery": true,
+    "dimensions": "72-96 x 36 x 30 inches",
+    "material": "Solid Pine Wood",
+    "color": "Natural Wood Finish",
+    "features": ["Extendable Table", "6 Matching Chairs", "Scratch-Resistant Surface"],
+    "warranty": "5 Years",
+    "description": "Host family dinners and gatherings with the IKEA Extendable Dining Table Set. Crafted from solid pine wood, this dining set includes a spacious table and six comfortable chairs. The extendable feature allows you to accommodate extra guests, making it perfect for large meals and celebrations. With a scratch-resistant surface and a timeless natural wood finish, this set is a durable and stylish addition to any dining room.",
+    "images": [
+      "https://example.com/images/dining_table1.jpg",
+      "https://example.com/images/dining_table2.jpg"
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Outdoor Patio Lounge Set",
+    "brand": "SunVilla",
+    "category": "Outdoor",
+    "price": 1299.99,
+    "currency": "USD",
+    "stock": 25,
+    "rating": 5,
+    "reviews": 220,
+    "discount": 75,
+    "cashOnDelivery": true,
+    "dimensions": "4-Piece Set",
+    "material": "Wicker & Steel Frame",
+    "color": "Beige & Brown",
+    "features": ["Weather-Resistant Cushions", "UV-Protected Rattan", "Glass-Top Coffee Table"],
+    "warranty": "3 Years",
+    "description": "Relax in style with the SunVilla Outdoor Patio Lounge Set. This 4-piece set includes a sofa, two armchairs, and a glass-top coffee table, providing the perfect outdoor retreat. Made from high-quality wicker with a sturdy steel frame, this set is built to withstand all weather conditions. The UV-protected rattan and water-resistant cushions ensure long-lasting durability. Whether you’re enjoying a morning coffee or hosting a backyard party, this set adds elegance and comfort to any outdoor space.",
+    "images": [
+      "https://example.com/images/patio_set1.jpg",
+      "https://example.com/images/patio_set2.jpg"
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Modern Bookshelf with Storage",
+    "brand": "Wayfair",
+    "category": "Storage & Organization",
+    "price": 349.99,
+    "currency": "USD",
+    "stock": 60,
+    "rating": 4.6,
+    "reviews": 180,
+    "discount": 25,
+    "cashOnDelivery": false,
+    "dimensions": "72 x 36 x 12 inches",
+    "material": "Engineered Wood & Metal",
+    "color": "White & Gold",
+    "features": ["5 Spacious Shelves", "Metal Frame Support", "Scratch-Resistant Finish"],
+    "warranty": "2 Years",
+    "description": "Keep your space organized with the Wayfair Modern Bookshelf. Featuring five spacious shelves and a sturdy metal frame, this bookshelf is perfect for storing books, decor, and other essentials. The scratch-resistant white finish adds a sleek, contemporary touch, while the gold metal accents provide a luxurious look. Ideal for living rooms, offices, or bedrooms, this bookshelf combines functionality with elegance to elevate any space.",
+    "images": [
+      "https://example.com/images/bookshelf1.jpg",
+      "https://example.com/images/bookshelf2.jpg"
+    ]
+  }
+]

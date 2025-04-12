@@ -16,6 +16,14 @@ export const ReusableProductList = () => {
     const checked = useSelector((state) => state.products.checked)
 
     useEffect(() => {
+        // switch (key) {
+        //     case value:
+                
+        //         break;
+        
+        //     default:
+        //         break;
+        // }
         if (checked === true) {
             let payOnDeliveryProducts = product.filter((item) => item.pay_on_delivery === true);
             setProductArray(payOnDeliveryProducts);
