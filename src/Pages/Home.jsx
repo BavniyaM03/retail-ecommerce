@@ -14,6 +14,11 @@ export const Home = () => {
     const mobilesItem = useSelector((state) => state.products.mobile);
     const beauty = useSelector((state) => state.products.beauty);
     const fashion =useSelector((state)=>state.products.fashion);
+    const furniture =useSelector((state)=>state.products.furniture);
+    const home =useSelector((state)=>state.products.home);
+    const laptop =useSelector((state)=>state.products.laptop);
+    const sports =useSelector((state)=>state.products.sports);
+    const toys =useSelector((state)=>state.products.toys);
     // console.log(mobilesItem)
     // console.log(beauty)
     // console.log(fashion)
@@ -31,6 +36,11 @@ export const Home = () => {
                             <ImageShowcaseCard products={mobilesItem} />
                             <ImageShowcaseCard products={beauty} />
                             <ImageShowcaseCard products={fashion} />
+                            <ImageShowcaseCard products={furniture} />
+                            <ImageShowcaseCard products={home} />
+                            <ImageShowcaseCard products={laptop} />
+                            <ImageShowcaseCard products={sports} />
+                            <ImageShowcaseCard products={toys} />
                         </Grid >
                     </Container>
                 </Box>
@@ -39,4 +49,5 @@ export const Home = () => {
 
     )
 }
+
 

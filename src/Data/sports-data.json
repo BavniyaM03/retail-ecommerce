@@ -18,8 +18,7 @@
     "warranty": "6 Months",
     "description": "The Adidas Predator Soccer Ball is designed for players who demand precision and durability. Constructed with high-quality synthetic leather, this ball provides excellent grip and control during matches. Its water-resistant feature ensures that you can play in any weather conditions without compromising performance. Whether you're practicing your shots or playing an intense match, this ball delivers optimal performance and longevity. Perfect for training and official games, it offers an authentic playing experience with enhanced durability and air retention.",
     "images": [
-      "https://example.com/images/adidas_soccer_ball1.jpg",
-      "https://example.com/images/adidas_soccer_ball2.jpg"
+      "https://m.media-amazon.com/images/I/81MWPlFr1FL._AC_SX679_.jpg"
     ]
   },
   {
@@ -41,33 +40,10 @@
     "warranty": "1 Year",
     "description": "The Wilson NBA Official Basketball is a top-tier ball used by professional players and enthusiasts alike. Engineered with composite leather, it provides superior grip and excellent control, allowing players to execute precise dribbles and shots. Designed for both indoor and outdoor use, this ball retains its durability and maintains a consistent bounce. Its moisture-wicking surface prevents slipping, ensuring that players maintain a firm grip even in high-pressure situations. Whether you’re practicing or competing, this basketball guarantees top-notch performance.",
     "images": [
-      "https://example.com/images/wilson_nba_ball1.jpg",
-      "https://example.com/images/wilson_nba_ball2.jpg"
+     "https://m.media-amazon.com/images/I/91IQFipYcJL._AC_UF1000,1000_QL80_.jpg"
     ]
   },
-  {
-    "id": 73,
-    "name": "Yonex Carbonex 8000 Plus Badminton Racket",
-    "brand": "Yonex",
-    "category": "Racquet Sports",
-    "price": 79.99,
-    "currency": "USD",
-    "stock": 75,
-    "rating": 3.2,
-    "reviews": 500,
-    "discount": 10,
-    "cashOnDelivery": true,
-    "sport_type": "Badminton",
-    "weight": "85g",
-    "material": "Graphite & Carbon Fiber",
-    "features": ["Lightweight Design", "High Tension Strings", "Shock Absorption"],
-    "warranty": "6 Months",
-    "description": "The Yonex Carbonex 8000 Plus Badminton Racket is designed for players looking to improve their performance with a lightweight yet powerful racket. Made from high-quality graphite and carbon fiber, this racket delivers excellent power while maintaining exceptional control. The shock-absorbing technology reduces vibrations, making every shot smooth and precise. The aerodynamic frame enhances swing speed, allowing for quicker responses in competitive matches. Whether you are a beginner or an advanced player, this racket will enhance your gameplay with its balance of power, speed, and precision.",
-    "images": [
-      "https://example.com/images/yonex_racket1.jpg",
-      "https://example.com/images/yonex_racket2.jpg"
-    ]
-  },
+
   {
     "id": 74,
     "name": "Nike Men's Running Shoes",
@@ -87,8 +63,7 @@
     "warranty": "1 Year",
     "description": "Designed for both casual runners and professional athletes, Nike's Men's Running Shoes provide superior comfort and support. The breathable mesh upper keeps your feet cool, while the cushioned sole absorbs impact, reducing stress on joints. A slip-resistant outsole enhances traction, making them perfect for both track and road running. The lightweight design ensures agility and speed, allowing runners to push their limits with confidence. Whether training for a marathon or going for a casual jog, these shoes offer a perfect blend of style, performance, and durability.",
     "images": [
-      "https://example.com/images/nike_running_shoes1.jpg",
-      "https://example.com/images/nike_running_shoes2.jpg"
+     "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTS5fQAil7CNyxDy9DiBa0SiwmfdcWVckRJnCC_46Jt-Dw6FaPJpN3t1XhDVI8xgz9xopt2xLwVjxJd3yzetNhVjjOWWM0nPWh9UeCoBv8&usqp=CAE"
     ]
   },
   {
@@ -110,8 +85,7 @@
     "warranty": "1 Year",
     "description": "Train like a professional fighter with the Everlast Heavy Boxing Bag. Designed for high-intensity workouts, this heavy bag is built with durable synthetic leather that withstands powerful punches and kicks. The reinforced straps ensure secure hanging, while the shock-absorbing material reduces impact strain on the hands and wrists. Whether you’re practicing striking techniques or working on endurance, this bag is perfect for home and gym use. Elevate your boxing and martial arts training with this high-quality punching bag from Everlast.",
     "images": [
-      "https://example.com/images/everlast_boxing_bag1.jpg",
-      "https://example.com/images/everlast_boxing_bag2.jpg"
+     "https://m.media-amazon.com/images/I/71gijwbNhFL.jpg"
     ]
   }
 ]

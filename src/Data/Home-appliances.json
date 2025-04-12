@@ -21,8 +21,7 @@
     "features": ["HDR10+", "120Hz Refresh Rate", "Dolby Atmos"],
     "description": "Experience stunning visuals with the Samsung 55-inch Smart 4K LED TV. Featuring ultra HD resolution, HDR10+, and built-in smart apps, this TV delivers immersive entertainment. Enjoy crystal-clear sound with Dolby Atmos and seamless connectivity with WiFi and Bluetooth.",
     "images": [
-      "https://example.com/images/samsungtv1.jpg",
-      "https://example.com/images/samsungtv2.jpg"
+     "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSV2AqoVsTT7kXKEdOTPf3eM-iHuAUWp7pvNSM4QIFAOAS9ymcPrNNZhyVcnPuJMPCbA3tTMjXC2BqKKE_Ytr8P7kYojo79xIbMWZ74c0WI"
     ]
   },
   {
@@ -46,8 +45,7 @@
     "features": ["Ice Maker", "Water Dispenser", "Frost Free"],
     "description": "Keep your food fresh with the LG French Door Refrigerator, featuring a spacious 25 cu. ft. capacity, smart WiFi control, and an energy-efficient A++ rating. The built-in water dispenser and ice maker make everyday use convenient and hassle-free.",
     "images": [
-      "https://example.com/images/lgfridge1.jpg",
-      "https://example.com/images/lgfridge2.jpg"
+     "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTswsxpqPHmhmTzMz5JKisUnwazPpDzbC_PGUBbogRzYe7KR7vsTnX5EKfWfxeR6eivL9fHDCOZXSu8JGQ7vOF2NDLwJjEULUKK0fSJt0vj"
     ]
   },
   {
@@ -71,8 +69,7 @@
     "features": ["Child Lock", "Silent Operation", "Auto Clean"],
     "description": "The Bosch Front Load Washing Machine combines efficiency and performance with its 8 kg capacity, A+++ energy rating, and quick wash feature. Enjoy whisper-quiet operation and superior fabric care with its advanced inverter technology.",
     "images": [
-      "https://example.com/images/boschwasher1.jpg",
-      "https://example.com/images/boschwasher2.jpg"
+      "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTdP5ZW45XwuXUqCqY8sg1azsQ9lkNYvW1NegeKtzQftUdqr-gsCyG7jtY9PP2fg3l23ve62F-Z9JJaPZ01nng6wAo6uOIe3KxDY8xWYdA"
     ]
   },
   {
@@ -96,32 +93,7 @@
     "features": ["Touch Control", "Child Lock", "Energy Saving Mode"],
     "description": "The Panasonic Microwave Oven offers powerful 1200W cooking with smart sensor technology. Enjoy even heating, auto defrost, and convenient touch controls for effortless cooking. A must-have for modern kitchens.",
     "images": [
-      "https://example.com/images/panasonicmicrowave1.jpg",
-      "https://example.com/images/panasonicmicrowave2.jpg"
-    ]
-  },
-  {
-    "id": 55,
-    "name": "Robotic Vacuum Cleaner",
-    "brand": "iRobot",
-    "category": "Cleaning",
-    "price": 499.99,
-    "currency": "USD",
-    "stock": 60,
-    "rating": 5,
-    "reviews": 370,
-    "discount": 75,
-    "cashOnDelivery": true,
-    "color": ["Black", "White"],
-    "battery_life": "120 minutes",
-    "smart_features": ["App Control", "Voice Assistant Compatible"],
-    "power_consumption": "50W",
-    "warranty": "2 Years",
-    "features": ["Self-Charging", "Auto-Scheduling", "HEPA Filter"],
-    "description": "Keep your home spotless with the iRobot Robotic Vacuum Cleaner. Featuring app control, self-charging, and auto-scheduling, this device efficiently cleans dust and debris while operating quietly.",
-    "images": [
-      "https://example.com/images/irobotvacuum1.jpg",
-      "https://example.com/images/irobotvacuum2.jpg"
+     "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTMV82EZ9TkIROrwfU6QPp5-uj1h877fOZ8RvUO78OWPrIsiTsmkkAidNGby_2_hsSg3uNXuGW7uizWmYLrnx5DF5_QZqNuf5wutfVZX7kPM3Bvl17gZ9BWMw"
     ]
   },
   {
@@ -145,32 +117,7 @@
     "features": ["Milk Frother", "Removable Water Tank", "Stainless Steel Boiler"],
     "description": "Brew barista-quality coffee at home with the De'Longhi Espresso Coffee Maker. With a 1.5L capacity, milk frother, and programmable settings, enjoy your favorite coffee just the way you like it.",
     "images": [
-      "https://example.com/images/delonghicoffee1.jpg",
-      "https://example.com/images/delonghicoffee2.jpg"
-    ]
-  },
-  {
-    "id": 57,
-    "name": "Air Purifier",
-    "brand": "Dyson",
-    "category": "Home Comfort",
-    "price": 599.99,
-    "currency": "USD",
-    "stock": 50,
-    "rating": 4.5,
-    "reviews": 410,
-    "discount": 35,
-    "cashOnDelivery": true,
-    "color": ["White", "Gray"],
-    "coverage_area": "500 sq. ft.",
-    "smart_features": ["App Control", "Air Quality Sensor"],
-    "power_consumption": "75W",
-    "warranty": "2 Years",
-    "features": ["HEPA Filter", "Silent Mode", "Oscillation"],
-    "description": "Improve indoor air quality with the Dyson Air Purifier. Featuring a HEPA filter, app control, and a silent mode, this device efficiently removes allergens and pollutants from the air.",
-    "images": [
-      "https://example.com/images/dysonairpurifier1.jpg",
-      "https://example.com/images/dysonairpurifier2.jpg"
+     "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSMqen5GCssUnqwV58UkEqrm3mgROePVSLVkLXNFigBEMO7ArVjc2xXRk63qkmx4PWB2k4YobwK5wlnzi6KW6SmuvEoiEwwec3YauLBVpsb9l4F-27EPnAY"
     ]
   }
 ]
