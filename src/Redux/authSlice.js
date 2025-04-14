@@ -7,12 +7,22 @@ const userFormValues = {
     password: ""
 }
 
+const validation = {
+    email_validation: '',
+    first_name_validation: '',
+    last_name_validation: '',
+    password_validation: '',
+}
+
+
+
 const authSlice = createSlice({
     name: "authentication",
     initialState: {
         userFormValues: userFormValues,
         open: false,
         isLoggedIn: true,
+        validation: validation
     },
     reducers: {
 
@@ -35,40 +45,39 @@ const authSlice = createSlice({
             const regExpForName = /^[a-zA-Z]{4,30}$/;
 
             if (state.userFormValues.email === "") {
-                return alert('please enter email address')
+                state.validation.email_validation = 'please enter email address';
+                return;
             }
             else if (!regExpForMail.test(state.userFormValues.email)) {
-                return alert('Invalid Email')
-            } else if (regExpForMail.test(state.userFormValues.email)) {
-                alert('Email is valid')
+                state.validation.email_validation = 'Invalid email address';
+                return;
             }
-
-
-            if (state.userFormValues.password === "") {
-                return alert('please enter password')
-            } else if (!regExp.test(state.userFormValues.password)) {
-                return alert('Invalid Password')
-            } else if (regExp.test(state.userFormValues.password)) {
-                alert('password is valid')
-            }
-
 
             if (state.userFormValues.firstName === "") {
-                return alert('please enter first Name ')
+                state.validation.first_name_validation = 'please enter first Name'
+                return;
             } else if (!regExpForName.test(state.userFormValues.firstName)) {
-                return alert('Invalid Name')
-            } else if (regExpForName.test(state.userFormValues.firstName)) {
-                alert('Name is valid')
+                state.validation.first_name_validation = 'Invalid Name'
+                return;
             }
 
             if (state.userFormValues.lastName === "") {
-                return alert('please enter last name')
+                state.validation.last_name_validation = 'please enter last name';
+                return;
+
             } else if (!regExpForName.test(state.userFormValues.lastName)) {
-                return alert('Invalid lastname')
-            } else if (regExpForName.test(state.userFormValues.lastName)) {
-                alert('last name is valid')
+                state.validation.last_name_validation = "Invalid Lastname";
+                return;
             }
 
+            if (state.userFormValues.password === "") {
+                state.validation.password_validation = "Please enter password";
+                return;
+            } else if (!regExp.test(state.userFormValues.password)) {
+                state.validation.password_validation = 'Password must be strong';
+                return;
+            }
+            
             const getDataFromSession = sessionStorage.getItem('signup');
             const signUpData = JSON.parse(getDataFromSession);
 

@@ -5,8 +5,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ReusableSliderProduct } from './ReusableSliderProduct';
 import { Typography } from '@mui/material';
-import { useParams } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { NavLink, useParams } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { showProductDetails } from '../../../../Redux/productSlice';
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -36,6 +37,7 @@ export default function ReusableSlider({ infinite, slidesToShow, slidesToScroll,
     const productCategory = product.category;
     console.log(productCategory);
     const relatedProducts = useSelector((state) => state.products[productCategory]);
+    const dispatch = useDispatch();
     
 
     const settings = {
@@ -78,7 +80,9 @@ export default function ReusableSlider({ infinite, slidesToShow, slidesToScroll,
             <Slider {...settings} >
                 {relatedProducts?.map((item) => (
                     <div>
+                        <NavLink to={`/product/${item.id}`} onClick={()=>dispatch(showProductDetails(item))}>
                         <ReusableSliderProduct item={item}/>
+                        </NavLink>
                     </div>
 
                  ))} 

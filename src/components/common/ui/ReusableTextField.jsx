@@ -1,5 +1,5 @@
 import { TextField } from "@mui/material"
-export const ReusableTextField = ({ name, label, type, variant, onChange }) => {
+export const ReusableTextField = ({ name, label, type, variant, onChange, helperText }) => {
     return (
         <>
             <TextField
@@ -10,6 +10,7 @@ export const ReusableTextField = ({ name, label, type, variant, onChange }) => {
                 type={type}
                 fullWidth
                 variant={variant}
+                helperText={helperText}
             />
         </>
     )

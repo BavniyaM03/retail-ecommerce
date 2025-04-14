@@ -10,6 +10,7 @@ export const SignupForm = () => {
     const [showPassword, setShowPassword] = React.useState(false);
     const userFormValues = useSelector((state) => state.authSlice.userFormValues);
     const isLoggedIn = useSelector((state) => state.authSlice.isLoggedIn)
+    const validationText = useSelector((state)=>state.authSlice.validation);
 
     const dispatch = useDispatch();
     const handleClickShowPassword = () => setShowPassword((show) => !show);
@@ -30,6 +31,7 @@ export const SignupForm = () => {
                     variant="standard"
                     value={userFormValues.email}
                     onChange={(e) => handleUserSignupData(e)}
+                    helperText={validationText.email_validation}
                 />
 
                 <Typography sx={{ fontSize: '12px' }} variant='captions'>By continuing, you agree to Flipkart's <b style={{ color: '#16678e' }}> Terms of Use </b> and <b style={{ color: '#16678e' }}>Privacy Policy</b>.</Typography>
@@ -40,7 +42,8 @@ export const SignupForm = () => {
                     type="text"
                     variant="standard"
                     value={userFormValues.firstName}
-                    onChange={(e) => handleUserSignupData(e)} />
+                    onChange={(e) => handleUserSignupData(e)}
+                    helperText={validationText.first_name_validation} />
 
                 <ReusableTextField
                     name="lastName"
@@ -48,14 +51,16 @@ export const SignupForm = () => {
                     type="text"
                     variant="standard"
                     value={userFormValues.lastName}
-                    onChange={(e) => handleUserSignupData(e)} />
+                    onChange={(e) => handleUserSignupData(e)}
+                    helperText={validationText.last_name_validation} />
 
 
                 <ReusablePassword
                     value={userFormValues.password}
                     onChange={(e) => handleUserSignupData(e)}
                     type={showPassword ? 'text' : 'password'}
-                    onClick={handleClickShowPassword} showPassword={showPassword} />
+                    onClick={handleClickShowPassword} showPassword={showPassword}
+                    helperText={validationText.password_validation} />
 
             </div>}
         </>

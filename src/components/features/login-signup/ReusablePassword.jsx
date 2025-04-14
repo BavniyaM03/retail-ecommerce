@@ -1,10 +1,10 @@
 import React from 'react';
-import { FilledInput, FormControl, IconButton, InputAdornment, InputLabel } from '@mui/material';
+import { FilledInput, FormControl, IconButton, InputAdornment, InputLabel, TextField, Typography } from '@mui/material';
 import { Visibility, VisibilityOff } from '@mui/icons-material';
 
-export const ReusablePassword = ({ value, onChange, type, onClick, showPassword }) => {
+export const ReusablePassword = ({ value, onChange, type, onClick, showPassword, helperText}) => {
     return (
-        <FormControl sx={{ m: 1, width: '25ch' }} variant="filled">
+        <FormControl sx={{ m: 1, width: '25ch' }} variant="filled" helperText={helperText}>
             <InputLabel>Password</InputLabel>
             <FilledInput
                 name="password"
@@ -25,6 +25,7 @@ export const ReusablePassword = ({ value, onChange, type, onClick, showPassword 
                     </InputAdornment>
                 }
             />
+            <Typography variant='caption' >{helperText}</Typography>
         </FormControl>
     )
 }
