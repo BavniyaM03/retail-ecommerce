@@ -1,8 +1,8 @@
 import Button from '@mui/material/Button';
-export const ReusableButton = ({variant, value, className, sx, onClick}) =>{
+export const ReusableButton = ({variant, value, className, sx, onClick, name}) =>{
     return (
         <>
-        <Button className={className} sx={sx} variant={variant} onClick={onClick}>{value}</Button>
+        <Button name={name} className={className} sx={sx} variant={variant} onClick={onClick}>{value}</Button>
         </>
     )
 }

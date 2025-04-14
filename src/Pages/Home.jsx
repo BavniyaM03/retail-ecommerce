@@ -26,10 +26,10 @@ export const Home = () => {
         <React.Fragment>
             <CssBaseline />
             <Container maxWidth="xl">
-                <Box sx={{ bgcolor: '#cfe8fc', height: '100%', marginTop: 1 }} >
+                <Box sx={{ height: '100%', marginTop: 1 }} >
                     <Hero />
                     <Container maxWidth='xl' sx={{ marginTop: 1 }}>
-                        <Grid container spacing={2.5} sx={{ bgcolor: 'red' }}>
+                        <Grid container spacing={2.5}>
                             <HeadlineProductCard />
                             <ProductCardWithCaptions />
                             <DetailedProductCard />

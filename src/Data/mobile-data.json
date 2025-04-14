@@ -5,7 +5,7 @@
     "brand": "Samsung",
     "price": 999.99,
     "currency": "USD",
-    "stock": 50,
+    "stock": 0,
     "rating": 4.5,
     "reviews": 450,
     "discount": 10,
@@ -39,7 +39,8 @@
       "https://images.samsung.com/is/image/samsung/sg-feature-equipped-for-your-environment-399623738?$FB_TYPE_A_JPG$"
     ],
     "pay_on_delivery": true,
-    "out_of_stock": "available"
+    "out_of_stock": "available",
+    "category": "mobile"
   },
   {
     "id": 64,
@@ -81,7 +82,8 @@
       "https://m.media-amazon.com/images/I/61kJdbgQOfL._SX679_.jpg"
     ],
     "pay_on_delivery": false,
-    "out_of_stock": "available"
+    "out_of_stock": "available",
+    "category": "mobile"
   },
   {
     "id": 65,
@@ -90,7 +92,7 @@
     "price": 899.99,
     "currency": "USD",
     "stock": 40,
-    "rating": 4.2,
+    "rating": 2,
     "reviews": 380,
     "discount": 35,
     "color": ["Obsidian", "Porcelain", "Sky Blue"],
@@ -123,7 +125,8 @@
       "https://m.media-amazon.com/images/I/71N4hshhfNL._AC_UY218_.jpg"
     ],
     "pay_on_delivery": true,
-    "out_of_stock": "available"
+    "out_of_stock": "available",
+    "category": "mobile"
   },
   {
     "id": 66,
@@ -131,8 +134,8 @@
     "brand": "OnePlus",
     "price": 749.99,
     "currency": "USD",
-    "stock": 60,
-    "rating": 4.5,
+    "stock": 0,
+    "rating": 3,
     "reviews": 290,
     "discount": 50,
     "color": ["Emerald Green", "Volcanic Black"],
@@ -165,7 +168,8 @@
       "https://m.media-amazon.com/images/I/61BAuSC0UnL._AC_UY218_.jpg"
     ],
     "pay_on_delivery": true,
-    "out_of_stock": "available"
+    "out_of_stock": "available",
+    "category": "mobile"
   },
   {
     "id": 67,
@@ -206,7 +210,8 @@
       "https://i02.appmifile.com/mi-com-product/fly-birds/new-xiaomi-14-ultra/PC/pc-14ultra-header.jpg?f=webp"
     ],
     "pay_on_delivery": true,
-    "out_of_stock": "available"
+    "out_of_stock": "available",
+    "category": "mobile"
   },
   {
     "id": 68,
@@ -243,7 +248,8 @@
       "https://fdn2.gsmarena.com/vv/pics/motorola/motorola-edge-30-1.jpg"
     ],
     "pay_on_delivery": false,
-    "out_of_stock": "out of stock"
+    "out_of_stock": "out of stock",
+    "category": "mobile"
   },
   {
     "id": 69,
@@ -251,8 +257,8 @@
     "brand": "Realme",
     "price": 499.99,
     "currency": "USD",
-    "stock": 90,
-    "rating": 4,
+    "stock": 0,
+    "rating": 2.2,
     "reviews": 150,
     "discount": 18,
     "color": ["Mirror Silver", "Aurora Green"],
@@ -280,7 +286,8 @@
       "https://fdn2.gsmarena.com/vv/pics/realme/realme-gt-neo6-1.jpg"
     ],
     "pay_on_delivery": true,
-    "out_of_stock": "available"
+    "out_of_stock": "available",
+    "category": "mobile"
   },
   {
     "id": 70,
@@ -289,7 +296,7 @@
     "price": 649.99,
     "currency": "USD",
     "stock": 20,
-    "rating": 4.5,
+    "rating": 1,
     "reviews": 250,
     "discount": 12,
     "color": ["Phantom Black", "Lunar Silver"],
@@ -317,6 +324,7 @@
       "https://i02.appmifile.com/mi-com-product/fly-birds/poco-f6-pro/PC/f63963c40f1916d4291b9451b97f0027.jpg?f=webp"
     ],
     "pay_on_delivery": true,
-    "out_of_stock": "available"
+    "out_of_stock": "available",
+    "category": "mobile"
   }
 ]

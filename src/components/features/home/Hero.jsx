@@ -13,7 +13,7 @@ export const Hero = () => {
             <Box className="custom-box-container ">
                 {category.map((product, index) => (
                     <section key={index}>
-                        <NavLink to={`/productlist/${product.id}`}>
+                        <NavLink to={`/productlist/${product.id}`}  reloadDocument>
                         <img src={product.image} alt={product.title} />
                         </NavLink>
                         <h3>{product.title}</h3>

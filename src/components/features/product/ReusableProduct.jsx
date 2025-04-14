@@ -15,7 +15,7 @@ import { addToWishlist } from "../../../Redux/wishlistSlice";
 export const ReusableProduct = () => {
     const product = useSelector((state)=>state.products.productDetails);
     const dispatch = useDispatch();
-    return (
+    return ( 
         <>
             <div className="container">
                 <div className="product-image-container">

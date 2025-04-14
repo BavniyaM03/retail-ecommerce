@@ -3,7 +3,8 @@
 * {
   padding: 0px;
   margin: 0px;
-}
+  text-decoration: none;
+  }
 
 body{
   font-family: "Karla", sans-serif;
@@ -29,6 +30,11 @@ body{
 .custom-card-title {
   margin-top: 10px !important;
   margin-left: 20px !important
+}
+
+NavLink {
+  text-decoration: none;
+
 }
 
 

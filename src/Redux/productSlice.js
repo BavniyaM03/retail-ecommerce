@@ -82,6 +82,16 @@ const productDetails = [];
 
 let searchQuery = '';
 
+const filterSelections = {
+    low_to_high: false,
+    high_to_low: false,
+    pay_on_delivery: false,
+    discount: null,
+    stock: false,
+    rating: false,
+    rating_value : null
+}
+
 
 const productSlice = createSlice({
     name: "product",
@@ -101,18 +111,19 @@ const productSlice = createSlice({
         selectedImages: selectedImages,
         productDetails: productDetails,
         searchQuery: searchQuery,
+        filterSelections: filterSelections,
         checked: false,
         payOnDelivery: false,
         findProductExisting: false
     },
     reducers: {
-        // HANDLER FOR DISPLAY PROUCT CARD
+        // Handler for display product card
         displaySelectedImages: (state, action) => {
             const product = action.payload;
             console.log('92', product);
             state.selectedImages = product;
         },
-        // SHOW FULL PAGE OF PRODUCT DETAIL 
+        //Show full details of the product
         showProductDetails: (state, action) => {
             window.scrollTo(0, 0);
             const product = action.payload;
@@ -141,21 +152,29 @@ const productSlice = createSlice({
             // console.log(state.searchQuery);
         },
 
-        priceSortingLowToHigh: (state, action) => {
-            const category = action.payload;
-            state[category] = state[category].sort((a, b) => a.price - b.price)
-            console.log(current(state[category]));
-        },
-        priceSortingHighToLow: (state, action) => {
-            const category = action.payload;
-            state[category] = state[category].sort((a, b) => b.price - a.price)
-            console.log(current(state[category]));
-        },
-        setChecked: (state, action) => {
-            const status = action.payload;
-            console.log(status);
-            state.checked = status;
-        },
+        trackValueOfFilters: (state, action) => {
+            const name = event.target.name;
+            const value = event.target.checked;
+            const discountValue = action.payload;
+            state.filterSelections.rating_value = action.payload.rating;
+            console.log(name)
+            console.log(value)
+            // console.log(discountValue)
+            // console.log(action.payload.rating);
+            console.log(state.filterSelections.rating_value)
+            state.filterSelections[name] = value;
+            state.filterSelections[name] === state.filterSelections.discount ? state.filterSelections[name] = discountValue : state.filterSelections
+            [name] = value;
+            // state.findProductExisting[name] === state.filterSelections.rating ? state.filterSelections[name] = action.payload.rating : state.filterSelections[name] = value;
+            if (state.filterSelections[name] !== state.filterSelections.low_to_high) {
+                state.filterSelections.low_to_high = false;
+            } else if (state.filterSelections[name] !== state.filterSelections.high_to_low) {
+                state.filterSelections.high_to_low = false;
+            }
+
+
+
+        }
         // filterProductsWithRatingFourAndAbove: (state, action) => {
         //     const { category, event } = action.payload;
         //     const originalArray = state[category];
@@ -183,6 +202,6 @@ const productSlice = createSlice({
     }
 })
 
-export const { displaySelectedImages, showProductDetails, findProduct, priceSortingLowToHigh, priceSortingHighToLow, filterProductsWithRatingFourAndAbove, cashOnDeliveryFilter, findProductOnSearch, setChecked } = productSlice.actions;
+export const { displaySelectedImages, showProductDetails, findProduct, priceSortingLowToHigh, priceSortingHighToLow, filterProductsWithRatingFourAndAbove, cashOnDeliveryFilter, findProductOnSearch, setChecked, trackValueOfFilters } = productSlice.actions;
 
 export default productSlice.reducer;
