@@ -89,7 +89,8 @@ const filterSelections = {
     discount: null,
     stock: false,
     rating: false,
-    rating_value : null
+    rating_value : null,
+    range : null
 }
 
 
@@ -146,22 +147,25 @@ const productSlice = createSlice({
             const objectKeyString = objectKey.toString();
             const findValue = objectKeyString.includes(state.searchQuery);
             state.findProductExisting = findValue;
-            console.log(findValue);
+            // console.log(findValue);
             // console.log(objectKeyString);
             // console.log(objectKey);
             // console.log(state.searchQuery);
         },
 
         trackValueOfFilters: (state, action) => {
+            console.log(action.payload)
             const name = event.target.name;
             const value = event.target.checked;
             const discountValue = action.payload;
             state.filterSelections.rating_value = action.payload.rating;
-            console.log(name)
-            console.log(value)
+            state.filterSelections.range = action.payload;
+            
+            // console.log(name)
+            // console.log(value)
             // console.log(discountValue)
             // console.log(action.payload.rating);
-            console.log(state.filterSelections.rating_value)
+            // console.log(state.filterSelections.rating_value)
             state.filterSelections[name] = value;
             state.filterSelections[name] === state.filterSelections.discount ? state.filterSelections[name] = discountValue : state.filterSelections
             [name] = value;

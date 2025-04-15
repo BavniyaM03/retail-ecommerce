@@ -24,30 +24,12 @@ export const FilterBox = () => {
     const checked = useSelector((state) => state.products.checked)
     const filterSelections = useSelector((state) => state.products.filterSelections)
     const navigate = useNavigate();
+    const [range, setRange] = useState([0, 10000]);
     // const payOnDelivery = useSelector((state) => state.products.payOnDelivery)
     // const category = product.category;
-    const marks = [
-        {
-            value: 50,
-            label: '50',
-        },
-        {
-            value: 100,
-            label: '100',
-        },
-        {
-            value: 500,
-            label: '500',
-        },
-        {
-            value: 1000,
-            label: '1000',
-        },
-    ];
 
-    function valuetext(value) {
-        return `${value}`;
-    }
+
+
 
     const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
@@ -67,9 +49,15 @@ export const FilterBox = () => {
     //     }
     // }
 
-    const handleCategoryValue = (category) =>{
+    const handleCategoryValue = (category) => {
         console.log(category);
         navigate(`/productlist/${category}`)
+    }
+
+
+    const handleRange = (e) => {
+        setRange(e.target.value);
+        dispatch(trackValueOfFilters(e.target.value));
     }
 
     return (
@@ -90,20 +78,50 @@ export const FilterBox = () => {
                 </div>
                 <div className="category-filter filter-types">
                     <Typography>Category</Typography>
-                    <ReusableDropDown value="Category" onChange={(event)=>handleCategoryValue(event.target.value)} item={['mobile', 'laptop', 'fashion', 'home', 'electronic', 'toys', 'beauty', 'furniture', 'sports']} />
+                    <ReusableDropDown value="Category" onChange={(event) => handleCategoryValue(event.target.value)} item={['mobile', 'laptop', 'fashion', 'home', 'electronic', 'toys', 'beauty', 'furniture', 'sports']} />
                 </div>
-<div className="price-filter filter-types">
+                <div className="price-filter filter-types">
                     <Box sx={{ width: 250 }}>
                         <Typography gutterBottom>
                             Price Range
                         </Typography>
-                        <Slider
+                        <Slider defaultValue={500} min={0} max={10000} value={range} onChange={(e) => handleRange(e)} valueLabelDisplay='auto' disableSwap />
+                        <Typography>Min : {range[0]} - Max : {range[1]}</Typography>
+                    </Box>
+                    {/* <Slider
                             track="inverted"
                             getAriaValueText={valuetext}
                             defaultValue={[0, 10000]}
+                            step={10}
                             marks={marks}
-                        />
-                    </Box>
+                            min={0}
+                            max={10000}
+                        /> */}
+
+                    {/* <div class="price-input">
+                        <div class="field">
+                            <span>Min</span>
+                            <input type="number" class="input-min" value="2500" />
+                        </div>
+                        <div class="separator">-</div>
+                        <div class="field">
+                            <span>Max</span>
+                            <input type="number" class="input-max" value="7500" />
+                        </div>
+                    </div>
+
+
+                    <div class="slider">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="range-input">
+                        <input type="range" class="range-min" min="0" max="10000" value="2500" step="100" />
+                        <input type="range" class="range-max" min="0" max="10000" value="7500" step="100" />
+                    </div> */}
+
+                    {/* <Slider defaultValue={30} step={10} marks min={10} max={110} disabled /> */}
+
+                    {/* <input type='range'></input> */}
                 </div>
                 <div className='pay-on-delivery filter-types'>
                     <Typography>Payment</Typography>
@@ -118,26 +136,26 @@ export const FilterBox = () => {
                 <div className='discounts filter-types'>
                     <Typography>Discounts</Typography>
                     <ReusableButton sx={{ color: 'black' }} variant="text" value="10% off or more" name="discount" onClick={() => dispatch(trackValueOfFilters(10))} />
-                    <ReusableButton sx={{ color: 'black' }} variant="text" value="25% off or more"  name="discount"  onClick={() => dispatch(trackValueOfFilters(25))} />
-                    <ReusableButton sx={{ color: 'black' }} variant="text" value="35% off or more"  name="discount"  onClick={() => dispatch(trackValueOfFilters(35))} />
-                    <ReusableButton sx={{ color: 'black' }} variant="text" value="50% off or more"  name="discount"  onClick={() => dispatch(trackValueOfFilters(50))} />
-                    <ReusableButton sx={{ color: 'black' }} variant="text" value="70% off or more"  name="discount"  onClick={() => dispatch(trackValueOfFilters(70))} />
+                    <ReusableButton sx={{ color: 'black' }} variant="text" value="25% off or more" name="discount" onClick={() => dispatch(trackValueOfFilters(25))} />
+                    <ReusableButton sx={{ color: 'black' }} variant="text" value="35% off or more" name="discount" onClick={() => dispatch(trackValueOfFilters(35))} />
+                    <ReusableButton sx={{ color: 'black' }} variant="text" value="50% off or more" name="discount" onClick={() => dispatch(trackValueOfFilters(50))} />
+                    <ReusableButton sx={{ color: 'black' }} variant="text" value="70% off or more" name="discount" onClick={() => dispatch(trackValueOfFilters(70))} />
                 </div>
                 <div className='availabilitiy filter-types'>
                     <Typography>Availabilitiy</Typography>
-                    <FormControlLabel control={<Checkbox name='stock' onChange={(event) => dispatch(trackValueOfFilters({ name, event }))}/>} label="Exclude out of stock" />
+                    <FormControlLabel control={<Checkbox name='stock' onChange={(event) => dispatch(trackValueOfFilters({ name, event }))} />} label="Exclude out of stock" />
                 </div>
 
                 <div className='customer-rating filter-types'>
                     <Typography>Ratings</Typography>
                     <FormControlLabel
 
-                        control={<Checkbox name="rating" onChange={(event) => dispatch(trackValueOfFilters({ name, event , rating : 4 }))} />}
+                        control={<Checkbox name="rating" onChange={(event) => dispatch(trackValueOfFilters({ name, event, rating: 4 }))} />}
                         label="4 Star & Above" />
 
-                    <FormControlLabel control={<Checkbox name="rating" onChange={(event) => dispatch(trackValueOfFilters({ name, event , rating : 3 }))} />} label="3 Star & Above" />
+                    <FormControlLabel control={<Checkbox name="rating" onChange={(event) => dispatch(trackValueOfFilters({ name, event, rating: 3 }))} />} label="3 Star & Above" />
                 </div>
-            </div>
+            </div >
         </>
     )
 }

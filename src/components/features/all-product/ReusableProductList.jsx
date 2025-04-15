@@ -108,6 +108,12 @@ export const ReusableProductList = () => {
             setProductArray(product);
         }
 
+        if(filterSelections.range){
+            console.log(filterSelections.range)
+            updatedProducts = updatedProducts.filter((item)=>item.price >= filterSelections.range[0] && item.price <= filterSelections.range[1])
+            console.log(updatedProducts);
+        }
+
 
 
         setProductArray(updatedProducts);
