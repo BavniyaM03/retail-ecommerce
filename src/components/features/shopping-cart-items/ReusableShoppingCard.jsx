@@ -34,7 +34,7 @@ const { enqueueSnackbar } = useSnackbar();
 
     const handleRemoveCartItem = (item) =>{
         dispatch(removeCartItem(item))
-        enqueueSnackbar(`Remove Item ${item.title ? item.title : item.name} From Your Cart`, {variant : 'warning'});
+        enqueueSnackbar(`Remove Item ${item.title ? item.title : item.name} From Your Cart`);
     }
 
     return (

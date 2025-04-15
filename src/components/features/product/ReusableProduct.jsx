@@ -17,21 +17,25 @@ import { current } from "@reduxjs/toolkit";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import VerticalCarousel from "./VerticalCarousel";
+import ReusablePopupProduct from "./ReusablePopupProduct";
 // import VerticalCarousel from "./VerticalCarousel";
 
 
 export const ReusableProduct = () => {
     const product = useSelector((state) => state.products.productDetails);
     const toggle = useSelector((state) => state.cartItem.toggle_button);
-    console.log(toggle);
+    const [open, setOpen] = useState(false);
+    // console.log(toggle);
     const [previewImage, setPreviewImage] = useState()
     const navigate = useNavigate();
 
     const dispatch = useDispatch();
     const { enqueueSnackbar } = useSnackbar();
     const images = product.images;
+    const  videos  = product.video;
 
-    const style = {tranform : `translate(0, 55px)`}
+    console.log(product);
+    const style = { tranform: `translate(0, 55px)` }
 
     // const handleVerticalScroll = (index) => {
     //     document.getSelection(index).style.transform = `translate(0, 50px)`
@@ -39,7 +43,7 @@ export const ReusableProduct = () => {
     // let index = 5;
     // let y = -65;
     // const handleVerticalScroll = () => {
-        
+
     //     const elements = document.querySelectorAll('.small-images'); // replace with your actual class
     //     if (elements[index]) {
     //         elements[index].style.transform = `translateY(${y}px)`;
@@ -47,7 +51,7 @@ export const ReusableProduct = () => {
     //     index ++;
     //     y * 2;
     // };
-    
+
 
     const handleGotoCart = () => {
         navigate('/cartitem')
@@ -55,34 +59,44 @@ export const ReusableProduct = () => {
 
     const handlerAddToCart = (product, event) => {
         dispatch(addToCart(product, event))
-        enqueueSnackbar('Product Added to Cart', {variant : 'success'});
+        enqueueSnackbar('Product Added to Cart');
     }
 
-    const handleAddtoWishlist = (product) =>{
+    const handleAddtoWishlist = (product) => {
         dispatch(addToWishlist(product))
-        enqueueSnackbar('Product Added to Wishlist', {variant : 'info'});
+        enqueueSnackbar('Product Added to Wishlist');
     }
 
 
-    console.log(25, previewImage);
+
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
+
+
+    // console.log(25, previewImage);
     return (
         <>
             <div className="container">
                 <div className="product-image-container">
                     <div className="wishlist-container">
-                        <FavoriteBorderTwoToneIcon onClick={()=>handleAddtoWishlist(product)} />
+                        <FavoriteBorderTwoToneIcon onClick={() => handleAddtoWishlist(product)} />
                     </div>
 
                     {/* <div> */}
-                        <div className="image-options">
-                            <VerticalCarousel images={images} setPreviewImage={setPreviewImage} />
-                            {/* {images?.map((image, index) => (
+                    <div className="image-options">
+                        <VerticalCarousel images={images} setPreviewImage={setPreviewImage} />
+                        {/* {images?.map((image, index) => (
                                 <section key={index} className="small-images" sx={{ backgroundColor: 'red' }}>
                                     <img src={image} onClick={() => setPreviewImage(image)}></img>
                                 </section>
                             ))} */}
 
-                            {/* <section className="small-images">
+                        {/* <section className="small-images">
                             <img src="https://images-static.nykaa.com/media/catalog/product/b/8/b86cf32NYKAC00000193_1a.jpg"></img>
                         </section>
                         <section className="small-images">
@@ -95,20 +109,20 @@ export const ReusableProduct = () => {
                             <img src="https://images-static.nykaa.com/media/catalog/product/b/8/b86cf32NYKAC00000193_1a.jpg"></img>
                         </section> */}
 
-                        </div>
-                        {/* <div className="small-images-arrow">
+                    </div>
+                    {/* <div className="small-images-arrow">
                             <section><KeyboardArrowUpIcon /></section>
                             <section onClick={()=>handleVerticalScroll()}><KeyboardArrowDownIcon /></section>
                         </div> */}
                     {/* </div> */}
 
 
-                    <div className="product-image">
+                    <div className="product-image" onClick={handleClickOpen}>
                         <ReactImageMagnify {...{
                             smallImage: {
                                 alt: 'Wristwatch by Ted Baker London',
                                 isFluidWidth: true,
-                                src: previewImage ? previewImage : product.images
+                                src: previewImage ? previewImage : product.images,
                             },
                             largeImage: {
                                 src: previewImage ? previewImage : product.images,
@@ -152,17 +166,15 @@ export const ReusableProduct = () => {
 
                         <div className="add-to-cart-button-container">
                             {toggle === true ? (<ReusableButton onClick={(event) => handlerAddToCart(product, event)} className="add-to-cart-button" variant="contained" value="Add to cart" />) : (<ReusableButton onClick={handleGotoCart} className="add-to-cart-button" variant="contained" value="Go to cart" />)}
-
                         </div>
-
                     </div>
-
                 </div>
 
 
 
-
+                <ReusablePopupProduct handleClose={handleClose} open={open} images={images} videos={videos} />
             </div >
+
         </>
     )
 }

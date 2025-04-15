@@ -9,12 +9,20 @@
     "rating": 4.5,
     "reviews": 450,
     "discount": 10,
-    "color": ["Black", "Silver", "Blue"],
+    "color": [
+      "Black",
+      "Silver",
+      "Blue"
+    ],
     "release_date": "2024-02-15",
     "operating_system": "Android 14",
     "processor": "Snapdragon 8 Gen 3",
     "ram": "12GB",
-    "storage": ["128GB", "256GB", "512GB"],
+    "storage": [
+      "128GB",
+      "256GB",
+      "512GB"
+    ],
     "battery": "5000mAh",
     "display": {
       "size": "6.7 inches",
@@ -25,9 +33,18 @@
     "camera": {
       "rear": "108MP + 12MP + 10MP",
       "front": "32MP",
-      "features": ["Night Mode", "8K Video Recording", "OIS"]
+      "features": [
+        "Night Mode",
+        "8K Video Recording",
+        "OIS"
+      ]
     },
-    "connectivity": ["5G", "WiFi 6E", "Bluetooth 5.3", "NFC"],
+    "connectivity": [
+      "5G",
+      "WiFi 6E",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
     "features": [
       "In-Display Fingerprint Sensor",
       "Face Unlock",
@@ -44,6 +61,10 @@
       "https://m.media-amazon.com/images/I/71zWoxUHISL._AC_SX679_.jpg",
       "https://m.media-amazon.com/images/I/71zWoxUHISL._AC_SX679_.jpg"
     ],
+    "video": [
+      "https://media-ik.croma.com/prod/https://media.croma.com/video/upload/v1712316029/Croma%20Assets/Videos/2024%20Videos/305370_wjnsn5.mp4?tr=q-70",
+      "https://media-ik.croma.com/prod/https://media.croma.com/video/upload/v1706510115/Croma%20Assets/Videos/2023%20Videos/303838_yxt7zl.mp4?tr=q-70"
+    ],
     "pay_on_delivery": true,
     "out_of_stock": "available",
     "category": "mobile"
@@ -58,12 +79,20 @@
     "rating": 5,
     "reviews": 600,
     "discount": 25,
-    "color": ["Titanium Gray", "Gold", "Black"],
+    "color": [
+      "Titanium Gray",
+      "Gold",
+      "Black"
+    ],
     "release_date": "2024-09-20",
     "operating_system": "iOS 17",
     "processor": "A17 Bionic",
     "ram": "8GB",
-    "storage": ["256GB", "512GB", "1TB"],
+    "storage": [
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
     "battery": "4850mAh",
     "display": {
       "size": "6.8 inches",
@@ -74,10 +103,24 @@
     "camera": {
       "rear": "48MP + 12MP + 12MP",
       "front": "12MP",
-      "features": ["ProRAW", "Cinematic Mode", "LiDAR Scanner"]
+      "features": [
+        "ProRAW",
+        "Cinematic Mode",
+        "LiDAR Scanner"
+      ]
     },
-    "connectivity": ["5G", "WiFi 6E", "Bluetooth 5.3", "MagSafe"],
-    "features": ["Face ID", "Ceramic Shield", "USB-C Port", "IP68 Water & Dust Resistance"],
+    "connectivity": [
+      "5G",
+      "WiFi 6E",
+      "Bluetooth 5.3",
+      "MagSafe"
+    ],
+    "features": [
+      "Face ID",
+      "Ceramic Shield",
+      "USB-C Port",
+      "IP68 Water & Dust Resistance"
+    ],
     "warranty": "1 Year",
     "images": [
       "https://m.media-amazon.com/images/I/81dT7CUY6GL._AC_UY218_.jpg",
@@ -86,6 +129,10 @@
       "https://m.media-amazon.com/images/I/71ta3jyFvIL._SX679_.jpg",
       "https://m.media-amazon.com/images/I/81oC53mwCPL._SX679_.jpg",
       "https://m.media-amazon.com/images/I/61kJdbgQOfL._SX679_.jpg"
+    ],
+    "video": [
+      "https://media-ik.croma.com/prod/https://media.croma.com/video/upload/v1712316029/Croma%20Assets/Videos/2024%20Videos/305370_wjnsn5.mp4?tr=q-70",
+      "https://media-ik.croma.com/prod/https://media.croma.com/video/upload/v1712315997/Croma%20Assets/Videos/2024%20Videos/305368_pd5gtr.mp4?tr=q-70"
     ],
     "pay_on_delivery": false,
     "out_of_stock": "available",
@@ -101,12 +148,19 @@
     "rating": 2,
     "reviews": 380,
     "discount": 35,
-    "color": ["Obsidian", "Porcelain", "Sky Blue"],
+    "color": [
+      "Obsidian",
+      "Porcelain",
+      "Sky Blue"
+    ],
     "release_date": "2024-10-05",
     "operating_system": "Android 14",
     "processor": "Google Tensor G3",
     "ram": "12GB",
-    "storage": ["128GB", "256GB"],
+    "storage": [
+      "128GB",
+      "256GB"
+    ],
     "battery": "5100mAh",
     "display": {
       "size": "6.7 inches",
@@ -117,9 +171,18 @@
     "camera": {
       "rear": "50MP + 48MP + 12MP",
       "front": "11MP",
-      "features": ["Magic Eraser", "Astrophotography", "4K Video"]
+      "features": [
+        "Magic Eraser",
+        "Astrophotography",
+        "4K Video"
+      ]
     },
-    "connectivity": ["5G", "WiFi 6E", "Bluetooth 5.3", "NFC"],
+    "connectivity": [
+      "5G",
+      "WiFi 6E",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
     "features": [
       "Fingerprint Sensor",
       "Face Unlock",
@@ -129,6 +192,10 @@
     "warranty": "2 Years",
     "images": [
       "https://m.media-amazon.com/images/I/71N4hshhfNL._AC_UY218_.jpg"
+    ],
+    "video": [
+      "https://media-ik.croma.com/prod/https://media.croma.com/video/upload/v1712316029/Croma%20Assets/Videos/2024%20Videos/305370_wjnsn5.mp4?tr=q-70",
+      "https://media-ik.croma.com/prod/https://media.croma.com/video/upload/v1712315997/Croma%20Assets/Videos/2024%20Videos/305368_pd5gtr.mp4?tr=q-70"
     ],
     "pay_on_delivery": true,
     "out_of_stock": "available",
@@ -144,12 +211,18 @@
     "rating": 3,
     "reviews": 290,
     "discount": 50,
-    "color": ["Emerald Green", "Volcanic Black"],
+    "color": [
+      "Emerald Green",
+      "Volcanic Black"
+    ],
     "release_date": "2024-03-10",
     "operating_system": "OxygenOS 14 (Android 14)",
     "processor": "Snapdragon 8 Gen 3",
     "ram": "16GB",
-    "storage": ["256GB", "512GB"],
+    "storage": [
+      "256GB",
+      "512GB"
+    ],
     "battery": "5500mAh",
     "display": {
       "size": "6.8 inches",
@@ -160,9 +233,18 @@
     "camera": {
       "rear": "50MP + 48MP + 32MP",
       "front": "32MP",
-      "features": ["Hasselblad Tuning", "Ultra HDR", "Super Slow Motion"]
+      "features": [
+        "Hasselblad Tuning",
+        "Ultra HDR",
+        "Super Slow Motion"
+      ]
     },
-    "connectivity": ["5G", "WiFi 7", "Bluetooth 5.3", "NFC"],
+    "connectivity": [
+      "5G",
+      "WiFi 7",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
     "features": [
       "In-Display Fingerprint",
       "120W Super Fast Charging",
@@ -172,6 +254,10 @@
     "warranty": "2 Years",
     "images": [
       "https://m.media-amazon.com/images/I/61BAuSC0UnL._AC_UY218_.jpg"
+    ],
+    "video": [
+      "https://media-ik.croma.com/prod/https://media.croma.com/video/upload/v1712316029/Croma%20Assets/Videos/2024%20Videos/305370_wjnsn5.mp4?tr=q-70",
+      "https://media-ik.croma.com/prod/https://media.croma.com/video/upload/v1712315997/Croma%20Assets/Videos/2024%20Videos/305368_pd5gtr.mp4?tr=q-70"
     ],
     "pay_on_delivery": true,
     "out_of_stock": "available",
@@ -187,12 +273,18 @@
     "rating": 4.5,
     "reviews": 410,
     "discount": 75,
-    "color": ["White", "Black"],
+    "color": [
+      "White",
+      "Black"
+    ],
     "release_date": "2024-04-05",
     "operating_system": "MIUI 15 (Android 14)",
     "processor": "Snapdragon 8 Gen 3",
     "ram": "16GB",
-    "storage": ["256GB", "512GB"],
+    "storage": [
+      "256GB",
+      "512GB"
+    ],
     "battery": "5200mAh",
     "display": {
       "size": "6.73 inches",
@@ -203,9 +295,18 @@
     "camera": {
       "rear": "50MP + 50MP + 50MP + 50MP",
       "front": "32MP",
-      "features": ["Leica Lens", "8K Video", "Periscope Zoom"]
+      "features": [
+        "Leica Lens",
+        "8K Video",
+        "Periscope Zoom"
+      ]
     },
-    "connectivity": ["5G", "WiFi 7", "Bluetooth 5.3", "NFC"],
+    "connectivity": [
+      "5G",
+      "WiFi 7",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
     "features": [
       "120W Fast Charging",
       "In-Display Fingerprint",
@@ -214,6 +315,10 @@
     "warranty": "2 Years",
     "images": [
       "https://i02.appmifile.com/mi-com-product/fly-birds/new-xiaomi-14-ultra/PC/pc-14ultra-header.jpg?f=webp"
+    ],
+    "video": [
+      "https://media-ik.croma.com/prod/https://media.croma.com/video/upload/v1712316029/Croma%20Assets/Videos/2024%20Videos/305370_wjnsn5.mp4?tr=q-70",
+      "https://media-ik.croma.com/prod/https://media.croma.com/video/upload/v1712315997/Croma%20Assets/Videos/2024%20Videos/305368_pd5gtr.mp4?tr=q-70"
     ],
     "pay_on_delivery": true,
     "out_of_stock": "available",
@@ -229,12 +334,18 @@
     "rating": 3.2,
     "reviews": 200,
     "discount": 15,
-    "color": ["Charcoal", "Sunset Red"],
+    "color": [
+      "Charcoal",
+      "Sunset Red"
+    ],
     "release_date": "2024-01-12",
     "operating_system": "Android 13",
     "processor": "Snapdragon 7 Gen 1",
     "ram": "8GB",
-    "storage": ["128GB", "256GB"],
+    "storage": [
+      "128GB",
+      "256GB"
+    ],
     "battery": "4700mAh",
     "display": {
       "size": "6.5 inches",
@@ -245,13 +356,28 @@
     "camera": {
       "rear": "64MP + 13MP",
       "front": "16MP",
-      "features": ["Dual Capture", "4K Video"]
+      "features": [
+        "Dual Capture",
+        "4K Video"
+      ]
     },
-    "connectivity": ["5G", "WiFi 6", "Bluetooth 5.2", "NFC"],
-    "features": ["Water Repellent Design", "Fast Charging"],
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.2",
+      "NFC"
+    ],
+    "features": [
+      "Water Repellent Design",
+      "Fast Charging"
+    ],
     "warranty": "1 Year",
     "images": [
       "https://fdn2.gsmarena.com/vv/pics/motorola/motorola-edge-30-1.jpg"
+    ],
+    "video": [
+      "https://media-ik.croma.com/prod/https://media.croma.com/video/upload/v1712316029/Croma%20Assets/Videos/2024%20Videos/305370_wjnsn5.mp4?tr=q-70",
+      "https://media-ik.croma.com/prod/https://media.croma.com/video/upload/v1712315997/Croma%20Assets/Videos/2024%20Videos/305368_pd5gtr.mp4?tr=q-70"
     ],
     "pay_on_delivery": false,
     "out_of_stock": "out of stock",
@@ -267,12 +393,17 @@
     "rating": 2.2,
     "reviews": 150,
     "discount": 18,
-    "color": ["Mirror Silver", "Aurora Green"],
+    "color": [
+      "Mirror Silver",
+      "Aurora Green"
+    ],
     "release_date": "2024-05-01",
     "operating_system": "Realme UI 5 (Android 14)",
     "processor": "Snapdragon 8s Gen 2",
     "ram": "12GB",
-    "storage": ["256GB"],
+    "storage": [
+      "256GB"
+    ],
     "battery": "5000mAh",
     "display": {
       "size": "6.74 inches",
@@ -283,13 +414,28 @@
     "camera": {
       "rear": "50MP + 8MP",
       "front": "16MP",
-      "features": ["Street Photography Mode", "HDR Video"]
+      "features": [
+        "Street Photography Mode",
+        "HDR Video"
+      ]
     },
-    "connectivity": ["5G", "WiFi 6", "Bluetooth 5.3", "NFC"],
-    "features": ["Fast Charging", "VC Cooling System"],
+    "connectivity": [
+      "5G",
+      "WiFi 6",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "features": [
+      "Fast Charging",
+      "VC Cooling System"
+    ],
     "warranty": "1 Year",
     "images": [
       "https://fdn2.gsmarena.com/vv/pics/realme/realme-gt-neo6-1.jpg"
+    ],
+    "video": [
+      "https://media-ik.croma.com/prod/https://media.croma.com/video/upload/v1712316029/Croma%20Assets/Videos/2024%20Videos/305370_wjnsn5.mp4?tr=q-70",
+      "https://media-ik.croma.com/prod/https://media.croma.com/video/upload/v1712315997/Croma%20Assets/Videos/2024%20Videos/305368_pd5gtr.mp4?tr=q-70"
     ],
     "pay_on_delivery": true,
     "out_of_stock": "available",
@@ -305,12 +451,18 @@
     "rating": 1,
     "reviews": 250,
     "discount": 12,
-    "color": ["Phantom Black", "Lunar Silver"],
+    "color": [
+      "Phantom Black",
+      "Lunar Silver"
+    ],
     "release_date": "2024-06-15",
     "operating_system": "HyperOS (Android 14)",
     "processor": "Snapdragon 8 Gen 2",
     "ram": "12GB",
-    "storage": ["256GB", "512GB"],
+    "storage": [
+      "256GB",
+      "512GB"
+    ],
     "battery": "5000mAh",
     "display": {
       "size": "6.67 inches",
@@ -321,13 +473,30 @@
     "camera": {
       "rear": "50MP + 8MP + 2MP",
       "front": "16MP",
-      "features": ["AI Camera", "Night Vision", "4K Video"]
+      "features": [
+        "AI Camera",
+        "Night Vision",
+        "4K Video"
+      ]
     },
-    "connectivity": ["5G", "WiFi 6E", "Bluetooth 5.3", "NFC"],
-    "features": ["LiquidCool Technology", "Fast Charging", "In-Display Fingerprint"],
+    "connectivity": [
+      "5G",
+      "WiFi 6E",
+      "Bluetooth 5.3",
+      "NFC"
+    ],
+    "features": [
+      "LiquidCool Technology",
+      "Fast Charging",
+      "In-Display Fingerprint"
+    ],
     "warranty": "1 Year",
     "images": [
       "https://i02.appmifile.com/mi-com-product/fly-birds/poco-f6-pro/PC/f63963c40f1916d4291b9451b97f0027.jpg?f=webp"
+    ],
+    "video": [
+      "https://media-ik.croma.com/prod/https://media.croma.com/video/upload/v1712316029/Croma%20Assets/Videos/2024%20Videos/305370_wjnsn5.mp4?tr=q-70",
+      "https://media-ik.croma.com/prod/https://media.croma.com/video/upload/v1712315997/Croma%20Assets/Videos/2024%20Videos/305368_pd5gtr.mp4?tr=q-70"
     ],
     "pay_on_delivery": true,
     "out_of_stock": "available",

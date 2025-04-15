@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import { ReusableProduct } from "../components/features/product/ReusableProduct"
 import ReusableSlider from '../components/features/product/related-products/ReusableSlider'
-import ReusablePopupProduct from '../components/features/product/ReusablePopupProduct';
+// import ReusablePopupProduct from '../components/features/product/ReusablePopupProduct';
 import { ReusableReviewRatingBox } from '../components/features/product/review-rating/ReusableReviewRatingBox';
 import { useParams } from 'react-router-dom';
 
@@ -29,7 +29,7 @@ export const Product = () => {
                     <ReusableSlider />
                 </Box>
 
-                <ReusablePopupProduct />
+                {/* <ReusablePopupProduct /> */}
 
             </Container>
         </React.Fragment>

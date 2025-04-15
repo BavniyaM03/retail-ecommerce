@@ -63,7 +63,7 @@ export default function Header() {
                             onChange={(e) => dispatch(findProduct(e.target.value))}
                             placeholder="Search…"
                             inputProps={{ 'aria-label': 'search' }}
-                            sx={{width: 910}}
+                            sx={{width: 1150}}
                         />
                         {/* <SearchIconWrapper> */}
                         <SearchOutlined sx={{ cursor: 'pointer', zIndex: 9 }} onClick={() => dispatch(findProductOnSearch())} />
