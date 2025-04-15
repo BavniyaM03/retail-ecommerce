@@ -1,4 +1,6 @@
 import { createSlice, current } from "@reduxjs/toolkit";
+import Swal from "sweetalert2";
+
 
 const userFormValues = {
     firstName: "",
@@ -84,17 +86,17 @@ const authSlice = createSlice({
             if (signUpData) {
 
                 if (signUpData.email === state.userFormValues.email) {
-                    alert('email already exist')
+                   state.validation.email_validation = 'email already exist';
                 } else {
                     const signUpData = JSON.stringify(state.userFormValues);
                     sessionStorage.setItem('signup', signUpData);
-                    alert('signup successfully')
+                    Swal.fire('signup successfully')
                 }
             }
             else {
                 const signUpData = JSON.stringify(state.userFormValues);
                 sessionStorage.setItem('signup', signUpData);
-                alert('signup successfully')
+                Swal.fire('signup successfully')
             }
         },
 

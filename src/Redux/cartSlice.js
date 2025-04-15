@@ -1,4 +1,6 @@
 import { createSlice, current } from "@reduxjs/toolkit";
+import { useSnackbar } from 'notistack';
+// const { enqueueSnackbar } = useSnackbar();
 
 const initialState =
     [
@@ -56,9 +58,13 @@ const initialState =
 const cartSlice = createSlice({
     name: "cartItem",
     initialState: {
-        items: initialState
+        items: initialState,
+        toggle_button : true,
     }, reducers: {
         addToCart: (state, action) => {
+            // event.target.style.display = 'none';
+            // enqueueSnackbar('Product Added to Cart');
+            state.toggle_button = false;
             const product = action.payload;
             const existingProduct = state.items.find((item) => { if (item.id === product.id) { return item } else { return null } })
             console.log("existing Product", existingProduct);

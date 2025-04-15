@@ -8,6 +8,7 @@ import './ReusableShoppingCard.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart, moveToWishlist, removeCartItem, removeToCart } from '../../../Redux/cartSlice';
 import { addToWishlist } from '../../../Redux/wishlistSlice';
+import { useSnackbar } from 'notistack';
 
 
 export const ReusableShoppingCard = () => {
@@ -15,7 +16,7 @@ export const ReusableShoppingCard = () => {
     const dispatch = useDispatch();
     console.log(14, cart);
 
-
+const { enqueueSnackbar } = useSnackbar();
     const priceArray = cart.map((item) => item.price * item.quantity);
     console.log(19, priceArray);
     const getSum = (total, num) => {
@@ -29,6 +30,11 @@ export const ReusableShoppingCard = () => {
     const handleMoveToWishlist = (item) =>{
         dispatch(moveToWishlist(item))
         dispatch(addToWishlist(item))
+    }
+
+    const handleRemoveCartItem = (item) =>{
+        dispatch(removeCartItem(item))
+        enqueueSnackbar(`Remove Item ${item.title ? item.title : item.name} From Your Cart`, {variant : 'warning'});
     }
 
     return (
@@ -57,7 +63,7 @@ export const ReusableShoppingCard = () => {
                             </div>
 
                             <div className='cart-item-actions' >
-                                <div className='cart-action-btn' onClick={() => dispatch(removeCartItem(item))} >
+                                <div className='cart-action-btn' onClick={() => handleRemoveCartItem(item)} >
                                     <DeleteOutlineOutlinedIcon fontSize='small' />
                                     <Typography>Remove</Typography>
                                 </div>

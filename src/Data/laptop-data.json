@@ -33,6 +33,7 @@
       "Studio-Quality Microphones"
     ],
     "warranty": "1 Year",
+    "category": "laptop",
     "images": [
       "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp16-spaceblack-cto-hero-202410?wid=840&hei=498&fmt=jpeg&qlt=90&.v=1731525368125"
     ]
@@ -71,8 +72,9 @@
       "Carbon Fiber Palm Rest"
     ],
     "warranty": "1 Year",
+    "category": "laptop",
     "images": [
-     "https://d154tzc5g79pmr.cloudfront.net/media/catalog/product/cache/74ae05ef3745aec30d7f5a287debd7f5/x/p/xps-16-9640-laptop-bts_1.jpg"
+      "https://d154tzc5g79pmr.cloudfront.net/media/catalog/product/cache/74ae05ef3745aec30d7f5a287debd7f5/x/p/xps-16-9640-laptop-bts_1.jpg"
     ]
   },
   {
@@ -108,6 +110,7 @@
       "Advanced AI Gaming Performance"
     ],
     "warranty": "2 Years",
+    "category": "laptop",
     "images": [
       "https://images-cdn.ubuy.co.in/6664a702975d40493c63043b-razer-blade-16-2024-gaming-laptop.jpg"
     ]
@@ -145,6 +148,7 @@
       "AI-Enhanced Cooling System"
     ],
     "warranty": "2 Years",
+    "category": "laptop",
     "images": [
       "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTseYyEF6vGjb1qz4Ky5xxgtGwSUQa6j9FgcQF8Igr5XR_5aQ7Ewv0V0tP8a5GpsNCDYAOq-rTuye9hMi3dspz13JlGugV4YoL7J0PPeC2G&usqp=CAE"
     ]
@@ -182,8 +186,9 @@
       "AI Noise Reduction for Video Calls"
     ],
     "warranty": "1 Year",
+    "category": "laptop",
     "images": [
-     "https://m.media-amazon.com/images/I/71b8smFm2KL._AC_UF894,1000_QL80_.jpg"
+      "https://m.media-amazon.com/images/I/71b8smFm2KL._AC_UF894,1000_QL80_.jpg"
     ]
   }
 ]

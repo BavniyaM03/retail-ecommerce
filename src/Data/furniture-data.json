@@ -3,7 +3,7 @@
     "id": 45,
     "name": "Modern Leather Sofa",
     "brand": "Ashley Furniture",
-    "category": "Living Room",
+    "category": "furniture",
     "price": 899.99,
     "currency": "USD",
     "stock": 50,
@@ -25,7 +25,7 @@
     "id": 46,
     "name": "Oakwood King Size Bed",
     "brand": "Home Elegance",
-    "category": "Bedroom",
+    "category": "furniture",
     "price": 1199.99,
     "currency": "USD",
     "stock": 30,
@@ -47,7 +47,7 @@
     "id": 47,
     "name": "Ergonomic Office Chair",
     "brand": "Herman Miller",
-    "category": "Office",
+    "category": "furniture",
     "price": 749.99,
     "currency": "USD",
     "stock": 100,
@@ -69,7 +69,7 @@
     "id": 48,
     "name": "Extendable Dining Table Set",
     "brand": "IKEA",
-    "category": "Dining Room",
+    "category": "furniture",
     "price": 699.99,
     "currency": "USD",
     "stock": 40,
@@ -91,7 +91,7 @@
     "id": 49,
     "name": "Outdoor Patio Lounge Set",
     "brand": "SunVilla",
-    "category": "Outdoor",
+    "category": "furniture",
     "price": 1299.99,
     "currency": "USD",
     "stock": 25,
@@ -113,7 +113,7 @@
     "id": 50,
     "name": "Modern Bookshelf with Storage",
     "brand": "Wayfair",
-    "category": "Storage & Organization",
+    "category": "furniture",
     "price": 349.99,
     "currency": "USD",
     "stock": 60,
@@ -128,7 +128,7 @@
     "warranty": "2 Years",
     "description": "Keep your space organized with the Wayfair Modern Bookshelf. Featuring five spacious shelves and a sturdy metal frame, this bookshelf is perfect for storing books, decor, and other essentials. The scratch-resistant white finish adds a sleek, contemporary touch, while the gold metal accents provide a luxurious look. Ideal for living rooms, offices, or bedrooms, this bookshelf combines functionality with elegance to elevate any space.",
     "images": [
-     "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTK7ebRYnmuhbiXr8wSYayfg1CWaccR-N4MuFE3zb488paR31tL3qs9g1UDsp0z7UoFWnjr6_AznOHttbd58rSHLhtzjFxAcVfFE9dEZ17o&usqp=CAE"
+      "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTK7ebRYnmuhbiXr8wSYayfg1CWaccR-N4MuFE3zb488paR31tL3qs9g1UDsp0z7UoFWnjr6_AznOHttbd58rSHLhtzjFxAcVfFE9dEZ17o&usqp=CAE"
     ]
   }
 ]

@@ -3,7 +3,7 @@
     "id": 51,
     "name": "Smart 4K LED TV",
     "brand": "Samsung",
-    "category": "Entertainment",
+    "category": "home",
     "price": 799.99,
     "currency": "USD",
     "stock": 50,
@@ -21,14 +21,14 @@
     "features": ["HDR10+", "120Hz Refresh Rate", "Dolby Atmos"],
     "description": "Experience stunning visuals with the Samsung 55-inch Smart 4K LED TV. Featuring ultra HD resolution, HDR10+, and built-in smart apps, this TV delivers immersive entertainment. Enjoy crystal-clear sound with Dolby Atmos and seamless connectivity with WiFi and Bluetooth.",
     "images": [
-     "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSV2AqoVsTT7kXKEdOTPf3eM-iHuAUWp7pvNSM4QIFAOAS9ymcPrNNZhyVcnPuJMPCbA3tTMjXC2BqKKE_Ytr8P7kYojo79xIbMWZ74c0WI"
+      "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSV2AqoVsTT7kXKEdOTPf3eM-iHuAUWp7pvNSM4QIFAOAS9ymcPrNNZhyVcnPuJMPCbA3tTMjXC2BqKKE_Ytr8P7kYojo79xIbMWZ74c0WI"
     ]
   },
   {
     "id": 52,
     "name": "French Door Refrigerator",
     "brand": "LG",
-    "category": "Kitchen",
+    "category": "home",
     "price": 1499.99,
     "currency": "USD",
     "stock": 30,
@@ -45,14 +45,14 @@
     "features": ["Ice Maker", "Water Dispenser", "Frost Free"],
     "description": "Keep your food fresh with the LG French Door Refrigerator, featuring a spacious 25 cu. ft. capacity, smart WiFi control, and an energy-efficient A++ rating. The built-in water dispenser and ice maker make everyday use convenient and hassle-free.",
     "images": [
-     "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTswsxpqPHmhmTzMz5JKisUnwazPpDzbC_PGUBbogRzYe7KR7vsTnX5EKfWfxeR6eivL9fHDCOZXSu8JGQ7vOF2NDLwJjEULUKK0fSJt0vj"
+      "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTswsxpqPHmhmTzMz5JKisUnwazPpDzbC_PGUBbogRzYe7KR7vsTnX5EKfWfxeR6eivL9fHDCOZXSu8JGQ7vOF2NDLwJjEULUKK0fSJt0vj"
     ]
   },
   {
     "id": 53,
     "name": "Front Load Washing Machine",
     "brand": "Bosch",
-    "category": "Laundry",
+    "category": "home",
     "price": 899.99,
     "currency": "USD",
     "stock": 40,
@@ -76,7 +76,7 @@
     "id": 54,
     "name": "Microwave Oven",
     "brand": "Panasonic",
-    "category": "Kitchen",
+    "category": "home",
     "price": 199.99,
     "currency": "USD",
     "stock": 80,
@@ -93,14 +93,14 @@
     "features": ["Touch Control", "Child Lock", "Energy Saving Mode"],
     "description": "The Panasonic Microwave Oven offers powerful 1200W cooking with smart sensor technology. Enjoy even heating, auto defrost, and convenient touch controls for effortless cooking. A must-have for modern kitchens.",
     "images": [
-     "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTMV82EZ9TkIROrwfU6QPp5-uj1h877fOZ8RvUO78OWPrIsiTsmkkAidNGby_2_hsSg3uNXuGW7uizWmYLrnx5DF5_QZqNuf5wutfVZX7kPM3Bvl17gZ9BWMw"
+      "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTMV82EZ9TkIROrwfU6QPp5-uj1h877fOZ8RvUO78OWPrIsiTsmkkAidNGby_2_hsSg3uNXuGW7uizWmYLrnx5DF5_QZqNuf5wutfVZX7kPM3Bvl17gZ9BWMw"
     ]
   },
   {
     "id": 56,
     "name": "Espresso Coffee Maker",
     "brand": "De'Longhi",
-    "category": "Kitchen",
+    "category": "home",
     "price": 349.99,
     "currency": "USD",
     "stock": 90,
@@ -117,7 +117,7 @@
     "features": ["Milk Frother", "Removable Water Tank", "Stainless Steel Boiler"],
     "description": "Brew barista-quality coffee at home with the De'Longhi Espresso Coffee Maker. With a 1.5L capacity, milk frother, and programmable settings, enjoy your favorite coffee just the way you like it.",
     "images": [
-     "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSMqen5GCssUnqwV58UkEqrm3mgROePVSLVkLXNFigBEMO7ArVjc2xXRk63qkmx4PWB2k4YobwK5wlnzi6KW6SmuvEoiEwwec3YauLBVpsb9l4F-27EPnAY"
+      "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSMqen5GCssUnqwV58UkEqrm3mgROePVSLVkLXNFigBEMO7ArVjc2xXRk63qkmx4PWB2k4YobwK5wlnzi6KW6SmuvEoiEwwec3YauLBVpsb9l4F-27EPnAY"
     ]
   }
 ]

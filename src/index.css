@@ -32,10 +32,11 @@ body{
   margin-left: 20px !important
 }
 
-NavLink {
-  text-decoration: none;
-
+/* swal alert */
+.swal2-container {
+  z-index: 20000 !important;
 }
+
 
 
 
