@@ -2,6 +2,8 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap; /* Allows wrapping on small screens */
+    /* background-color: aqua; */
+    max-height: 700px;
 }
 
 /* 🖼 Product Image Container */

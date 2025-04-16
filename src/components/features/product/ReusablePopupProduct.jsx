@@ -13,8 +13,8 @@ import { addToCart } from '../../../Redux/cartSlice';
 
 export default function ReusablePopupProduct({ handleClose, open, images, videos }) {
     const [isActive, setIsActive] = React.useState(true);
-    const [selectedImage, setSelectedImage] = useState(images[0]);
-    const [selectedVideo, setSelectedVideo] = useState(videos[0]);
+    const [selectedImage, setSelectedImage] = useState(images);
+    const [selectedVideo, setSelectedVideo] = useState(videos);
     const product = useSelector((state) => state.products.productDetails);
     const dispatch = useDispatch();
 
@@ -85,7 +85,7 @@ export default function ReusablePopupProduct({ handleClose, open, images, videos
                         </div>
 
                         {isActive ? (<div className='small-images-container'>
-                            {images.map((image, index) => (
+                            {images?.length === 0 ? 0 : images?.map((image, index) => (
                                 <section key={index} onClick={() => handlerPreviewImage(index)}><img className='small-view-of-images' src={image}></img></section>
                             ))}
 
